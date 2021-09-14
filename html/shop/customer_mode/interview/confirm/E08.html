@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>事前確認事項（確認）｜PETEMO グルーミングサロン 予約サイト管理</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../../../../../css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="../../../../../js/jquery-ui.min-1.10.4.js" ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../../../css/styles.css" />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+      <!-- ヘッダー -->
+      <header class="header-booking">
+        <div class="header-booking__left">
+          <h1 class="header-booking__logo">
+            <a href="/" >
+              <img src="../../../../..//image/common/logo-green.png" alt="ロゴ">
+            </a>
+          </h1>
+        </div>
+      </header>
+
+      <!-- main_shop-customer_mode-interview-confirm -->
+      <main class="main__shop__customer__mode__interview__confirm">
+        <div class="container">
+
+        <!-- ステップスライダー -->
+        <div class="main__shop__customer__mode__interview__confirm__stepflow">
+          <ul class="input_stepflow">
+            <li class="completed">
+              <span class="text"><p class="title">STEP 1</p>お客さま情報の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li class="completed">
+              <span class="text"><p class="title">STEP 2</p>ペット情報の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li class="active">
+              <span class="text"><p class="title">STEP 3</p>事前確認事項の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li>
+              <span class="text"><p class="title">STEP 4</p>登録情報の確認</span>
+              <span class="bubble"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- customerdate -->
+        <div class="main__shop__customer__mode__interview__confirm__title">
+          <p>事前確認事項の確認</p>
+        </div>
+
+        <div class="main__shop__customer__mode__interview__confirm__customerdate">
+          <table class="table2">
+            <tbody>
+              <tr>
+                <th>かかりつけの獣医</th>
+                <td>〇〇〇〇病院</td>
+              </tr>
+              <tr>
+                <th>グルーミング中や仕上がり後の写真を撮影してもよろしいですか？</th>
+                <td>同意する</td>
+              </tr>
+              <tr>
+                <th>健康状態</th>
+                <td class="table-health-flag">異常あり</td>
+                <td class="table-health-name">パテラ</td>
+                <td class="table-health-level">グレード1</td>
+                <td class="table-health-position">身体</td>
+                <td class="table-health-text">詳細テキスト詳細テキスト</td>
+                <td class="table-health-name">ヘルニア</td>
+                <td class="table-health-level">軽度</td>
+                <td class="table-health-position">首</td>
+                <td class="table-health-text">詳細テキスト詳細テキスト</td>
+              </tr>
+              <tr>
+                <th class="table-title">その他現在治療中の病気・怪我はございますか？</th>
+                <td class="table-flag">ある</td>
+                <td class="table-text">詳細テキスト詳細テキスト</td>
+              </tr>
+              <tr>
+                <th>最近動物病院に受診しましたか？</th>
+                <td>かかった</td>
+              </tr>
+              <tr>
+                <th>血液などの検査を1年以内にしていますか？</th>
+                <td>していない</td>
+              </tr>
+              <tr>
+                <th>心臓病の検査を1年以内にしていますか？</th>
+                <td>していない</td>
+              </tr>
+              <tr>
+                <th>投薬中の薬があれば教えてください。</th>
+                <td>ある</td>
+              </tr>
+              <tr>
+                <th class="table-longq-title">室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？</th>
+                <td class="table-longtext">はい</td>
+              </tr>
+              <tr>
+                <th>いつものウンチの状態はいかがですか？</th>
+                <td>堅い</td>
+              </tr>
+              <tr>
+                <th>お水の飲み方はどちらですか？</th>
+                <td>お皿</td>
+              </tr>
+              <tr>
+                <th class="table-title">預かり中に体調を崩したことはございますか？</th>
+                <td class="table-flag">ある</td>
+                <td class="table-text">詳細テキスト詳細テキスト</td>
+              </tr>
+              <tr>
+                <th class="table-title">食べ物でアレルギーはございますか？</th>
+                <td class="table-flag">ある</td>
+                <td class="table-text">詳細テキスト詳細テキスト</td>
+              </tr>
+              <tr>
+                <th>ノミ・ダニ予防はされていますか？</th>
+                <td>していない</td>
+              </tr>
+              <tr>
+                <th class="table-title">同居している他のワンちゃん・ネコちゃんはいますか？</th>
+                <td class="table-flag">いる</td>
+                <td class="table-text">詳細テキスト詳細テキスト</td>
+              </tr>
+              <tr>
+                <th class="table-title">その他、お手入れに関してお困りごとはありますか？</th>
+                <td class="table-flag">フケ</td>
+                <td class="table-text">ベタつき</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ボタン -->
+        <div class="main__shop__customer__mode__interview__confirm__button">
+          <a href="" class="sub-button">修正する</a>
+          <a href="" class="most-important-button">登録</a>
+        </div>
+
+        </div>
+      </main>
+
+
+    <!-- js -->
+    <script defer type="text/javascript" src="../../../../../js/script.js"></script>
+  </body>
+</html>

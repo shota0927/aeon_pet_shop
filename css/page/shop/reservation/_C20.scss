@@ -1,0 +1,41 @@
+.main__shop__reservation__c20{
+	overflow-x: hidden;	
+	background-color: #707070;
+	& .container{
+		padding: 0;
+		background-color: #FFFFFF;
+		border-radius: 10px;
+		border:1px solid #FFFFFF;
+		margin: 222px 224px 221px 224px;
+	}
+}
+.main__shop__reservation__c20__title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 36px 0 31px 0;
+	& .alert__icons{
+		width: 31px;
+		height: 31px;
+		margin-bottom: 11px;
+	}
+	& p{
+		color: #F4451C;
+	}
+}
+.main__shop__reservation__c20__text{
+	text-align: center;
+}
+.main__shop__reservation__c20__button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 33px 0 45px 0;
+	& .sub-button{
+		width: 220px;
+		height: 48px;
+		margin-top: 12px;
+	}
+}

@@ -1,0 +1,34 @@
+.required__section {
+
+}
+
+.icon__wrapper--required {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-warning;
+    border-radius: 0.5rem;
+    width: 3rem;
+}
+
+.icon__text--required,
+.icon__text--optional {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.icon__wrapper--optional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-label-optional;
+    border-radius: 0.5rem;
+    width: 3rem;
+    margin-top: 1rem;
+}
+
+.icon__wrapper--visible,
+.icon__wrapper--invisible {
+    margin-top: 1rem;
+}
+

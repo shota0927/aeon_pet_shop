@@ -1,0 +1,21 @@
+.textarea__section {
+
+}
+
+.textarea__wrapper {
+
+}
+
+.textarea {
+  width: 100%;
+    max-width: 74rem;
+    height: 14rem;
+    resize: none;
+    padding: 1.5rem;
+    border: 0.1rem solid $color-border-gray;
+    border-radius: 0.5rem;
+
+    &:focus {
+        border-color: $color-focus;
+    }
+}

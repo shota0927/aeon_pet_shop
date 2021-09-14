@@ -1,0 +1,14 @@
+.category-title {
+  background-color: $color-bright-green;
+  font-size: 1.8rem;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  border-radius: 6px 6px 0 0;
+  @include mq(md) {
+    font-size: 2rem;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+}

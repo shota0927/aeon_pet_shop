@@ -1,0 +1,46 @@
+.second-important-button {
+  @include _button-base;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  width: 94px;
+  border: 1px solid $color-main;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.second-important-button::after {
+  content: "";
+  position: absolute;
+  border: 0px;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 6px;
+  height: 6px;
+  top: 47%;
+  right: 15px;
+}
+
+.second-important-button--medical {
+  @include _button-icon;
+  background-color: #fff;
+  color: $color-warning;
+  border: 1px solid $color-warning;
+  width: 178px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+  & img {
+    width: 10.02px;
+    height: 13.36px;
+    margin-right: 7.1px;
+  }
+  &::after {
+    border-top: solid 1px $color-warning;
+    border-right: solid 1px $color-warning;
+  }
+}

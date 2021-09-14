@@ -1,0 +1,279 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  @include mq(md) {
+    height: 80px;
+  }
+}
+.header__left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__logo{
+  margin-left: 10px;
+  display: block;
+  @include mq(md) {
+    margin-left: 20px;
+  }
+}
+.header__logo a{
+  display: block;
+}
+.header__logo-pc{
+  width: 240px;
+  height: 54px;
+}
+.header__logo-sp{
+  width: 210px;
+  height: 42px;
+}
+.header__search{
+  margin-left: 60px;
+  display: none;
+  @media screen and (min-width: 940px) {
+    @include _button-base;
+    @include _button-icon;
+    background-color: $color-thin-green;
+    color: $color-main;
+    padding-top: 13.6px;
+    padding-bottom: 13.6px;
+    width: 180px;
+    border-radius: 22px;
+    font-size: 1.4rem;
+  }
+}
+.header__search img{
+  display: block;
+  width: 14.55px;
+  height: 14.55px;
+  margin-right: 7.5px;
+}
+.header__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before{
+    display: none;
+    @media screen and (min-width: 940px) {
+      display: block;
+      position: absolute;
+      content: "ご予約には会員登録が必要となります。";
+      width: 180px;
+      height: auto;
+      bottom: -18px;
+      right: 0;
+      font-size: 1rem;
+    }
+  }
+}
+.header.header--non-login {
+  .header__btns{
+    &::before{
+      display: none;
+    }
+  }
+}
+.header__login{
+  display: none;
+  @media screen and (min-width: 940px) {
+    @include _button-base;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid $color-accent-brown;
+    color: $color-accent-brown;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    width: 145px;
+    border-radius: 22px;
+    font-size: 1.5rem;
+  }
+}
+.header__member{
+  display: none;
+  @media screen and (min-width: 940px) {
+    @include _button-base;
+    margin-left: 10px;
+    background-color: $color-accent-brown;
+    color: #fff;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    width: 145px;
+    border-radius: 22px;
+    font-size: 1.5rem;
+  }
+}
+.header__mypage{
+  display: none;
+  @media screen and (min-width: 940px) {
+    @include _button-base;
+    margin-left: 10px;
+    background-color: $color-bright-green;
+    color: #fff;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    width: 145px;
+    border-radius: 22px;
+    font-size: 1.5rem;
+  }
+}
+.hamburger__menu{
+  margin-right: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.hamburger__menu img{
+  width: 48px;
+  height: 48px;
+  @include mq(md) {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.header-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.3);
+  @include mq(md) {
+    width: 518px;
+  }
+}
+
+.header__burger-musk {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #707070;
+  z-index: 998;
+}
+
+.header-nav__title {
+  background-color: #333;
+  color: #fff;
+  letter-spacing: 0.07em;
+  padding: 18px 15px 15.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav__title .pc{
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+.header-nav__title .sp{
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.header-nav__bars {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.header-nav__bar {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+}
+.header-nav__bar--left {
+  transform: rotate(-45deg);
+}
+.header-nav__bar--right {
+  transform: rotate(45deg);
+}
+
+.header-nav__items {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.header-nav__items:nth-of-type(2) {
+  border-top: 1px solid rgba($color:#7D7D7D, $alpha: 0.3);
+}
+.header-nav__item a:hover {
+  border-radius: 6px;
+  background-color: $color-thin-green;
+}
+.header-nav__item a{
+  margin: 0 auto;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    width: 498px;
+  }
+}
+.header-nav__title-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+  margin-left: 22px;
+}
+
+.header-nav__logout-button {
+  text-align: right;
+  margin-right: 11px;
+  margin-top: 15px;
+}
+.header-nav__logout-button .logout-button {
+  width: 130px;
+}
+
+.header-nav__number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  background-color: #D04A02;
+  border-radius: 50%;
+  font-size: 11px;
+  font-family: 'Lato';
+  color: #fff;
+  line-height: 1;
+  padding-bottom: 1px;
+}
+.header-nav__number--booking {
+  margin-left: 18px;
+}
+.header-nav__dog-icon {
+  width: 25px;
+  height: 22px;
+  margin-right: 3px;
+  margin-left: 17px;
+}
+.header-nav__cat-icon {
+  width: 25px;
+  height: 22px;
+  margin-right: 3px;
+  margin-left: 8px;
+}

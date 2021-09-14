@@ -1,0 +1,65 @@
+.header-booking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+}
+
+.header-booking__left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-booking__logo {
+  width: 86px;
+  height: 40px;
+  margin-left: 16px;
+}
+
+.header-booking__login-name {
+  margin-left: 11px;
+  font-size: 1.2rem;
+}
+
+.header-booking__logout-button {
+  margin-left: 24px;
+}
+
+.header-booking__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 31px;
+}
+
+.header-booking__tab {
+  margin-right: 15px;
+}
+
+.header-booking__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-booking__pull-down .pull-down__select  {
+  width: 259px;
+  padding: 8px 14px;
+  font-size: 1.4rem;
+}
+
+.header-booking__login-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 130px;
+  height: 30px;
+  background-color: $color-accent-orange;
+  color: #fff;
+  line-height: 1;
+  border-radius: 25px;
+  margin-left: 22px;
+}

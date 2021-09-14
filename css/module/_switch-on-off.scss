@@ -1,0 +1,92 @@
+.button__switch {
+    
+}
+
+.switch__wrapper {
+    position: relative;
+    width: 8rem;
+    height: 4rem;
+    background-color: $color-switch-off;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 2;
+
+    &::before {
+        content: "ON";
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #fff;
+        z-index: inherit;
+    }
+
+    &::after {
+        content: "OFF";
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #fff;
+        z-index: inherit;
+    }
+}
+
+.switch__checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: block !important;
+}
+
+.switch__knob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+        width: 3.2rem;
+        height: 3.2rem;
+        color: #fff;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: 0.3s ease all;
+    }
+}
+
+.switch__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.3s ease all;
+}
+
+[type="checkbox"]:checked + .switch__knob {
+    &::before {
+        content: "";
+        left: 4.5rem;
+    }
+}
+
+[type="checkbox"]:checked ~ .switch__layer {
+    background-color: $color-main;
+}

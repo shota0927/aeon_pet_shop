@@ -1,0 +1,140 @@
+.small-button {
+  @include _button-base;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 76px;
+  border: 1px solid $color-main;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.small-button--right-arrow {
+  @include _button-base;
+  width: initial;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  padding-right: 24px;
+  border: 1px solid $color-main;
+  font-size: 1.4rem;
+  position: relative;
+}
+.small-button--right-arrow::after {
+  content: "";
+  position: absolute;
+  border: 0px;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  right: 13px;
+}
+
+.small-button--left-arrow {
+  @include _button-base;
+  width: initial;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 24px;
+  padding-right: 16px;
+  border: 1px solid $color-main;
+  font-size: 1.4rem;
+  position: relative;
+}
+.small-button--left-arrow::after {
+  content: "";
+  position: absolute;
+  border: 0px;
+  border-bottom: solid 1px $color-main;
+  border-left: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  left: 10px;
+}
+
+.small-button--sign-up {
+  @include _button-base;
+  @include _button-icon;
+  color: $color-main;
+  font-size: 1.2rem;
+  width: 95px;
+  border: 1px solid $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  
+  & img {
+    width: 10px;
+    height: 10px;
+    margin-right: 9px;
+  }
+}
+
+.small-button--last-week {
+  @include _button-base;
+  width: initial;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 9px;
+  border: 1px solid $color-main;
+  font-size: 1rem;
+  position: relative;
+}
+.small-button--last-week::after {
+  content: "";
+  position: absolute;
+  border: 0px;
+  border-bottom: solid 1px $color-main;
+  border-left: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: 6.5px;
+}
+
+.small-button--next-week {
+  @include _button-base;
+  width: initial;
+  background-color: #fff;
+  color: $color-main;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  padding-right: 15px;
+  border: 1px solid $color-main;
+  font-size: 1rem;
+  position: relative;
+}
+.small-button--next-week::after {
+  content: "";
+  position: absolute;
+  border: 0px;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  right: 8px;
+}

@@ -1,0 +1,191 @@
+.checkbox__wrapper--individual {
+    height: 2rem;
+    &:not(:first-child){
+        margin-top: 2rem;
+    }
+}
+
+.label__wrapper--item {
+    position: relative;
+    width: 20rem;
+    height: 2rem;
+
+    &::after {
+        position: absolute;
+        content: "チェック項目";
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-40%)
+    }
+}
+
+.checkbox__label {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+
+    &:not(:first-child) {
+        margin-left: 2rem;;
+    }
+}
+
+.checkbox__invisible {
+    display: block !important;
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.label__wrapper--focused {
+    position: relative;
+    width: 20rem;
+    height: 2rem;
+
+    &::after {
+        position: absolute;
+        content: "Focused";
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-40%)
+    }
+}
+
+.label__wrapper--checked {
+    position: relative;
+    width: 20rem;
+    height: 2rem;
+
+    &::after {
+        position: absolute;
+        content: "チェック済み";
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-40%)
+    }
+}
+
+
+.checkbox__indicator2 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $color-border-gray;
+    border-radius: 0.5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border: solid $color-main;
+        border-width: 0 2px 2px 0;
+        width: 1rem;
+        height: 2rem;
+        display: none;
+    }
+}
+
+[type="checkbox"]:checked + .checkbox__indicator2 {
+    background-color: $color-focus;
+    &::after {
+        display: block;
+        border-color: #fff;
+    }
+}
+
+[type="checkbox"]:focus + .checkbox__indicator2 {
+    border-color: $color-main;
+}
+
+.radio__wrapper--individual {
+    position: relative;
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+.radio__label {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+}
+
+.radio__wrapper--item {
+    position: relative;
+    width: 9rem;
+    height: 4rem;
+
+    &::after {
+        position: absolute;
+        content: '選択肢';
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-70%);
+    }
+}
+
+.radio__wrapper--focused {
+    position: relative;
+    width: 9rem;
+    height: 4rem;
+
+    &::after {
+        position: absolute;
+        content: '選択肢';
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-70%);
+    }
+}
+
+.radio__wrapper--checked {
+    position: relative;
+    width: 11rem;
+    height: 4rem;
+
+    &::after {
+        position: absolute;
+        content: '選択済み';
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-70%);
+    }
+}
+
+.radio__invisible {
+    display: block !important;
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.radio__indicator2 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $color-border-gray;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: $color-main;
+        display: none;
+    }
+}
+
+[type="radio"]:checked + .radio__indicator2 {
+    &::after {
+        display: block;
+    }
+}
+
+[type="radio"]:focus + .radio__indicator2 {
+    border-color: $color-main;
+}

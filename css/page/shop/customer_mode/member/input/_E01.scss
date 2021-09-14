@@ -1,0 +1,535 @@
+.main__shop__customer__mode__member__input{	
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px;
+	& .container{
+		padding: 0;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border:1px solid #E5EFCA;
+	}
+}
+.input__area--default::placeholder{
+	color: #D5D5D5;
+	font-size: 1.6rem;
+}
+
+//stepflow
+.main__shop__customer__mode__member__input__stepflow{
+  width: 748px;
+  margin: 22px auto 21px auto;
+}
+.input_stepflow {
+	font-size: 1.2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.input_stepflow > li {
+	position: relative;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-overflow: ellipsis;
+	color: #D5D5D5;
+	 -ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	     flex: 1;
+}
+.input_stepflow > li .title {
+ 	 text-align: center;
+}
+.input_stepflow > li .text {
+	display: block;
+  	text-align: center;
+	padding-right: 3.2em;
+	padding-bottom: 1em;
+	padding-left: 3.0em;
+}
+.input_stepflow > li .bubble {
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin: 0 0 0.5em 7em;
+	border-radius: 1000px;
+	background-color: #D5D5D5;
+}
+.input_stepflow > li .bubble::after,
+.input_stepflow > li .bubble::before {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	height: 3px;
+  	margin-left: 0.9em;
+	content: '';
+	background-color: #F4F4F4;
+}
+.input_stepflow > li.completed .title{
+  color: #6F8D1B;
+}
+.input_stepflow > li.completed .text{
+  color: #000;
+}
+.input_stepflow > li.completed .bubble,
+.input_stepflow > li.completed .bubble::after,
+.input_stepflow > li.completed .bubble::before {
+	background-color: #6F8D1B;
+}
+.input_stepflow > li:last-child .bubble::after,
+.input_stepflow > li:last-child .bubble::before {
+	width: 0%;
+	margin-right: 50%;
+}
+.input_stepflow > li.active{
+  & .title{
+    color: #6F8D1B;
+  }
+  & .text{
+    color: #000;
+  }  
+}
+.input_stepflow > li.active .bubble {
+	color: #6F8D1B;
+	border: 4px solid #E7ECD7;
+	padding: 5.5px;
+	margin-top: -4.5px;
+	margin-bottom: -3.5px;
+}
+.input_stepflow > li.active .bubble,
+.input_stepflow > li.active .bubble::before {
+	background-color: #6F8D1B;
+}
+
+.main__shop__customer__mode__member__input__customer-title{
+	background-color: #98AD5C;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 1.4rem;
+	margin: 21px 11px;
+	padding: 8px 20px;
+}
+.main__shop__customer__mode__member__input__customer-name{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 13px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__wrapper{
+		display: flex;
+		align-items: center;
+		& .input__area--default{
+			width: 160px;
+		}
+	}
+	& .first-name{
+		margin-right: 8px;
+	}
+	& .second-name{
+		margin-left: 15px;
+		margin-right: 8px;
+	}
+}
+.main__shop__customer__mode__member__input__customer-namesub{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 21px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__wrapper{
+		display: flex;
+		align-items: center;
+		& .input__area--default{
+			width: 160px;
+		}
+	}
+	& .first-name{
+		margin-right: 8px;
+	}
+	& .second-name{
+		margin-left: 15px;
+		margin-right: 8px;
+	}
+}
+.main__shop__customer__mode__member__input__customer-gender{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 80px;
+			&::after{
+			content: '男性';
+			}
+		}
+		& .radio__wrapper--item{
+			width: 80px;
+			&::after{
+			content: '女性';
+			}
+		}
+		& .radio__wrapper--focused::after{
+			content: '無回答';
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-birthday{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__birthday__wrap{
+		display: flex;
+		& .input__wrapper.select__wrapper--shevron{
+			width: 100px;
+			margin-right: 10px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-tellno1{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+		& .tell__cation{
+			font-size: 1.2rem;
+			color: #414141;
+			margin-left: 10px;
+		}
+	}
+	& .input__tell1__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+		& .tell__cation2{
+			font-size: 1.2rem;
+			color: #414141;
+			margin-top: 4px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-tellno2{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 10px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+		& .tell__cation{
+			font-size: 1.2rem;
+			color: #414141;
+			margin-left: 10px;
+		}
+	}
+	& .input__tell2__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-agenttell{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 10px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+		& .tell__cation{
+			font-size: 1.2rem;
+			color: #414141;
+			margin-left: 10px;
+		}
+	}
+	& .input__agenttell__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+		& .tell__cation2{
+			font-size: 1.2rem;
+			color: #414141;
+			margin-top: 4px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-agentrelation{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 23px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__agentrelation__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-postno{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__postno__wrapper{
+		& .input__area--default{
+			width: 120px;
+			height: 46px;
+		}
+		& .address-search-button{
+			width: 81px;
+			height: 35px;
+			border-radius: 24px;
+			background-color: #888888;
+			color: #fff;
+			padding: 8px 12px 8px 13px;
+			margin-left: 10px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer__address-wrap{
+	display: flex;
+}
+.main__shop__customer__mode__member__input__customer-prefecture{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__prefecture__wrapper{
+		& .input__wrapper.select__wrapper--shevron{
+			width: 120px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-city{
+	font-size: 1.4rem;
+	margin-left: 10px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__city__wrapper{
+		& .input__area--default{
+			width: 234px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-subaddress{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__subaddress__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-buildingname{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 24px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__buildingname__wrapper{
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+.main__shop__customer__mode__member__input__customer-dm{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 65px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-dm{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 80px;
+			&::after{
+			content: 'はい';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: 'いいえ';
+		}
+	}
+}
+.main__shop__customer__mode__member__input__button{
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 40px 0;
+}

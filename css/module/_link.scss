@@ -1,0 +1,40 @@
+.link {
+
+}
+
+.link__wrapper {
+    width: 30rem;
+}
+
+.link__items {
+    width: 100%;
+
+    &:last-child {
+        border-bottom: 1px solid $color-border-gray;
+    }
+}
+
+.link__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid $color-border-gray;
+
+}
+
+.link__text {
+    display: inline-block;
+}
+
+.link__button {
+    display: inline-block;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.fa-arrow-right {
+    color: $color-icon-default;
+}

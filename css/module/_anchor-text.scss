@@ -1,0 +1,32 @@
+.anchor-text {
+  display: inline-block;
+  color: $color-main;
+  text-decoration: underline;
+}
+
+.anchor-text__right-arrow {
+  @include _arrow-right;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+}
+
+.anchor-text__last-arrow {
+  @include _arrow-right;
+  border-bottom: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+}
+
+.anchor-text--small {
+  display: inline-block;
+  color: $color-main;
+  font-size: 1.2rem;
+  position: relative
+}
+.anchor-text--small span {
+  @include _arrow-right;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+  position: absolute;
+  top: 50%;
+  right: -60%;
+}

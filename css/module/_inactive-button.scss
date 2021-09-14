@@ -1,0 +1,5 @@
+.inactive-button {
+  background-color: #DEDEDE;
+  color: #fff;
+  @include _button-base;
+}

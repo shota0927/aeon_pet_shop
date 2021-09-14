@@ -1,0 +1,14 @@
+@mixin _button-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13.6px;
+  padding-bottom: 13.6px;
+  width: 180px;
+  & img {
+    display: block;
+    width: 16.86px;
+    height: 16.86px;
+    margin-right: 13.1px;
+  }
+}

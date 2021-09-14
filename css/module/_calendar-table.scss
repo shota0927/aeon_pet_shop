@@ -1,0 +1,43 @@
+.calendar-table {
+  border-collapse: collapse;
+}
+
+.calendar-table th {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 140px;
+  height: 30px;
+}
+
+.calendar-table td {
+  height: 108px;
+  text-align: center;
+  vertical-align: text-top;
+  padding-top: 7px;
+  font-size: 1.8rem;
+  font-family: 'Lato';
+  border: 1px solid #F4F4F4;
+}
+
+.calendar-table td.calendar-table__not-current-month {
+  color: #d5d5d5;
+}
+
+.calender-table__icon {
+  width: 20px;
+  height: 20px;
+  margin: 8px auto 8px;
+}
+
+.calender-table__reservation-count {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 20px;
+  border-radius: 10px;
+  color: $color-main;
+  background-color: $color-thin-green;
+  font-size: 1rem;
+  line-height: 1;
+}

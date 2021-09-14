@@ -1,0 +1,44 @@
+.main__shop__record__pets__hotelorder__ordersheet{
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px 10px 0 10px;
+	& .container{
+		position: relative;
+		width: 1002px;
+		top: -17px;
+		padding: 0;
+		background-color: #fff;
+		border-radius: 4px;
+		border:1px solid #fff;
+		z-index: 10;
+	}
+}
+.main__shop__record__pets__hotelorder__ordersheet__shift__title{
+	position: relative;
+	z-index: 1;
+	& .shift-title__item a{
+		width: 156px;
+		height: 53px;
+		padding-right: 25px;
+		padding-bottom: 16px;
+		& img{
+			width: 28px;
+			height: 28px;
+			margin-right: 10px;
+		}
+	}
+}
+.main__shop__record__pets__hotelorder__ordersheet__sheetarea{
+	text-align: center;
+	background-color: #F4F4F4;
+	color: #888888;
+	padding-top: 257px;
+	padding-bottom: 277px;
+	margin: 18px 11px;
+}
+.main__shop__record__pets__hotelorder__ordersheet__button{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	height: 48px;
+}

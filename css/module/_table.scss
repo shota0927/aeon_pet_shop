@@ -1,0 +1,54 @@
+.table1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1;
+  width: 100%;
+}
+
+.table1 tr:nth-child(2n+1) {
+  background-color: $color-thin-green;
+}
+
+.table1 tr:nth-child(2n) {
+  background-color: #fff;
+}
+
+.table1 th {
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.table1 td {
+  font-size: 1.4rem;
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+
+
+
+.table2{
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1;
+  width: 100%;
+}
+.table2 th{
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 18px 15px;
+  width: 120px;
+  background-color: $color-thin-green;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+.table2 tr:last-child th{
+  border-bottom: none;
+}
+.table2 td{
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 18px 15px;
+}

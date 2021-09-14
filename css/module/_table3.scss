@@ -1,0 +1,23 @@
+.table3{
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1;
+}
+.table3 th{
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 18px 15px;
+  width: 151px;
+  background-color: $color-thin-green;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+.table3 tr:last-child th{
+  border-bottom: none;
+}
+.table3 td{
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 18px 15px;
+  width: 329px;
+}

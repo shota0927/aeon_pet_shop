@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>PETEMO | PETLIFE STORE</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min-1.10.4.js" ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+
+      <!-- ヘッダー -->
+      <header class="header-booking">
+        <div class="header-booking__left">
+          <h1 class="header-booking__logo">
+            <a href="/" >
+              <img src="..//image/common/logo-green.png" alt="ロゴ">
+            </a>
+          </h1>
+
+          <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+          <a href="" class="header-booking__logout-button logout-button--small"><img src="../image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
+        </div>
+
+        <div class="header-booking__right">
+          <!-- タブ -->
+          <div class='header-booking__tab booking-tab'>
+            <div class='booking-tab__buttons'>
+              <span class='booking-tab__content1'>予約管理</span>
+              <span class='booking-tab__content2'>シフト管理</span>
+              <span class='booking-tab__content3'>電子カルテ</span>
+              <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+            </div>
+          </div>
+
+          <div class="header-booking__pull-down pull-down">
+            <select class="pull-down__select" required>
+              <option value="" selected>未選択</option>
+              <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+              <option value="option3">○○○○店</option>
+              <option value="option4">○○○○店</option>
+              <option value="option5">○○○○店</option>
+              <option value="option6">○○○○店</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <!-- ヘッダー -->
+      <header class="header-booking">
+        <div class="header-booking__left">
+          <h1 class="header-booking__logo">
+            <a href="/" >
+              <img src="..//image/common/logo-green.png" alt="ロゴ">
+            </a>
+          </h1>
+
+          <a href="" class="header-booking__login-button">ログイン</a>
+        </div>
+
+        <div class="header-booking__right">
+          <!-- タブ -->
+          <div class='header-booking__tab booking-tab'>
+            <div class='booking-tab__buttons'>
+              <span class='booking-tab__content1'>予約管理</span>
+              <span class='booking-tab__content2'>シフト管理</span>
+              <span class='booking-tab__content3'>電子カルテ</span>
+              <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- カテゴリータイトル -->
+      <div class="shift-title">
+        <div class="shift-title__title">
+          2021年7月19日〜25日<a class="shift-title__arrow-button" href=""><img src="../image/common/arrow-last-button-greem.png" alt="下矢印ボタン"></a>
+        </div>
+
+        <ul class="shift-title__list">
+          <li class="shift-title__item">
+            <a href="">日別に表示</a>
+          </li>
+          <li class="shift-title__item current">
+            <a href="">週ごとに表示</a>
+          </li>
+          <li class="shift-title__item">
+            <a href="">月ごとに表示</a>
+          </li>
+        </ul>
+      </div>
+      
+      <ul class="shift-title__list">
+        <li class="shift-title__item">
+          <a href="">日別に表示</a>
+        </li>
+        <li class="shift-title__item current">
+          <a href="">週ごとに表示</a>
+        </li>
+        <li class="shift-title__item">
+          <a href="">月ごとに表示</a>
+        </li>
+      </ul>
+
+      <!-- カテゴリータイトル -->
+      <div class="booking-category-title">
+        <span>店舗検索</span>
+      </div>
+
+      <!-- チェック項目 -->
+      <div class="check">
+        <input type="checkbox" id="test1">
+        <label for="test1">チェック項目</label>
+        
+        <input type="checkbox" id="test2" checked="checked">
+        <label for="test2">チェック済み</label>
+      </div>
+
+      <!-- 選択肢 -->
+      <div class="select">
+        <input type="radio" id="test3" name="radio">
+        <label for="test3">選択肢</label>
+        
+        <input type="radio" id="test4" name="radio" checked="checked">
+        <label for="test4">選択済み</label>
+      </div>
+
+      <!-- プルダウン 小 -->
+      <div class="pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>東北</option>
+          <option value="option2">関東</option>
+          <option value="option3">九州</option>
+        </select>
+      </div>
+
+      <!-- ボタン（最重要　緑） -->
+      <a href="" class="most-important-button--green">ご予約</a>
+
+      <!-- ボタン（サブ） 矢印なし -->
+      <a href="" class="small-button">ご予約</a>
+
+      <!-- ボタン（サブ） 右矢印 -->
+      <a href="" class="small-button--right-arrow">ご予約</a>
+
+      <!-- ボタン（サブ） 左矢印 -->
+      <a href="" class="small-button--left-arrow">ご予約</a>
+
+      <!-- ボタン（サブ） 新規登録 -->
+      <a href="" class="small-button--sign-up"><img src="../image/common/signup-icon.png" alt="十字アイコン">新規登録</a>
+
+      <!-- ボタン（サブ） 左矢印 -->
+      <a href="" class="small-button--last-week">前週</a>
+
+      <!-- ボタン（サブ） 右矢印 -->
+      <a href="" class="small-button--next-week">翌週</a>
+      
+      <!-- 丸い下矢印ボタン -->
+      <a href="" class="last-arrow-button"><span></span></a>
+
+      <!-- ログアウトボタン -->
+      <a href="" class="logout-button--small"><img src="../image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
+
+      <!-- アンカーテキスト（右矢印） -->
+      <a href="" class="anchor-text"><span class="anchor-text__right-arrow"></span>パスワードをお忘れの方へ</a>
+
+      <!-- アンカーテキスト（下矢印） -->
+      <a href="" class="anchor-text"><span class="anchor-text__last-arrow"></span>全て表示</a>
+
+      <!-- アンカーテキスト（詳細） -->
+      <a href="" class="anchor-text--small">詳細<span></span></a>
+
+      <!-- タブ切り替えサンプル （ヘッダーにあるタブと干渉してしまうので一旦コメントアウト）-->
+      <!-- <div class='booking-tab'>
+        <div class='booking-tab__buttons'>
+          <span class='booking-tab__content1'>予約管理</span>
+          <span class='booking-tab__content2'>シフト管理</span>
+          <span class='booking-tab__content3'>電子カルテ</span>
+          <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+        </div>
+      </div> -->
+
+      <!-- タイムテーブル -->
+      <table class="time-table">
+        <tbody>
+          <tr>
+            <th class="time-table__head">9:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">9:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">10:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">11:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">11:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">12:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">12:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">13:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">13:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">14:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">14:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">15:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">15:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">16:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">16:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">17:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">17:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">18:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">18:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">19:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">19:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+          <tr>
+            <th class="time-table__head">20:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="time-table__head">20:00</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- カレンダー -->
+      <table class="calendar-table">
+        <tbody>
+          <tr>
+            <th>月</th>
+            <th>火</th>
+            <th>水</th>
+            <th>木</th>
+            <th>金</th>
+            <th>土</th>
+            <th>日</th>
+          </tr>
+          <tr>
+            <td class="calendar-table__not-current-month">28</td>
+            <td class="calendar-table__not-current-month">29</td>
+            <td class="calendar-table__not-current-month">30</td>
+            <td>
+              1
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              2
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-faulse.png" alt="バツ">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              3
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-triangle.png" alt="三角">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              4
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              5
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              6
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              7
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              8
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              9
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              10
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              11
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              12
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              13
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              14
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              15
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              16
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              17
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              18
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              19
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              20
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              21
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              22
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              23
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              24
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              25
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              26
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              27
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              28
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              29
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              30
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              31
+              <div class="calender-table__icon">
+                <img src="../image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td class="calendar-table__not-current-month">1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- テーブル左右色付き -->
+      <table class="table3">
+        <tbody>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキストテキストテキストテ</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <th>テキスト</th>
+            <td>テキストテキストテキストテキスト</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 追従ボタン -->
+      <div class="sign-up-bar">
+        <a href="" class="sign-up-bar__button most-important-button">新規登録</a>
+      </div>
+
+      <!-- カレンダー
+      <div class="calendar__wrapper">
+        <form action="" class="box__datepicker">
+          <input type="text" class="c-ym" placeholder="年月を入力してください">
+        </form>
+      </div> -->
+
+      <!-- カレンダー選択　年月日表示 -->
+      <div class="calender2">
+        <div class="calender2__header">
+          <a href="" class="calender2__left-arrow"><span></span></a>
+          <div class="calender2__title">
+            <span class="calender2__title--year">YYYY.</span><span>MM</span>
+          </div>
+          <a href="" class="calender2__right-arrow"><span></span></a>
+        </div>
+        <table class="calender2__table">
+          <tbody>
+            <tr>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+              <th>日</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <!-- カレンダー選択　年月表示 -->
+      <div class="calender2 calender2--month">
+        <div class="calender2__header calender2__header--month">
+          <a href="" class="calender2__left-arrow"><span></span></a>
+          <div class="calender2__title">
+            <span>YYYY</span>
+          </div>
+          <a href="" class="calender2__right-arrow"><span></span></a>
+        </div>
+        <table class="calender2__table calender2__table--month">
+          <tbody>
+            <tr>
+              <td>1月</td>
+              <td>2月</td>
+              <td>3月</td>
+              <td>4月</td>
+            </tr>
+            <tr>
+              <td>5月</td>
+              <td>6月</td>
+              <td>7月</td>
+              <td>8月</td>
+            </tr>
+            <tr>
+              <td>9月</td>
+              <td>10月</td>
+              <td>11月</td>
+              <td>12月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+    <!-- js -->
+    <script defer type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@mixin _arrow-right {
+  display: inline-block;
+  margin-right: 10px;
+  border: 0px;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 8px;
+  height: 8px;
+}
