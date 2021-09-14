@@ -1,0 +1,43 @@
+.pager {
+
+}
+
+.pager__wrapper {
+    display: flex;
+
+}
+
+.icon__wrapper--prev,
+.icon__wrapper--next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid $color-main;
+    border-radius: 50%;
+}
+
+.pager__icon--prev,
+.pager__icon--next {
+    color: $color-main;
+}
+
+.page__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.page__number {
+
+}
+
+.page__number--link {
+    padding: 2rem;
+
+    &:hover {
+        color: $color-main;
+    }
+}

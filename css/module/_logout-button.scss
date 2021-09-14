@@ -1,0 +1,29 @@
+.logout-button {
+  @include _button-base;
+  @include _button-icon;
+  background-color: #E8E8E8;
+  padding-top: 8.6px;
+  padding-bottom: 8.6px;
+  font-size: 1.2rem;
+  & img {
+    width: 19px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+.logout-button--small {
+  @include _button-base;
+  @include _button-icon;
+  background-color: #F4F4F4;
+  font-size: 1.2rem;
+  width: 130px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  
+  & img {
+    width: 19px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}

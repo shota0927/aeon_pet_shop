@@ -1,0 +1,98 @@
+.calender2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.08);
+  padding: 19px 10px 12px;
+  text-align: center;
+}
+
+.calender2--month {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calender2__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calender2__left-arrow {
+  display: block;
+  padding: 20px;
+}
+.calender2__left-arrow span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-bottom: 1.5px solid $color-select-shevron;
+  border-left: 1.5px solid $color-select-shevron;
+  transform: rotate(45deg);
+}
+.calender2__header--month .calender2__left-arrow {
+  padding: 20px 20px 20px 0;
+}
+
+.calender2__header--month .calender2__right-arrow {
+  padding: 20px 0 20px 20px;
+}
+
+.calender2__right-arrow {
+  display: block;
+  padding: 20px;
+}
+.calender2__right-arrow span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-top: 1.5px solid $color-select-shevron;
+  border-right: 1.5px solid $color-select-shevron;
+  transform: rotate(45deg);
+}
+
+.calender2__title {
+  font-size: 1.8rem;
+  font-family: 'Lato';
+  color: $color-main;
+}
+
+.calender2__title--year {
+  color: $color-icon-default;
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.calender2__table {
+  margin: 0 auto;
+}
+
+.calender2__table th {
+  font-size: 1.1rem;
+  color: $color-icon-default;
+  font-weight: 400;
+  width: 44px;
+}
+
+.calender2__table td {
+  font-size: 1.2rem;
+  width: 44px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #F4F4F4;
+  font-family: 'Lato';
+  cursor: pointer;
+}
+
+.calender2__table td.active {
+  background-color: $color-bright-green;
+  color: #fff;
+}
+
+.calender2__header--month {
+  width: 298px;
+  margin: auto;
+}
+.calender2__table.calender2__table--month td{
+  width: 65px;
+}

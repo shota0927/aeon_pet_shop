@@ -1,0 +1,165 @@
+.main__shop__reservation__confirm__c4{
+	overflow-x: hidden;	
+	background-color: #707070;
+	& .container{
+		padding: 0;
+		background-color: #FFFFFF;
+		border-radius: 4px;
+		border:1px solid #FFFFFF;
+		margin: 28px 206px 27px 207px;
+	}
+}
+.main__shop__reservation__confirm__c4__titlehead{
+	display: flex;
+	justify-content: space-between;
+	& .titlehead-left{
+		font-size: 1.8rem;
+		margin: 32px 0 12px 40px;
+	}
+	& .titlehead-right{
+		margin: 27px 20px 15px 0;
+		& .small-button--right-arrow{
+			margin-left: 20px;
+		}
+	}
+}
+
+.main__shop__reservation__confirm__c4__reservedate{
+	& .table2{
+		//width: 100%;
+		margin: 0 40px;
+		& tr th{
+			vertical-align: top;
+			width: 151px;
+			height: 40px;
+			padding: 12px 10px;
+		}
+		& tr td{
+			padding: 11px 10px 13px 10px;
+			display: flex;
+			margin: 0;
+		}
+		& .table-reserve-name{
+			padding: 12px 0 47px 10px;
+		}
+		& .table-reserve-day{
+			padding: 11px 0 6px 10px;
+		}
+		& .table-reserve-intime{
+			padding: 0 0 6px 10px;
+		}
+		& .table-reserve-outtime{
+			padding: 0 0 12px 10px;
+		}
+		& .table-widetitle{
+			padding: 12px 0 30px 10px;
+		}
+		& .table-answer{
+			padding-bottom: 6px;
+		}
+		& .table-text{
+			padding-top: 0;
+		}
+		& .table-title-status{
+			padding: 12px 0 40px 10px;
+		}
+		& .table-title-status-flag{
+			padding: 0;
+			margin: 14px 10px;
+		}
+		& .switchArea {
+			line-height    : 40px;                /* 1行の高さ          */
+			letter-spacing : 0;                   /* 文字間             */
+			text-align     : center;              /* 文字位置は中央     */
+			font-size      : 17px;                /* 文字サイズ         */
+		  
+			position       : relative;            /* 親要素が基点       */
+			margin         : auto;                /* 中央寄せ           */
+			width          : 85px;               /* ボタンの横幅       */
+			background     : #fff;                /* デフォルト背景色   */
+		  }
+		  
+		   /* === チェックボックス ==================================== */
+		& .switchArea input[type="checkbox"] {
+			display        : none;            /* チェックボックス非表示 */
+		  }
+		  
+		   /* === チェックボックスのラベル（標準） ==================== */
+		& .switchArea label {
+			display        : block;               /* ボックス要素に変更 */
+			box-sizing     : border-box;          /* 枠線を含んだサイズ */
+			height         : 40px;                /* ボタンの高さ       */
+			border         : 2px solid #999999;   /* 未選択タブのの枠線 */
+			border-radius  : 20px;                /* 角丸               */
+		  }
+		  
+		   /* === チェックボックスのラベル（ONのとき） ================ */
+		& .switchArea input[type="checkbox"]:checked +label {
+			border-color   : #6f8d1b;             /* 選択タブの枠線     */
+		  }
+		  
+		   /* === 表示する文字（標準） ================================ */
+		& .switchArea label span:after{
+			content        : "OFF";               /* 表示する文字       */
+			padding        : 0 0 0 24px;          /* 表示する位置       */
+			color          : #999999;             /* 文字色             */
+		  }
+		  
+		   /* === 表示する文字（ONのとき） ============================ */
+		& .switchArea  input[type="checkbox"]:checked + label span:after{
+			content        : "ON";                /* 表示する文字       */
+			padding        : 0 24px 0 0;          /* 表示する位置       */
+			color          : #6f8d1b;             /* 文字色             */
+		  }
+		  
+		   /* === 丸部分のSTYLE（標準） =============================== */
+		& .switchArea #swImg {
+			position       : absolute;            /* 親要素からの相対位置*/
+			width          : 32px;                /* 丸の横幅           */
+			height         : 32px;                /* 丸の高さ           */
+			background     : #999999;             /* カーソルタブの背景 */
+			top            : 4px;                 /* 親要素からの位置   */
+			left           : 4px;                 /* 親要素からの位置   */
+			border-radius  : 16px;                /* 角丸               */
+			transition     : .2s;                 /* 滑らか変化         */
+		  }
+		  
+		   /* === 丸部分のSTYLE（ONのとき） =========================== */
+		& .switchArea input[type="checkbox"]:checked ~ #swImg {
+			transform      : translateX(45px);    /* 丸も右へ移動       */
+			background     : #6f8d1b;             /* カーソルタブの背景 */
+		  }
+		/*& .switch__wrapper{
+			width: 105px;
+			height: 40px;
+			&::before{
+				content: "受付済み";
+			}
+			//&::after{
+			//	content: "受付待ち";
+			//}
+		}
+		& [type="checkbox"]:checked + .switch__knob {
+			&::before {
+				left: 6.8rem;
+			}
+		}*/
+	}
+}
+
+.main__shop__reservation__confirm__c4__button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 30px 0 40px 0;
+	& .sub-button.sub-button--icon{
+		background-color: #6F8D1B;
+		color: #fff;
+	}
+	& .sub-button{
+		width: 220px;
+		height: 48px;
+		margin-top: 12px;
+	}
+}

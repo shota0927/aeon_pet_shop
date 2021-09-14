@@ -1,0 +1,94 @@
+.main__shop__record__pets__hotelorder__interview__detail{
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px 10px 0 10px;
+	& .container{
+		position: relative;
+		top: -17px;
+		padding: 0;
+		background-color: #fff;
+		border-radius: 4px;
+		border:1px solid #fff;
+		z-index: 10;
+		margin-bottom: 90px;
+	}
+}
+.main__shop__record__pets__hotelorder__interview__detail__shift__title{
+	position: relative;
+	z-index: 1;
+	& .shift-title__item a{
+		width: 156px;
+		height: 53px;
+		padding-right: 25px;
+		padding-bottom: 16px;
+		& img{
+			width: 28px;
+			height: 28px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__title{
+	color: #6F8D1B;
+	font-size: 1.8rem;
+	margin: 27px 11px 20px 11px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate{
+	& .table2{
+		width: 100%;
+		margin: 0 11px 40px 11px;
+		& tr th{
+			vertical-align: top;
+			width: 356px;
+			height: 40px;
+			padding: 12px 20px;
+		}
+		& tr td{
+			padding: 12px 20px;
+			display: flex;
+			margin: 0;
+		}
+		& .table-health-flag{
+			padding: 12px 0 14px 20px;
+		}
+		& .table-health-name{
+			padding: 11px 0 6px 20px;
+		}
+		& .table-health-level{
+			padding: 0 0 6px 20px;
+		}
+		& .table-health-position{
+			padding: 0 0 6px 20px;
+		}
+		& .table-health-text{
+			padding: 0 0 12px 20px;
+		}
+		& .table-title{
+			height: 57px;
+		}
+		& .table-flag{
+			padding-bottom: 6px;
+		}
+		& .table-text{
+			padding-top: 0;
+		}
+		& .table-longq-title{
+			height: 75px;
+		}
+		& .table-longtext{
+			display: inline-table;
+			margin: 29px 0  30px 20px;
+		}
+	}
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__button{
+	& .sign-up-bar{
+		background-color: rgba(242, 245, 233, 0.8);
+	}
+	& .sign-up-bar__button.sub-button{
+		margin-right: 16px;
+	}
+}

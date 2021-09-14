@@ -1,0 +1,19 @@
+.last-arrow-button {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid $color-main;
+  position: relative;
+}
+.last-arrow-button span {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-bottom: 1px solid $color-main;
+  border-right: 1px solid $color-main;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 35%;
+  left: 36%;
+}

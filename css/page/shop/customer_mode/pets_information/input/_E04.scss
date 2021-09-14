@@ -1,0 +1,545 @@
+.main__shop__customer__mode__petsinformation__input{	
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px;
+	& .container{
+		padding: 0;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border:1px solid #E5EFCA;
+	}
+}
+.input__area--default::placeholder{
+	color: #D5D5D5;
+	font-size: 1.6rem;
+}
+
+//stepflow
+.main__shop__customer__mode__petsinformation__input__stepflow{
+  width: 748px;
+  margin: 22px auto 21px auto;
+}
+.input_stepflow {
+	font-size: 1.2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.input_stepflow > li {
+	position: relative;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-overflow: ellipsis;
+	color: #D5D5D5;
+	 -ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	     flex: 1;
+}
+.input_stepflow > li .title {
+ 	 text-align: center;
+}
+.input_stepflow > li .text {
+	display: block;
+  	text-align: center;
+	padding-right: 3.2em;
+	padding-bottom: 1em;
+	padding-left: 3.0em;
+}
+.input_stepflow > li .bubble {
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin: 0 0 0.5em 7em;
+	border-radius: 1000px;
+	background-color: #D5D5D5;
+}
+.input_stepflow > li .bubble::after,
+.input_stepflow > li .bubble::before {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	height: 3px;
+  	margin-left: 0.9em;
+	content: '';
+	background-color: #F4F4F4;
+}
+.input_stepflow > li.completed .title{
+  color: #6F8D1B;
+}
+.input_stepflow > li.completed .text{
+  color: #000;
+}
+.input_stepflow > li.completed .bubble,
+.input_stepflow > li.completed .bubble::after,
+.input_stepflow > li.completed .bubble::before {
+	background-color: #6F8D1B;
+}
+.input_stepflow > li:last-child .bubble::after,
+.input_stepflow > li:last-child .bubble::before {
+	width: 0%;
+	margin-right: 50%;
+}
+.input_stepflow > li.active{
+  & .title{
+    color: #6F8D1B;
+  }
+  & .text{
+    color: #000;
+  }  
+}
+.input_stepflow > li.active .bubble {
+	color: #6F8D1B;
+	border: 4px solid #E7ECD7;
+	padding: 5.5px;
+	margin-top: -4.5px;
+	margin-bottom: -3.5px;
+}
+.input_stepflow > li.active .bubble,
+.input_stepflow > li.active .bubble::before {
+	background-color: #6F8D1B;
+}
+
+.main__shop__customer__mode__petsinformation__input__customer-title{
+	background-color: #98AD5C;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 1.4rem;
+	margin: 21px 11px;
+	padding: 8px 20px;
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-name{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 27px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__wrapper{
+		display: flex;
+		align-items: center;
+		font-size: 1.6rem;
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-namesub{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 34px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__wrapper{
+		display: flex;
+		align-items: center;
+		& .input__area--default{
+			width: 364px;
+			height: 46px;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-gender{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 24px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 94px;
+			&::after{
+			content: '男の子';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: '女の子';
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-color{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__pets-color__wrap{
+		width: 364px;
+		& p{
+			margin: 6px 0 5px 168px;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-birthday{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 22px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 24px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__birthday__wrap{
+		display: flex;
+		& .input__wrapper.select__wrapper--shevron{
+			width: 100px;
+			margin-right: 10px;
+		}
+	}
+	& .input-title{
+		background-color: #F2F5E9;
+		width: 165px;
+		height: 38px;
+		text-align: center;
+		padding-top: 9px;
+		margin: 10px 0;
+	}
+	& .input-oldcolor{
+		color: #6F8D1B;
+		font-size: 1.6rem;
+		margin-left: 7px;
+	}
+	& .input-birthday-caution{
+		font-size: 1.2rem;
+	}
+
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-kinds{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 24px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 86px;
+			&::after{
+			content: '犬';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: '猫';
+		}
+	}
+	& .input-pets-kinds{
+		margin-top: 10px;
+		& .input__area--default::placeholder{
+			color: #333333;
+		}
+		& .small-button{
+			width: 104px;
+			height: 26px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-vac{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 34px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__mix__vac__title{
+		margin: 0 0 8px 0;
+	}
+	& .input__mix__vac{
+		display: flex;
+		align-items: center;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .calendar__wrapper{
+			margin-right: 20px;
+		}
+		& .radio__wrapper--checked{
+			width: 66px;
+			&::after{
+				content: '済';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: '未';
+		}
+	}
+	& .input__rabies__vac__title{
+		margin: 11px 0 8px 0;
+	}
+	& .input__rabies__vac{
+		display: flex;
+		align-items: center;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .calendar__wrapper{
+			margin-right: 20px;
+		}
+		& .radio__wrapper--checked{
+			width: 66px;
+			&::after{
+				content: '済';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: '未';
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-register{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 29px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 80px;
+			&::after{
+			content: 'はい';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: 'いいえ';
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-castration{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 38px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 80px;
+			&::after{
+			content: 'はい';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: 'いいえ';
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-microchip{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--required{
+			width: 32px;
+			height: 16px;
+			margin-left: 58px;
+		}
+		& .icon__text--required{
+			font-size: 1.0rem;
+		}
+	}
+	& .input-gender{
+		display: flex;
+		& .radio__wrapper--individual{
+			margin: 0;
+		}
+		& .radio__wrapper--checked{
+			width: 108px;
+			&::after{
+			content: 'している';
+			}
+		}
+		& .radio__wrapper--item::after{
+			content: 'していない';
+			width: 100%;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-injury{
+	font-size: 1.4rem;
+	margin-left: 31px;
+	margin-bottom: 21px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 22px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+	}
+	& .input__agentrelation__wrapper{
+		& .input__agentrelation__check{
+			margin-bottom: 13px;
+			& .check label{
+				width: 150px;
+				display: inline-block;
+			}
+		}
+		& .input__agentrelation__contents{
+			margin-left: 33px;
+			width: 437px;
+			& .check label{
+				width: 172px;
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__pets-remarks{
+	font-size: 1.4rem;
+	margin: 0 31px 21px 31px;
+	& .input__title__wrap{
+		display: flex;
+		margin-bottom: 8px;
+		align-items: center;
+		& .icon__wrapper--optional{
+			width: 32px;
+			height: 16px;
+			margin: 0 0 0 10px;
+		}
+		& .icon__text--optional{
+			font-size: 1.0rem;
+		}
+	}
+}
+
+.main__shop__customer__mode__petsinformation__input__button{
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 40px 0;
+}

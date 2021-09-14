@@ -1,0 +1,171 @@
+.main__shop__customer__mode__pets__information__confirm{
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px;
+	& .container{
+		padding: 0;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border:1px solid #E5EFCA;
+	}
+}
+.input__area--default::placeholder{
+	color: #D5D5D5;
+}
+
+//stepflow
+.main__shop__customer__mode__pets__information__confirm__stepflow{
+  width: 748px;
+  margin: 22px auto 21px auto;
+}
+.input_stepflow {
+	font-size: 1.2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.input_stepflow > li {
+	position: relative;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-overflow: ellipsis;
+	color: #D5D5D5;
+	 -ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	     flex: 1;
+}
+.input_stepflow > li .title {
+ 	 text-align: center;
+}
+.input_stepflow > li .text {
+	display: block;
+  	text-align: center;
+	padding-right: 3.2em;
+	padding-bottom: 1em;
+	padding-left: 3.0em;
+}
+.input_stepflow > li .bubble {
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin: 0 0 0.5em 7em;
+	border-radius: 1000px;
+	background-color: #D5D5D5;
+}
+.input_stepflow > li .bubble::after,
+.input_stepflow > li .bubble::before {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	height: 3px;
+  	margin-left: 0.9em;
+	content: '';
+	background-color: #F4F4F4;
+}
+.input_stepflow > li.completed .title{
+  color: #6F8D1B;
+}
+.input_stepflow > li.completed .text{
+  color: #000;
+}
+.input_stepflow > li.completed .bubble,
+.input_stepflow > li.completed .bubble::after,
+.input_stepflow > li.completed .bubble::before {
+	background-color: #6F8D1B;
+}
+.input_stepflow > li:last-child .bubble::after,
+.input_stepflow > li:last-child .bubble::before {
+	width: 0%;
+	margin-right: 50%;
+}
+.input_stepflow > li.active{
+  & .title{
+    color: #6F8D1B;
+  }
+  & .text{
+    color: #000;
+  }  
+}
+.input_stepflow > li.active .bubble {
+	color: #6F8D1B;
+	border: 4px solid #E7ECD7;
+	padding: 5.5px;
+	margin-top: -4.5px;
+	margin-bottom: -3.5px;
+}
+.input_stepflow > li.active .bubble,
+.input_stepflow > li.active .bubble::before {
+	background-color: #6F8D1B;
+}
+
+.main__shop__customer__mode__pets__information__confirm__title{
+	background-color: #98AD5C;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 1.4rem;
+	margin: 0 11px 20px 11px;
+	padding: 8px 20px;
+}
+
+.main__shop__customer__mode__pets__information__confirm__customerdate{
+	& .table2{
+		width: 100%;
+		margin: 0 31px;
+		& tr th{
+			width: 151px;
+			height: 40px;
+			padding: 12px 20px;
+		}
+		& tr td{
+			padding: 12px 20px;
+			display: flex;
+			margin: 0;
+		}
+		& .table-birthday td{
+			display: inline-flex;
+		}
+		& .table-birthday-day{
+			padding-right: 0;
+		}
+		& .table-birthday-old{
+			padding-left: 13px;
+		}
+		& .table-register-text{
+			display: table-cell;
+			margin: 30px 0 29px 20px;
+		}
+		& .table-surgical-text{
+			display: table-cell;
+			margin: 21px 0 20px 20px;
+		}
+		& .table-microchip-text{
+			display: table-cell;
+			margin: 21px 0 20px 20px;
+		}
+		& .table-condition td{
+			display: inline-flex;
+		}
+		& .table-condition-flag{
+			padding-right: 0;
+		}
+		& .table-condition-approv{
+			padding-left: 18px;
+		}
+	}
+}
+
+.main__shop__customer__mode__pets__information__confirm__button{
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 101px 0;
+	& .most-important-button{
+		margin-left: 16px;
+	}
+}

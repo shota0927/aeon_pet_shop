@@ -1,0 +1,10 @@
+.sub-button {
+  background-color: #fff;
+  color: $color-main;
+  border: 1px solid $color-main;
+  @include _button-base;
+}
+.sub-button--icon{
+  @include _button-icon;
+  width: 277px;
+}

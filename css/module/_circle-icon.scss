@@ -1,0 +1,24 @@
+.circle__arrow {
+    
+}
+
+.circle__button--left,
+.circle__button--right {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid $color-main;
+    border-radius: 50%;
+}
+
+.circle--arrow__left,
+.circle--arrow__right {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-main;
+}
+
+

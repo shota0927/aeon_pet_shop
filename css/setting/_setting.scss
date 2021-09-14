@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+// ------
+// 変数
+// ------
+
+// 色
+$color-main: #6F8D1B; // ベース色
+$color-bright-green: #98AD5C; // 明るいグリーン
+$color-thin-green: #F2F5E9; // 薄いグリーン
+$color-warning: #F4451C; // アラートカラー、注意色
+$color-accent-orange: #F18B22; // アクセントオレンジ
+$color-accent-brown: #957656; // アクセントブラウン
+$color-text-sub:#F5F5F5;// テキストサブ
+$color-text-main: #333; // テキストメイン
+
+$color-background-base: #fff; // 背景色
+$color-border-gray: #DEDEDE; // ボーダー色
+$color-calendar-highlight:#ABBC7C; // カレンダーアクティブ色
+$color-calendar-background: #F5F5F5; // カレンダー背景色
+$color-icon-default: #888; // 各種アイコン色
+$color-accordion-icon: #ABBC7C; // アコーディオンボタン色
+$color-circle-border: #6F8D1B; // 丸ボタンボーダー色
+$color-switch-off: #DEDEDE; // スイッチオフ色
+$color-label-optional: #BCBCBC; // 任意ボタン色
+$color-tabwrapper-background: #E4EAD3; // タブwrapper背景色
+$color-focus: #ABBC7C; // フォーカス色
+$color-alert: #F4451C; // アラート色
+$color-error: #F5E1E2; // エラー色
+$color-select-shevron: #758B32; // セレクトボックス矢印色
+$color-number-shevron: #98A6B5; // カウンター矢印色
+
+$hover-opacity: 0.7; // 透過度
+
+// 余白
+$padding-pc: 40px;
+$padding-sp: 17px;
+
+// フォント
+$font-family-base: 'Noto Sans JP', 'Lato' , sans-serif;
+$font-size-base: 62.5%;
+$letter-spacing-base: 0;
+$font-weight-base: 400;
+$line-height-base: 1.6;
+
+// ブレークポイント
+$breakpoints: (
+  "md": "(min-width: 768px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// ------
+// 初期化、共通クラス
+// ------
+html{
+  font-size: $font-size-base;
+}
+body{
+  color: $color-text-main;
+  font-size: 1.4rem;
+  background-color: $color-background-base;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  font-weight: $font-weight-base;
+  font-family: $font-family-base;
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    font-size: 1.6rem;
+  }
+}
+img{
+  width: 100%;
+  height: auto;
+}
+a{
+  color: $color-text-main;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    opacity: $hover-opacity;
+  }
+}
+.container{
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  @include mq(md) {
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+  }
+}
+.inner{
+  @include mq(md) {
+    width: 100%;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

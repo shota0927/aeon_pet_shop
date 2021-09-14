@@ -1,0 +1,51 @@
+.accordion {
+
+}
+
+.accordion__wrapper {
+
+}
+
+.accordion__items {
+
+}
+
+.accordion__item {
+    width: 30rem;
+    border-top: solid 1px $color-border-gray;
+    font-size: 1.6rem;
+
+    &:last-child {
+        border-bottom: solid 1px $color-border-gray;
+    }
+}
+
+.accordion__item--header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.accordion__text {
+    display: inline-block;
+}
+
+.accordion__button {
+    display: inline-block;
+}
+
+.fa-chevron-down {
+    color: $color-accordion-icon;
+}
+
+.accordion__slide {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    border-top: solid 1px $color-border-gray;
+}
+
+.default__active {
+    display: block;
+}

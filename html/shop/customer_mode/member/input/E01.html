@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>お客さま情報（入力）｜PETEMO グルーミングサロン 予約サイト管理</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../../../../../css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="../../../../../js/jquery-ui.min-1.10.4.js" ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../../../css/styles.css" />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+      <!-- ヘッダー -->
+      <header class="header-booking">
+        <div class="header-booking__left">
+          <h1 class="header-booking__logo">
+            <a href="/" >
+              <img src="../../../../..//image/common/logo-green.png" alt="ロゴ">
+            </a>
+          </h1>
+        </div>
+      </header>
+
+      <!-- main_E01shop-customer_mode-member-input -->
+      <main class="main__shop__customer__mode__member__input">
+        <div class="container">
+
+        <!-- ステップスライダー -->
+        <div class="main__shop__customer__mode__member__input__stepflow">
+          <ul class="input_stepflow">
+            <li class="active">
+              <span class="text"><p class="title">STEP 1</p>お客さま情報の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li>
+              <span class="text"><p class="title">STEP 2</p>ペット情報の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li>
+              <span class="text"><p class="title">STEP 3</p>事前確認事項の登録</span>
+              <span class="bubble"></span>
+            </li>
+            <li>
+              <span class="text"><p class="title">STEP 4</p>登録情報の確認</span>
+              <span class="bubble"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- input -->
+        <div class="main__shop__customer__mode__member__input__customer-title">
+          <p>お客さま情報の登録</p>
+        </div>
+
+        <!-- インプット -->
+        <div class="main__shop__customer__mode__member__input__customer-name">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>お名前</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+            <div class="input__wrapper">
+            <p class="first-name">姓</p>
+            <input type="text" class="input__area--default" placeholder="日本">
+            <p class="second-name">名</p>
+            <input type="text" class="input__area--default" placeholder="花子">
+          </div>
+        </div>
+
+        <div class="main__shop__customer__mode__member__input__customer-namesub">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>ふりがな</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+            <div class="input__wrapper">
+            <p class="first-name">姓</p>
+            <input type="text" class="input__area--default" placeholder="にほん">
+            <p class="second-name">名</p>
+            <input type="text" class="input__area--default" placeholder="はなこ">
+          </div>
+        </div>
+
+        <div class="main__shop__customer__mode__member__input__customer-gender">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>性別</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+          <div class="input-gender">
+            <!-- ラジオボタン文字付き -->
+            <div class="radio__wrapper--individual">
+              <label class="radio__label">
+                <div class="radio__wrapper--checked">
+                  <input type="radio" name="radio1" class="radio__invisible" checked>
+                  <div class="radio__indicator2"></div>
+                </div>
+              </label>
+            </div>
+
+            <div class="radio__wrapper--individual first">
+              <label class="radio__label">
+                <div class="radio__wrapper--item">
+                  <input type="radio" name="radio1" class="radio__invisible">
+                  <div class="radio__indicator2 item"></div>
+                </div>
+              </label>
+            </div>
+
+            <div class="radio__wrapper--individual">
+              <label class="radio__label">
+                <div class="radio__wrapper--focused">
+                  <input type="radio" name="radio1" class="radio__invisible">
+                  <div class="radio__indicator2"></div>
+                </div>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- birthday -->
+        <div class="main__shop__customer__mode__member__input__customer-birthday">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>生年月日</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+
+          <div class="input__birthday__wrap">
+            <div class="input__birthday__year">
+              <!-- インプットドロップダウン -->
+              <div class="input__wrapper select__wrapper--shevron">
+                <select name="" id="" class="select__wrapper is-empty">
+                  <option value="" class="select__option" selected>年</option>
+                  <option value="1900" class="select__option">1900</option>
+                  <option value="1901" class="select__option">1901</option>
+                  <option value="1902" class="select__option">1902</option>
+                  <option value="1903" class="select__option">1903</option>
+                  <option value="1904" class="select__option">1904</option>
+                  <option value="1905" class="select__option">1905</option>
+                  <option value="1906" class="select__option">1906</option>
+                  <option value="1907" class="select__option">1907</option>
+                  <option value="1908" class="select__option">1908</option>
+                  <option value="1909" class="select__option">1909</option>
+                  <option value="1910" class="select__option">1910</option>
+                  <option value="1911" class="select__option">1911</option>
+                  <option value="1912" class="select__option">1912</option>
+                  <option value="1913" class="select__option">1913</option>
+                  <option value="1914" class="select__option">1914</option>
+                  <option value="1915" class="select__option">1915</option>
+                  <option value="1916" class="select__option">1916</option>
+                  <option value="1917" class="select__option">1917</option>
+                  <option value="1918" class="select__option">1918</option>
+                  <option value="1919" class="select__option">1919</option>
+                  <option value="1920" class="select__option">1920</option>
+                  <option value="1921" class="select__option">1921</option>
+                  <option value="1922" class="select__option">1922</option>
+                  <option value="1923" class="select__option">1923</option>
+                  <option value="1924" class="select__option">1924</option>
+                  <option value="1925" class="select__option">1925</option>
+                  <option value="1926" class="select__option">1926</option>
+                  <option value="1927" class="select__option">1927</option>
+                  <option value="1928" class="select__option">1928</option>
+                  <option value="1929" class="select__option">1929</option>
+                  <option value="1930" class="select__option">1930</option>
+                  <option value="1931" class="select__option">1931</option>
+                  <option value="1932" class="select__option">1932</option>
+                  <option value="1933" class="select__option">1933</option>
+                  <option value="1934" class="select__option">1934</option>
+                  <option value="1935" class="select__option">1935</option>
+                  <option value="1936" class="select__option">1936</option>
+                  <option value="1937" class="select__option">1937</option>
+                  <option value="1938" class="select__option">1938</option>
+                  <option value="1939" class="select__option">1939</option>
+                  <option value="1940" class="select__option">1940</option>
+                  <option value="1941" class="select__option">1941</option>
+                  <option value="1942" class="select__option">1942</option>
+                  <option value="1943" class="select__option">1943</option>
+                  <option value="1944" class="select__option">1944</option>
+                  <option value="1945" class="select__option">1945</option>
+                  <option value="1946" class="select__option">1946</option>
+                  <option value="1947" class="select__option">1947</option>
+                  <option value="1948" class="select__option">1948</option>
+                  <option value="1949" class="select__option">1949</option>
+                  <option value="1950" class="select__option">1950</option>
+                  <option value="1951" class="select__option">1951</option>
+                  <option value="1952" class="select__option">1952</option>
+                  <option value="1953" class="select__option">1953</option>
+                  <option value="1954" class="select__option">1954</option>
+                  <option value="1955" class="select__option">1955</option>
+                  <option value="1956" class="select__option">1956</option>
+                  <option value="1957" class="select__option">1957</option>
+                  <option value="1958" class="select__option">1958</option>
+                  <option value="1959" class="select__option">1959</option>
+                  <option value="1960" class="select__option">1960</option>
+                  <option value="1961" class="select__option">1961</option>
+                  <option value="1962" class="select__option">1962</option>
+                  <option value="1963" class="select__option">1963</option>
+                  <option value="1964" class="select__option">1964</option>
+                  <option value="1965" class="select__option">1965</option>
+                  <option value="1966" class="select__option">1966</option>
+                  <option value="1967" class="select__option">1967</option>
+                  <option value="1968" class="select__option">1968</option>
+                  <option value="1969" class="select__option">1969</option>
+                  <option value="1970" class="select__option">1970</option>
+                  <option value="1971" class="select__option">1971</option>
+                  <option value="1972" class="select__option">1972</option>
+                  <option value="1973" class="select__option">1973</option>
+                  <option value="1974" class="select__option">1974</option>
+                  <option value="1975" class="select__option">1975</option>
+                  <option value="1976" class="select__option">1976</option>
+                  <option value="1977" class="select__option">1977</option>
+                  <option value="1978" class="select__option">1978</option>
+                  <option value="1979" class="select__option">1979</option>
+                  <option value="1980" class="select__option">1980</option>
+                  <option value="1981" class="select__option">1981</option>
+                  <option value="1982" class="select__option">1982</option>
+                  <option value="1983" class="select__option">1983</option>
+                  <option value="1984" class="select__option">1984</option>
+                  <option value="1985" class="select__option">1985</option>
+                  <option value="1986" class="select__option">1986</option>
+                  <option value="1987" class="select__option">1987</option>
+                  <option value="1988" class="select__option">1988</option>
+                  <option value="1989" class="select__option">1989</option>
+                  <option value="1990" class="select__option">1990</option>
+                  <option value="1991" class="select__option">1991</option>
+                  <option value="1992" class="select__option">1992</option>
+                  <option value="1993" class="select__option">1993</option>
+                  <option value="1994" class="select__option">1994</option>
+                  <option value="1995" class="select__option">1995</option>
+                  <option value="1996" class="select__option">1996</option>
+                  <option value="1997" class="select__option">1997</option>
+                  <option value="1998" class="select__option">1998</option>
+                  <option value="1999" class="select__option">1999</option>
+                  <option value="2000" class="select__option">2000</option>
+                  <option value="2001" class="select__option">2001</option>
+                  <option value="2002" class="select__option">2002</option>
+                  <option value="2003" class="select__option">2003</option>
+                  <option value="2004" class="select__option">2004</option>
+                  <option value="2005" class="select__option">2005</option>
+                  <option value="2006" class="select__option">2006</option>
+                  <option value="2007" class="select__option">2007</option>
+                  <option value="2008" class="select__option">2008</option>
+                  <option value="2009" class="select__option">2009</option>
+                  <option value="2010" class="select__option">2010</option>
+                  <option value="2011" class="select__option">2011</option>
+                  <option value="2012" class="select__option">2012</option>
+                  <option value="2013" class="select__option">2013</option>
+                  <option value="2014" class="select__option">2014</option>
+                  <option value="2015" class="select__option">2015</option>
+                  <option value="2016" class="select__option">2016</option>
+                  <option value="2017" class="select__option">2017</option>
+                  <option value="2018" class="select__option">2018</option>
+                  <option value="2019" class="select__option">2019</option>
+                  <option value="2020" class="select__option">2020</option>
+                  <option value="2021" class="select__option">2021</option>
+                  <option value="2022" class="select__option">2022</option>
+                  <option value="2023" class="select__option">2023</option>
+                  <option value="2024" class="select__option">2024</option>
+                  <option value="2025" class="select__option">2025</option>
+                  <option value="2026" class="select__option">2026</option>
+                  <option value="2027" class="select__option">2027</option>
+                  <option value="2028" class="select__option">2028</option>
+                  <option value="2029" class="select__option">2029</option>
+                  <option value="2030" class="select__option">2030</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input__birthday__month">
+              <div class="input__wrapper select__wrapper--shevron">
+                <select name="" id="" class="select__wrapper is-empty">
+                  <option value="" class="select__option" selected>月</option>
+                  <option value="1" class="select__option">1</option>
+                  <option value="2" class="select__option">2</option>
+                  <option value="3" class="select__option">3</option>
+                  <option value="4" class="select__option">4</option>
+                  <option value="5" class="select__option">5</option>
+                  <option value="6" class="select__option">6</option>
+                  <option value="7" class="select__option">7</option>
+                  <option value="8" class="select__option">8</option>
+                  <option value="9" class="select__option">9</option>
+                  <option value="10" class="select__option">10</option>
+                  <option value="11" class="select__option">11</option>
+                  <option value="12" class="select__option">12</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input__birthday__day">
+              <div class="input__wrapper select__wrapper--shevron">
+                <select name="" id="" class="select__wrapper is-empty">
+                  <option value="" class="select__option" selected>日</option>
+                  <option value="1" class="select__option">1</option>
+                  <option value="2" class="select__option">2</option>
+                  <option value="3" class="select__option">3</option>
+                  <option value="4" class="select__option">4</option>
+                  <option value="5" class="select__option">5</option>
+                  <option value="6" class="select__option">6</option>
+                  <option value="7" class="select__option">7</option>
+                  <option value="8" class="select__option">8</option>
+                  <option value="9" class="select__option">9</option>
+                  <option value="10" class="select__option">10</option>
+                  <option value="11" class="select__option">11</option>
+                  <option value="12" class="select__option">12</option>
+                  <option value="13" class="select__option">13</option>
+                  <option value="14" class="select__option">14</option>
+                  <option value="15" class="select__option">15</option>
+                  <option value="16" class="select__option">16</option>
+                  <option value="17" class="select__option">17</option>
+                  <option value="18" class="select__option">18</option>
+                  <option value="19" class="select__option">19</option>
+                  <option value="20" class="select__option">20</option>
+                  <option value="21" class="select__option">21</option>
+                  <option value="22" class="select__option">22</option>
+                  <option value="23" class="select__option">23</option>
+                  <option value="24" class="select__option">24</option>
+                  <option value="25" class="select__option">25</option>
+                  <option value="26" class="select__option">26</option>
+                  <option value="27" class="select__option">27</option>
+                  <option value="28" class="select__option">28</option>
+                  <option value="29" class="select__option">29</option>
+                  <option value="30" class="select__option">30</option>
+                  <option value="31" class="select__option">31</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- tellno1 -->
+        <div class="main__shop__customer__mode__member__input__customer-tellno1">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>電話番号1</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+            <p class="tell__cation">※ハイフンなし</p>
+          </div>
+          <div class="input__tell1__wrapper">
+            <input type="text" class="input__area--default" placeholder="09012345678">
+            <p class="tell__cation2">※緊急時のご連絡用のため携帯電話番号を推奨いたします。</p>
+          </div>
+        </div>
+
+        <!-- tellno2 -->
+        <div class="main__shop__customer__mode__member__input__customer-tellno2">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>電話番号2</p>
+            </div>
+            <div class="icon__wrapper--optional">
+              <p class="icon__text--optional">任意</p>
+            </div>
+            <p class="tell__cation">※ハイフンなし</p>
+          </div>
+          <div class="input__tell2__wrapper">
+            <input type="text" class="input__area--default" placeholder="09012345678">
+          </div>
+        </div>
+
+        <!-- Agent-tell -->
+        <div class="main__shop__customer__mode__member__input__customer-agenttell">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>代理人電話番号</p>
+            </div>
+            <div class="icon__wrapper--optional">
+              <p class="icon__text--optional">任意</p>
+            </div>
+            <p class="tell__cation">※ハイフンなし</p>
+          </div>
+          <div class="input__agenttell__wrapper">
+            <input type="text" class="input__area--default" placeholder="09012345678">
+            <p class="tell__cation2">※緊急時、ご本人さまにつながらない場合、代理人さまにご連絡いたします。</p>
+          </div>
+        </div>
+
+        <!-- Agent-relation -->
+        <div class="main__shop__customer__mode__member__input__customer-agentrelation">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>ご本人との関係</p>
+            </div>
+            <div class="icon__wrapper--optional">
+              <p class="icon__text--optional">任意</p>
+            </div>
+          </div>
+          <div class="input__agentrelation__wrapper">
+            <input type="text" class="input__area--default" placeholder="母親">
+          </div>
+        </div>
+
+        <!-- postno -->
+        <div class="main__shop__customer__mode__member__input__customer-postno">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>郵便番号</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+          <div class="input__postno__wrapper">
+            <input type="text" class="input__area--default" placeholder="1234567">
+            <a href="" class="address-search-button">住所検索</a>
+          </div>
+        </div>
+
+        <!-- 住所 -->
+        <div class="main__shop__customer__mode__member__input__customer__address-wrap">
+          <!-- 県 -->
+          <div class="main__shop__customer__mode__member__input__customer-prefecture">
+            <div class="input__title__wrap">
+              <div class="input__title">
+                <p>住所</p>
+              </div>
+              <div class="icon__wrapper--required">
+                <p class="icon__text--required">必須</p>
+              </div>
+            </div>
+            <div class="input__prefecture__wrapper">
+              <div class="input__wrapper select__wrapper--shevron">
+                <select name="" id="" class="select__wrapper is-empty">
+                  <option value="" class="select__option" selected>都道府県</option>
+                  <option value="北海道" class="select__option">北海道</option>
+                  <option value="青森県" class="select__option">青森県</option>
+                  <option value="岩手県" class="select__option">岩手県</option>
+                  <option value="宮城県" class="select__option">宮城県</option>
+                  <option value="秋田県" class="select__option">秋田県</option>
+                  <option value="山形県" class="select__option">山形県</option>
+                  <option value="福島県" class="select__option">福島県</option>
+                  <option value="茨城県" class="select__option">茨城県</option>
+                  <option value="栃木県" class="select__option">栃木県</option>
+                  <option value="群馬県" class="select__option">群馬県</option>
+                  <option value="埼玉県" class="select__option">埼玉県</option>
+                  <option value="千葉県" class="select__option">千葉県</option>
+                  <option value="東京都" class="select__option">東京都</option>
+                  <option value="神奈川県" class="select__option">神奈川県</option>
+                  <option value="新潟県" class="select__option">新潟県</option>
+                  <option value="富山県" class="select__option">富山県</option>
+                  <option value="石川県" class="select__option">石川県</option>
+                  <option value="福井県" class="select__option">福井県</option>
+                  <option value="山梨県" class="select__option">山梨県</option>
+                  <option value="長野県" class="select__option">長野県</option>
+                  <option value="岐阜県" class="select__option">岐阜県</option>
+                  <option value="静岡県" class="select__option">静岡県</option>
+                  <option value="愛知県" class="select__option">愛知県</option>
+                  <option value="三重県" class="select__option">三重県</option>
+                  <option value="滋賀県" class="select__option">滋賀県</option>
+                  <option value="京都府" class="select__option">京都府</option>
+                  <option value="大阪府" class="select__option">大阪府</option>
+                  <option value="兵庫県" class="select__option">兵庫県</option>
+                  <option value="奈良県" class="select__option">奈良県</option>
+                  <option value="和歌山県" class="select__option">和歌山県</option>
+                  <option value="鳥取県" class="select__option">鳥取県</option>
+                  <option value="島根県" class="select__option">島根県</option>
+                  <option value="岡山県" class="select__option">岡山県</option>
+                  <option value="広島県" class="select__option">広島県</option>
+                  <option value="山口県" class="select__option">山口県</option>
+                  <option value="徳島県" class="select__option">徳島県</option>
+                  <option value="香川県" class="select__option">香川県</option>
+                  <option value="愛媛県" class="select__option">愛媛県</option>
+                  <option value="高知県" class="select__option">高知県</option>
+                  <option value="福岡県" class="select__option">福岡県</option>
+                  <option value="佐賀県" class="select__option">佐賀県</option>
+                  <option value="長崎県" class="select__option">長崎県</option>
+                  <option value="熊本県" class="select__option">熊本県</option>
+                  <option value="大分県" class="select__option">大分県</option>
+                  <option value="宮崎県" class="select__option">宮崎県</option>
+                  <option value="鹿児島県" class="select__option">鹿児島県</option>
+                  <option value="沖縄県" class="select__option">沖縄県</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- 市区町村 -->
+          <div class="main__shop__customer__mode__member__input__customer-city">
+            <div class="input__title__wrap">
+              <div class="input__title">
+                <p>市区町村</p>
+              </div>
+              <div class="icon__wrapper--required">
+                <p class="icon__text--required">必須</p>
+              </div>
+            </div>
+            <div class="input__city__wrapper">
+              <input type="text" class="input__area--default" placeholder="渋谷区渋谷">
+            </div>
+          </div>
+        </div>
+
+        <!-- 番地 -->
+        <div class="main__shop__customer__mode__member__input__customer-subaddress">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>番地</p>
+            </div>
+            <div class="icon__wrapper--required">
+              <p class="icon__text--required">必須</p>
+            </div>
+          </div>
+          <div class="input__subaddress__wrapper">
+            <input type="text" class="input__area--default" placeholder="1-15-21">
+          </div>
+        </div>
+
+        <!-- ビル名 -->
+        <div class="main__shop__customer__mode__member__input__customer-buildingname">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>ビル・建物名</p>
+            </div>
+            <div class="icon__wrapper--optional">
+              <p class="icon__text--optional">任意</p>
+            </div>
+          </div>
+          <div class="input__buildingname__wrapper">
+            <input type="text" class="input__area--default" placeholder="ポーラ渋谷ビル4F">
+          </div>
+        </div>
+
+        <!-- DM -->
+        <div class="main__shop__customer__mode__member__input__customer-dm">
+          <div class="input__title__wrap">
+            <div class="input__title">
+              <p>当店より郵送DMなどをお送りしてもよろしいですか？</p>
+            </div>
+            <div class="icon__wrapper--optional">
+              <p class="icon__text--optional">任意</p>
+            </div>
+          </div>
+          <div class="input-dm">
+            <!-- ラジオボタン文字付き -->
+            <div class="radio__wrapper--individual">
+              <label class="radio__label">
+                <div class="radio__wrapper--checked">
+                  <input type="radio" name="radio2" class="radio__invisible" checked>
+                  <div class="radio__indicator2"></div>
+                </div>
+              </label>
+            </div>
+
+            <div class="radio__wrapper--individual first">
+              <label class="radio__label">
+                <div class="radio__wrapper--item">
+                  <input type="radio" name="radio2" class="radio__invisible">
+                  <div class="radio__indicator2 item"></div>
+                </div>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 確認画面へ -->
+        <div class="main__shop__customer__mode__member__input__button">
+          <a href="" class="most-important-button">確認画面へ</a>
+        </div>
+
+        </div>
+      </main>
+
+
+    <!-- js -->
+    <script defer type="text/javascript" src="../../../../../js/script.js"></script>
+  </body>
+</html>

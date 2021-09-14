@@ -1,0 +1,138 @@
+.icons__section--circle {
+    background-color: #F5F5F5;
+}
+
+.icon__wrapper {
+    width: 10rem;
+    &:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+}
+
+.icon__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: inherit;;
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.circle__icon--play {
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+
+.icon__plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: inherit;;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-main;
+    border-radius: 50%;
+}
+.circle__icon--plus {
+    color: #fff;
+}
+
+.icon__minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: inherit;;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-icon-default;
+    border-radius: 50%;
+}
+
+.circle__icon--minus {
+    color: #fff;
+}
+
+.icon__check {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: inherit;;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-icon-default;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+
+    &::after {
+        position: absolute;
+        content: "\f00c";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: #fff;
+        z-index: inherit;
+    }
+}
+
+.checkbox__icon--circle {
+    position: relative;
+    display: block !important;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+.checkbox__layer {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    // z-index: 3;
+}
+
+[type="checkbox"]:checked + .checkbox__layer {
+    background-color: $color-main;
+    width: inherit;
+    height: inherit;
+}
+
+
+.icon__cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: inherit;;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-icon-default;
+    border-radius: 50%;
+}
+
+.circle__icon--cross {
+    color: #fff;
+}

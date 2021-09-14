@@ -1,0 +1,28 @@
+.pull-down {
+  display: inline-block;
+  position: relative;
+}
+
+.pull-down::after {
+  position: absolute;
+  top: 40%;
+  right: 18px;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid $color-main;
+  border-bottom: 1px solid $color-main;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.pull-down__select {
+  padding: 10px 12px;
+  border: 1px solid $color-border-gray;
+  border-radius: 6px;
+  width: 130px;
+}
+
+.pull-down__select:invalid {
+  color: $color-switch-off
+}

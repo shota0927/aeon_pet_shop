@@ -1,0 +1,64 @@
+.main__shop__customer__mode__login{
+	overflow-x: hidden;	
+	background-color: #E5EFCA;
+	padding: 10px;
+	& .container{
+		padding: 0;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border:1px solid #E5EFCA;
+	}
+}
+.input__area--default::placeholder{
+	color: #D5D5D5;
+	font-size: 1.6rem;
+}
+.icon__passlost{
+	width: 15px;
+	height: 12px;
+}
+.main__shop__customer__mode__login__wrapper{
+	margin: 140px 97px 424px 97px;
+	background-color: #F2F5E9;
+	border-radius: 10px;
+	& .input__area--default{
+		background-color: #fff;
+	}
+}
+.main__shop__customer__mode__login__title{
+	display: flex;
+	justify-content: center;
+	color: #6F8D1B;
+	font-weight: 100;
+	font-size: 2.4rem;
+	padding: 42px 0 26px 0;
+}
+.login__id{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.login__pass{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.main__shop__customer__mode__login__passlost{
+	text-align: center;
+	vertical-align: bottom;
+	& a{
+		color: #6F8D1B;
+		font-size: 1.4rem;
+		& img{
+			margin-left: 8px;
+		}
+	}
+}
+.main__shop__customer__mode__login__button{
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 50px 0;
+	& .most-important-button{
+		margin-left: 16px;
+	}
+}

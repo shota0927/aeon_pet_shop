@@ -1,0 +1,40 @@
+.select input[type="radio"]+label{
+  display: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  font-size: 1.4rem;
+  margin-top: 3px;
+}
+
+.select input[type="radio"]+label::before{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  margin-top: -12px;
+  left: 0;
+  top: 50%;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color:  #D5D5D5;
+  background-color: #FFF;
+}
+
+.select input[type="radio"]:checked+label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  margin-top: -11px;
+  top: 70%;
+  left: 4.5px;
+  background-color: $color-main;
+  border-radius: 50%;
+}
+
