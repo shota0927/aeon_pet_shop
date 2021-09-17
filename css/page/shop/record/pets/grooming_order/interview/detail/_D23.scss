@@ -1,0 +1,99 @@
+
+
+// D23-inner
+.D23-inner {
+  background-color: $color-shop-inner;
+  padding: 10px 10px 100px;
+}
+
+
+//D23-shop-tab
+.D23-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D23-shop-tab__customer,
+.D23-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D23-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D23-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D23-shop-tab__area {
+  background: #fff;
+  padding: 29px 11px 40px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+}
+
+
+// D23-grooming-check-list
+.D23-grooming-check-list__title {
+  font-size: 18px;
+  color: $color-main;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.D23-grooming-check-list__table {
+  margin-top: 23px;
+}
+.D23-grooming-check-list__table.table3 th {
+  padding: 11px 20px;
+  vertical-align: text-top;
+  line-height: 1.5;
+  width: 356px;
+}
+.D23-grooming-check-list__table.table3 td {
+  line-height: 1.5;
+  padding: 10.8px 20px;
+  width: 559px;
+}
+
+
+// D23-button-bar
+.D23-button-bar .sub-button {
+  margin-right: 16px;
+}

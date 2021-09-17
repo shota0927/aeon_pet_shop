@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>PETEMO | PETLIFE STORE</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- datepicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min-1.10.4.js"></script>
+    <!-- js -->
+    <script defer type="text/javascript" src="/js/script.js"></script>
+<script defer type="text/javascript" src="/js/my-script.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header-booking">
+      <div class="header-booking__left">
+        <h1 class="header-booking__logo">
+          <a href="/">
+            <img src="/image/common/logo-green.png" alt="ロゴ" />
+          </a>
+        </h1>
+
+        <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+        <a href="" class="header-booking__logout-button logout-button--small"
+          ><img
+            src="/image/common/logout-icon.png"
+            alt="ログアウトアイコン"
+          />ログアウト</a
+        >
+      </div>
+
+      <div class="header-booking__right">
+        <!-- タブ -->
+        <div class="header-booking__tab booking-tab">
+          <div class="booking-tab__buttons">
+            <a href="#" class="booking-tab__content1">予約管理</a>
+            <a href="#" class="booking-tab__content2">シフト管理</a>
+            <a href="#" class="booking-tab__content3">電子カルテ</a>
+            <div id="booking-tab__lamp" class="booking-tab__content3"></div>
+          </div>
+        </div>
+
+        <div class="header-booking__pull-down pull-down">
+          <select class="pull-down__select" required>
+            <option value="" selected>未選択</option>
+            <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+            <option value="option3">○○○○店</option>
+            <option value="option4">○○○○店</option>
+            <option value="option5">○○○○店</option>
+            <option value="option6">○○○○店</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- inner  -->
+    <div class="D13-inner">
+      <div class="D13-shop-tab">
+        <ul class="D13-shop-tab__inner">
+          <li><a href="" class="D13-shop-tab__customer">顧客管理</a></li>
+          <li><a href="" class="D13-shop-tab__pet">ペット管理</a></li>
+        </ul>
+        <div class="D13-shop-tab__area">
+          <!-- pet-name -->
+          <div class="D13-pet-name">
+            コタロー　（お客さま名：中野 恵志　マイページID：1234567890）
+          </div>
+
+          <!-- D13-menu-information -->
+          <div class="D13-menu-information">
+            <ul class="D13-menu-information__items">
+              <li><a href="#" class="D13-menu-information__item">詳細</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    D13-menu-information__item
+                    menu-information__item--active
+                  "
+                  >施術情報</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    D13-menu-information__item
+                    D13-menu-information__item--booking
+                  "
+                  >グルーミング予約情報</a
+                >
+              </li>
+              <li>
+                <a href="#" class="D13-menu-information__item">宿泊情報</a>
+              </li>
+            </ul>
+            <a href="" class="D13-menu-information__button small-button"
+              >ペット一覧</a
+            >
+          </div>
+
+          <!-- D13-pet-info D13-category-wrapper -->
+          <section class="D13-pet-info D13-category-wrapper">
+            <!-- D13-category-bar -->
+            <h2 class="D13-category-bar">ペット情報</h2>
+            <!-- D13-table3 -->
+            <table class="D13-table3 table3">
+              <tbody>
+                <tr>
+                  <th>飼い主氏名</th>
+                  <td>中野 恵志（なかの けいし）</td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td>09012345678<br />09012345678</td>
+                </tr>
+                <tr>
+                  <th>ペットのお名前</th>
+                  <td>小太郎（コタロウ）</td>
+                </tr>
+                <tr>
+                  <th>ペットの性別</th>
+                  <td>男の子</td>
+                </tr>
+                <tr>
+                  <th>毛色</th>
+                  <td>アイボリー</td>
+                </tr>
+                <tr>
+                  <th>ペットの年齢</th>
+                  <td>1999年 01月 01日 00歳00ヶ月</td>
+                </tr>
+                <tr>
+                  <th>ペットの種類</th>
+                  <td>犬</td>
+                </tr>
+                <tr>
+                  <th>犬種</th>
+                  <td>トイプードル</td>
+                </tr>
+                <tr>
+                  <th>混合ワクチン</th>
+                  <td>済 (2021年01月23日）　△</td>
+                </tr>
+                <tr>
+                  <th>狂犬病ワクチン</th>
+                  <td>済 (2021年01月23日）　○</td>
+                </tr>
+                <tr>
+                  <th>持病・けが確認</th>
+                  <td>有（心疾患、胃疾患） 獣医師の許可：有</td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>ここに備考の内容。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- D13-treatment-info D13-category-wrapper -->
+          <section class="D13-treatment-info D13-category-wrapper">
+            <!-- D13-category-bar  -->
+            <h2 class="D13-category-bar">施術情報</h2>
+            <!-- D13-category__content -->
+            <div class="D13-category-wrapper__content">
+              <!-- D13-table3 -->
+              <table class="D13-table3 table3">
+                <tbody>
+                  <tr>
+                    <th>日時</th>
+                    <td>
+                      2021年7月1日（木）<br />
+                      受付時間：9：00<br />
+                      お迎え時間：15：00
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>店舗</th>
+                    <td>PETEMO札幌苗穂店</td>
+                  </tr>
+                  <tr>
+                    <th>指名スタッフ</th>
+                    <td>竹内 真琴</td>
+                  </tr>
+                  <tr>
+                    <th>コース名</th>
+                    <td>シャンプーコース</td>
+                  </tr>
+                  <tr>
+                    <th>オプション</th>
+                    <td>トリートメント</td>
+                  </tr>
+                  <tr>
+                    <th>単品</th>
+                    <td>爪切り</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- D13-select-state -->
+              <div class="D13-treatment-info__select-state D13-select-state">
+                <div class="D13-select-state__title">状態</div>
+                <!-- プルダウン 小 -->
+                <div class="D13-select-state__pull-down pull-down">
+                  <select class="pull-down__select">
+                    <option value="option1" selected>施術中</option>
+                    <option value="option2">施術中</option>
+                    <option value="option3">施術中</option>
+                  </select>
+                </div>
+                <div class="D13-select-state__button">
+                  <a href="#" class="small-button">更新</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- D13-category-wrapper -->
+          <section class="D13-confirmation D13-category-wrapper">
+            <!-- D13-category-bar -->
+            <h2 class="D13-category-bar">事前確認事項</h2>
+            <!-- D13-category__content -->
+            <div class="D13-category-wrapper__content">
+              <!-- D13-table3 -->
+              <table class="D13-table3 D13-table3--third table3">
+                <tbody>
+                  <tr>
+                    <th>健康状態</th>
+                    <td>
+                      異常あり<br />
+                      <br />
+                      パテラ<br />
+                      グレード1<br />
+                      身体<br />
+                      詳細テキスト詳細テキスト<br />
+                      <br />
+                      ヘルニア<br />
+                      軽度<br />
+                      首<br />
+                      詳細テキスト詳細テキスト
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>その他現在治療中の病気・怪我はございますか？</th>
+                    <td>
+                      ある<br />
+                      詳細テキスト詳細テキスト
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      室内でおトイレのワンちゃんにお伺いします。
+                      ペットシーツを食べることがありますか？
+                    </th>
+                    <td>はい</td>
+                  </tr>
+                  <tr>
+                    <th>その他、お手入れに関してお困りごとはありますか？</th>
+                    <td>
+                      フケ<br />
+                      ベタつき
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- D13checkIn-advance-box -->
+              <div class="D13-confirmation__button D13-checkIn-advance">
+                <p class="D13-checkIn-advance__text">事前確認事項</p>
+                <div class="D13-checkIn-advance__btnBox">
+                  <a href="" class="small-button">編集</a>
+                  <a href="" class="small-button">確認</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- D13-category-wrapper -->
+          <section class="D13-counseling D13-category-wrapper">
+            <!-- D13-category-bar -->
+            <h2 class="D13-category-bar">受付カウンセリング・犬体チェック</h2>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <h3 class="D13-checklist__subtitle">コース</h3>
+              <!-- 選択肢 -->
+              <ul class="D13-checklist__items select">
+                <li class="D13-checklist__item">
+                  <input
+                    name="course-name"
+                    value="shampoo-course"
+                    type="radio"
+                    id="shampoo-course"
+                    checked="checked"
+                  />
+                  <label for="shampoo-course">シャンプーコース</label>
+                </li>
+                <li class="D13-checklist__item">
+                  <input
+                    name="course-name"
+                    value="cut-course"
+                    type="radio"
+                    id="cut-course"
+                  />
+                  <label for="cut-course">カットコース</label>
+                </li>
+              </ul>
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <!-- チェック項目 -->
+              <div class="check">
+                <input
+                  name="single"
+                  value="single"
+                  type="checkbox"
+                  id="single"
+                />
+                <label for="single">単品</label>
+              </div>
+              <div class="D13-checklist__hidden-wrapper" id="single-wrapper">
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="nail-clipper"
+                      value="nail-clipper"
+                      type="checkbox"
+                      id="nail-clipper"
+                    />
+                    <label for="nail-clipper">爪切り</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="anus-aperture"
+                      value="anus-aperture"
+                      type="checkbox"
+                      id="anus-aperture"
+                    />
+                    <label for="anus-aperture">肛門腺絞り</label>
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="ear-care"
+                      value="ear-care"
+                      type="checkbox"
+                      id="ear-care"
+                    />
+                    <label for="ear-care">耳ケア</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="spot-around-care"
+                      value="spot-around-care"
+                      type="checkbox"
+                      id="spot-around-care"
+                    />
+                    <label for="spot-around-care">目周りケア</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="foot-background-trimmer"
+                      value="foot-background-trimmer"
+                      type="checkbox"
+                      id="foot-background-trimmer"
+                    />
+                    <label for="foot-background-trimmer">足裏バリカン</label>
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="foot-around-cut"
+                      value="foot-around-cut"
+                      type="checkbox"
+                      id="foot-around-cut"
+                    />
+                    <label for="foot-around-cut">足周りカット</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="foot-target-trimmer-normal"
+                      value="foot-target-trimmer-normal"
+                      type="checkbox"
+                      id="foot-target-trimmer-normal"
+                    />
+                    <label for="foot-target-trimmer-normal"
+                      >足先バリカン（並）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="foot-target-trimmer-inverse"
+                      value="foot-target-trimmer-inverse"
+                      type="checkbox"
+                      id="foot-target-trimmer-inverse"
+                    />
+                    <label for="foot-target-trimmer-inverse"
+                      >足先バリカン（逆）</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="face-trimmer"
+                      value="face-trimmer"
+                      type="checkbox"
+                      id="face-trimmer"
+                    />
+                    <label for="face-trimmer">顔バリカン</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="face-cut"
+                      value="face-cut"
+                      type="checkbox"
+                      id="face-cut"
+                    />
+                    <label for="face-cut">顔カット</label>
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="pad-care"
+                      value="pad-care"
+                      type="checkbox"
+                      id="pad-care"
+                    />
+                    <label for="pad-care">パウケア</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="beard-cut"
+                      value="beard-cut"
+                      type="checkbox"
+                      id="beard-cut"
+                    />
+                    <label for="beard-cut">ヒゲカット</label>
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="dental-care-brush"
+                      value="dental-care-brush"
+                      type="checkbox"
+                      id="dental-care-brush"
+                    />
+                    <label for="dental-care-brush"
+                      >デンタルケア（ブラシ）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="dental-care-sheet"
+                      value="dental-care-sheet"
+                      type="checkbox"
+                      id="dental-care-sheet"
+                    />
+                    <label for="dental-care-sheet"
+                      >デンタルケア（シート）</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="dental-flat-rate-service"
+                      value="dental-flat-rate-service"
+                      type="checkbox"
+                      id="dental-flat-rate-service"
+                    />
+                    <label for="dental-flat-rate-service"
+                      >デンタル定額サービス</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="dental-brush-body"
+                      value="dental-brush-body"
+                      type="checkbox"
+                      id="dental-brush-body"
+                    />
+                    <label for="dental-brush-body"
+                      >デンタルブラシ（本体）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="partial-cut"
+                      value="partial-cut"
+                      type="checkbox"
+                      id="partial-cut"
+                    />
+                    <label for="partial-cut">部分カット</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <!-- チェック項目 -->
+              <div class="check">
+                <input
+                  name="care-4-point-set"
+                  value="care-4-point-set"
+                  type="checkbox"
+                  id="care-4-point-set"
+                />
+                <label for="care-4-point-set">お手入れ4点セット</label>
+              </div>
+              <div
+                class="D13-checklist__hidden-wrapper"
+                id="care-4-point-set-wrapper"
+              >
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="care-4-point-set-nail-clipper"
+                      value="care-4-point-set-nail-clipper"
+                      type="checkbox"
+                      id="care-4-point-set-nail-clipper"
+                    />
+                    <label for="care-4-point-set-nail-clipper">爪切り</label>
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="care-4-point-set-ear-care"
+                      value="care-4-point-set-ear-care"
+                      type="checkbox"
+                      id="care-4-point-set-ear-care"
+                    />
+                    <label for="care-4-point-set-ear-care">耳ケア</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="care-4-point-set-anus-aperture"
+                      value="care-4-point-set-anus-aperture"
+                      type="checkbox"
+                      id="care-4-point-set-anus-aperture"
+                    />
+                    <label for="care-4-point-set-anus-aperture"
+                      >肛門腺絞り</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="care-4-point-set-foot-background-trimmer"
+                      value="care-4-point-set-foot-background-trimmer"
+                      type="checkbox"
+                      id="care-4-point-set-foot-background-trimmer"
+                    />
+                    <label for="care-4-point-set-foot-background-trimmer"
+                      >足裏バリカン</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="care-4-point-set-foot-around-cut"
+                      value="care-4-point-set-foot-around-cut"
+                      type="checkbox"
+                      id="care-4-point-set-foot-around-cut"
+                    />
+                    <label for="care-4-point-set-foot-around-cut"
+                      >足周りカット</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="care-4-point-set-pad-care"
+                      value="care-4-point-set-pad-care"
+                      type="checkbox"
+                      id="care-4-point-set-pad-care"
+                    />
+                    <label for="care-4-point-set-pad-care">パウケア</label>
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="care-4-point-set-dental-care-brush"
+                      value="care-4-point-set-dental-care-brush"
+                      type="checkbox"
+                      id="care-4-point-set-dental-care-brush"
+                    />
+                    <label for="care-4-point-set-dental-care-brush"
+                      >デンタルケア（ブラシ）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="care-4-point-set-dental-care-sheet"
+                      value="care-4-point-set-dental-care-sheet"
+                      type="checkbox"
+                      id="care-4-point-set-dental-care-sheet"
+                    />
+                    <label for="care-4-point-set-dental-care-sheet"
+                      >デンタルケア（シート）</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <h3 class="D13-checklist__subtitle">オプション</h3>
+              <!-- 選択肢 -->
+              <ul class="D13-checklist__items select">
+                <li class="D13-checklist__item">
+                  <input type="radio" id="has-option" name="option" />
+                  <label for="has-option">あり</label>
+                </li>
+                <li class="D13-checklist__item">
+                  <input
+                    type="radio"
+                    id="no-option"
+                    name="option"
+                    checked="checked"
+                  />
+                  <label for="no-option">なし</label>
+                </li>
+              </ul>
+              <div
+                class="D13-checklist__hidden-wrapper"
+                id="has-option-wrapper"
+              >
+                <h4 class="D13-checklist__option-title">シャンプー・MB</h4>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="coat-care-shampoo"
+                      value="coat-care-shampoo"
+                      type="checkbox"
+                      id="coat-care-shampoo"
+                    />
+                    <label for="coat-care-shampoo"
+                      >コートケアシャンプー（ファーメイクEX）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="low-stimulation-shampoo"
+                      value="low-stimulation-shampoo"
+                      type="checkbox"
+                      id="low-stimulation-shampoo"
+                    />
+                    <label for="low-stimulation-shampoo"
+                      >低刺激シャンプー（モイスチャースキン）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="medical-shampoo"
+                      value="medical-shampoo"
+                      type="checkbox"
+                      id="medical-shampoo"
+                    />
+                    <label for="medical-shampoo">薬用シャンプー</label>
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="micro-bubble"
+                      value="micro-bubble"
+                      type="checkbox"
+                      id="micro-bubble"
+                    />
+                    <label for="micro-bubble">マイクロバブル</label>
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="moisture-plus"
+                      value="moisture-plus"
+                      type="checkbox"
+                      id="moisture-plus"
+                    />
+                    <label for="moisture-plus">モイスチャープラス</label>
+                  </li>
+                </ul>
+
+                <h4 class="D13-checklist__option-title">
+                  デンタル・パウ・その他
+                </h4>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="option-dental-care-brush"
+                      value="option-dental-care-brush"
+                      type="checkbox"
+                      id="option-dental-care-brush"
+                    />
+                    <label for="option-dental-care-brush"
+                      >デンタルケア（ブラシ）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="option-dental-care-sheet"
+                      value="option-dental-care-sheet"
+                      type="checkbox"
+                      id="option-dental-care-sheet"
+                    />
+                    <label for="option-dental-care-sheet"
+                      >デンタルケア（シート）</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="option-pad-care"
+                      value="option-pad-care"
+                      type="checkbox"
+                      id="option-pad-care"
+                    />
+                    <label for="option-pad-care">パウケア</label>
+                  </li>
+                </ul>
+
+                <h4 class="D13-checklist__option-title">セットオプション</h4>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="trial-moisture-retention"
+                      value="trial-moisture-retention"
+                      type="checkbox"
+                      id="trial-moisture-retention"
+                    />
+                    <label for="trial-moisture-retention">トライアル保湿</label>
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="standard-moisture-retention"
+                      value="standard-moisture-retention"
+                      type="checkbox"
+                      id="standard-moisture-retention"
+                    />
+                    <label for="standard-moisture-retention"
+                      >スタンダード保湿</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item">
+                    <input
+                      name="premium-moisture-retention"
+                      value="premium-moisture-retention"
+                      type="checkbox"
+                      id="premium-moisture-retention"
+                    />
+                    <label for="premium-moisture-retention"
+                      >プレミアム保湿</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="standard-dirt-cleaning"
+                      value="standard-dirt-cleaning"
+                      type="checkbox"
+                      id="standard-dirt-cleaning"
+                    />
+                    <label for="standard-dirt-cleaning"
+                      >スタンダード汚れ落とし</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="premium-dirt-cleaning"
+                      value="premium-dirt-cleaning"
+                      type="checkbox"
+                      id="premium-dirt-cleaning"
+                    />
+                    <label for="premium-dirt-cleaning"
+                      >プレミアム汚れ落とし</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="trial-treatment-care"
+                      value="trial-treatment-care"
+                      type="checkbox"
+                      id="trial-treatment-care"
+                    />
+                    <label for="trial-treatment-care"
+                      >トライアルトリートメントケア</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="standard-treatment-care"
+                      value="standard-treatment-care"
+                      type="checkbox"
+                      id="standard-treatment-care"
+                    />
+                    <label for="standard-treatment-care"
+                      >スタンダードトリートメントケア</label
+                    >
+                  </li>
+                </ul>
+                <!-- 選択肢 -->
+                <ul class="D13-checklist__items check">
+                  <li class="D13-checklist__item">
+                    <input
+                      name="premium-treatment-care"
+                      value="premium-treatment-care"
+                      type="checkbox"
+                      id="premium-treatment-care"
+                    />
+                    <label for="premium-treatment-care"
+                      >プレミアムトリートメントケア</label
+                    >
+                  </li>
+                  <li class="D13-checklist__item check">
+                    <input
+                      name="special-skin-treatment-care"
+                      value="special-skin-treatment-care"
+                      type="checkbox"
+                      id="special-skin-treatment-care"
+                    />
+                    <label for="special-skin-treatment-care"
+                      >スペシャルスキントリートメントケア</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <h3 class="D13-checklist__subtitle">入力オプション</h3>
+              <!-- D13-input-option -->
+              <div id="D13-input-option">
+                <div class="D13-checklist__input-option D13-input-option">
+                  <div class="D13-input-option__title">
+                    <span>オプション名</span>
+                    <!-- インプット -->
+                    <div class="input__wrapper">
+                      <input
+                        name="input-option-name"
+                        type="text"
+                        class="input__area--default"
+                        placeholder="入力してください"
+                      />
+                    </div>
+                  </div>
+                  <div class="D13-input-option__price">
+                    <span>金額（税抜）</span>
+                    <!-- インプット -->
+                    <div class="input__wrapper">
+                      <input
+                        name="input-option-price"
+                        type="text"
+                        class="input__area--default"
+                        placeholder="0"
+                      />
+                    </div>
+                    <span class="D13-input-option__yen">円</span>
+                  </div>
+                  <input
+                    name="del"
+                    type="button"
+                    value="×"
+                    class="D13-input-option__del-button"
+                  />
+                </div>
+              </div>
+              <input
+                name="add"
+                type="button"
+                value="＋ 追加"
+                class="D13-input-option__add-button"
+              />
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <!-- 選択肢 -->
+              <ul class="D13-checklist__items D13-cut-option check">
+                <li class="D13-checklist__item">
+                  <input
+                    name="cut-option-stomach-trimmer"
+                    value="cut-option-stomach-trimmer"
+                    type="checkbox"
+                    id="cut-option-stomach-trimmer"
+                  />
+                  <label for="cut-option-stomach-trimmer">腹バリ</label>
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="cut-option-beard-cut"
+                    value="cut-option-beard-cut"
+                    type="checkbox"
+                    id="cut-option-beard-cut"
+                  />
+                  <label for="cut-option-beard-cut">ヒゲカット</label>
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="cut-option-stomach-trimmer-wide"
+                    value="cut-option-stomach-trimmer-wide"
+                    type="checkbox"
+                    id="cut-option-stomach-trimmer-wide"
+                  />
+                  <label for="cut-option-stomach-trimmer-wide"
+                    >腹バリ広め</label
+                  >
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="cut-option-anus-trimmer-wide"
+                    value="cut-option-anus-trimmer-wide"
+                    type="checkbox"
+                    id="cut-option-anus-trimmer-wide"
+                  />
+                  <label for="cut-option-anus-trimmer-wide"
+                    >肛門バリカン広め</label
+                  >
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="cut-option-leave-eyelash"
+                    value="cut-option-leave-eyelash"
+                    type="checkbox"
+                    id="cut-option-leave-eyelash"
+                  />
+                  <label for="cut-option-leave-eyelash">まつ毛残し</label>
+                </li>
+              </ul>
+              <!-- D13-cut-option-table -->
+              <table class="D13-cut-option__table D13-cut-option-table">
+                <tbody>
+                  <tr>
+                    <th class="D13-cut-option-table__row-head">部位</th>
+                    <th class="D13-cut-option-table__row-head">器具</th>
+                    <th class="D13-cut-option-table__row-head">カット名</th>
+                    <th class="D13-cut-option-table__row-head">程度</th>
+                    <th class="D13-cut-option-table__row-head">残す長さ</th>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">顔</th>
+                    <td></td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-face-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-face-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">目周りカット</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-eye-around-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-eye-around-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">口周りカット</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-mouth-around-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-mouth-around-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">マズル</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-muzzle-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-muzzle-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-muzzle-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-muzzle-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-muzzle-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-muzzle-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-muzzle-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-muzzle-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">頭部</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-head-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-head-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-head-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-head-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-head-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-head-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-head-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-head-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">耳</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-ear-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-ear-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-ear-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-ear-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-ear-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-ear-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-ear-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-ear-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">ボディ</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-body-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-body-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-body-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-body-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-body-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-body-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-body-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-body-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">お尻</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-hip-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-hip-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-hip-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-hip-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-hip-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-hip-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-hip-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-hip-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">四肢</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-extremities-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-extremities-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-extremities-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-extremities-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-extremities-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-extremities-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-extremities-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-extremities-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">足先</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-foot-target-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-foot-target-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-foot-target-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-foot-target-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-foot-target-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-foot-target-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-foot-target-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-foot-target-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-cut-option-table__col-head">尾</th>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="equipment-tail-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="equipment-tail-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="cut-name-tail-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="cut-name-tail-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="degree-tail-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="degree-tail-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <!-- プルダウン 小 -->
+                      <div class="D13-cut-option-table__pull-down pull-down">
+                        <select
+                          name="leave-length-tail-select"
+                          class="D13-cut-option-table__select pull-down__select"
+                          required
+                        >
+                          <option value selected>選択して下さい</option>
+                          <option value="option1">オプション1</option>
+                          <option value="option2">オプション2</option>
+                          <option value="other">その他</option>
+                        </select>
+                      </div>
+                      <!-- インプット -->
+                      <div class="D13-cut-option-table__input input__wrapper">
+                        <input
+                          name="leave-length-tail-input"
+                          type="text"
+                          class="input__area--default"
+                          placeholder="入力してください"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- D13-fur-ball -->
+              <div class="D13-cut-option__fur-ball D13-fur-ball">
+                <h3 class="D13-fur-ball__title">毛玉、もつれ</h3>
+                <div class="D13-fur-ball__wrapper">
+                  <!-- 選択肢 -->
+                  <div class="D13-fur-ball__check check">
+                    <input
+                      name="has-fur-ball"
+                      value="has-fur-ball"
+                      type="checkbox"
+                      id="has-fur-ball"
+                    />
+                    <label for="has-fur-ball">有</label>
+                  </div>
+                  <div class="D13-fur-ball__treatment-time">
+                    <span>施術時間</span>
+                    <!-- インプット数字矢印付き -->
+                    <div class="input__wrapper spin__wrapper">
+                      <input name="treatment-time" type="number" class="input__spin--active" placeholder="00" step="1">
+                    </div>
+                    <span>分</span>
+                  </div>
+                  <div class="D13-fur-ball__input">
+                    <span>部位</span>
+                    <input
+                      name="treatment-part"
+                      type="text"
+                      class="input__area--default"
+                      placeholder="入力してください"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- D13-checklist -->
+            <div class="D13-counseling__content D13-checklist">
+              <!-- 選択肢 -->
+              <ul class="D13-checklist__items D13-cut-option">
+                <li class="D13-checklist__item check">
+                  <input
+                    name="has-tel-number"
+                    value="has-tel-number"
+                    type="checkbox"
+                    id="has-tel-number"
+                  />
+                  <label for="has-tel-number"
+                    >TELあり　電話番号：09012345678</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- D13-input-rep -->
+            <div class="D13-counseling__content D13-input-rep">
+              <div class="D13-input-rep__content">
+                <div class="D13-input-rep__wrapper">
+                  <div class="D13-input-rep__title">受付担当</div>
+                  <div class="D13-input-rep__staff-name--input">
+                    <input
+                      name="reception-staff-name"
+                      type="text"
+                      class="input__area--default"
+                      value="竹内 真琴"
+                    />
+                  </div>
+                </div>
+                <div class="D13-input-rep__wrapper">
+                  <div class="D13-input-rep__title">使用予定クーポン</div>
+                  <div class="D13-input-rep__staff-name--input pull-down">
+                    <select
+                      name="coupon-select"
+                      class="pull-down__select"
+                      required
+                    >
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="D13-input-rep__content">
+                <div class="D13-input-rep__title">S担当</div>
+                <div class="D13-input-rep__staff-name">竹内 真琴</div>
+              </div>
+              <div class="D13-input-rep__content">
+                <div class="D13-input-rep__title">C担当</div>
+                <div class="D13-input-rep__staff-name">竹内 真琴</div>
+              </div>
+              <div class="D13-input-rep__content">
+                <div class="D13-input-rep__title">単品担当</div>
+                <div class="D13-input-rep__staff-name--input">
+                  <input
+                    name="single-item-staff"
+                    type="text"
+                    class="input__area--default"
+                    value="竹内 真琴"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="D13-counseling__content">
+              <!-- D13-caution-table -->
+              <table class="D13-caution-table">
+                <tbody>
+                  <tr>
+                    <th class="D13-caution-table__point"></th>
+                    <th class="D13-caution-table__point">爪切り</th>
+                    <th class="D13-caution-table__point">耳ケア</th>
+                    <th class="D13-caution-table__point">肛門腺絞り</th>
+                    <th class="D13-caution-table__point">シャンプー</th>
+                    <th class="D13-caution-table__point">ブロー</th>
+                    <th class="D13-caution-table__point">カット</th>
+                  </tr>
+                  <tr>
+                    <th class="D13-caution-table__behave">暴れる</th>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="nail-clipper-rampage"
+                          value="nail-clipper-rampage"
+                          type="checkbox"
+                          id="nail-clipper-rampage"
+                        />
+                        <label for="nail-clipper-rampage"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="ear-care-rampage"
+                          value="ear-care-rampage"
+                          type="checkbox"
+                          id="ear-care-rampage"
+                        />
+                        <label for="ear-care-rampage"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="anus-aperture-rampage"
+                          value="anus-aperture-rampage"
+                          type="checkbox"
+                          id="anus-aperture-rampage"
+                        />
+                        <label for="anus-aperture-rampage"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="shampoo-rampage"
+                          value="shampoo-rampage"
+                          type="checkbox"
+                          id="shampoo-rampage"
+                        />
+                        <label for="shampoo-rampage"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="blowing-rampage"
+                          value="blowing-rampage"
+                          type="checkbox"
+                          id="blowing-rampage"
+                        />
+                        <label for="blowing-rampage"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="cut-rampage"
+                          value="cut-rampage"
+                          type="checkbox"
+                          id="cut-rampage"
+                        />
+                        <label for="cut-rampage"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-caution-table__behave">噛む</th>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="nail-clipper-bite"
+                          value="nail-clipper-bite"
+                          type="checkbox"
+                          id="nail-clipper-bite"
+                        />
+                        <label for="nail-clipper-bite"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="ear-care-bite"
+                          value="ear-care-bite"
+                          type="checkbox"
+                          id="ear-care-bite"
+                        />
+                        <label for="ear-care-bite"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="anus-aperture-bite"
+                          value="anus-aperture-bite"
+                          type="checkbox"
+                          id="anus-aperture-bite"
+                        />
+                        <label for="anus-aperture-bite"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="shampoo-bite"
+                          value="shampoo-bite"
+                          type="checkbox"
+                          id="shampoo-bite"
+                        />
+                        <label for="shampoo-bite"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="blowing-bite"
+                          value="blowing-bite"
+                          type="checkbox"
+                          id="blowing-bite"
+                        />
+                        <label for="blowing-bite"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="cut-bite"
+                          value="cut-bite"
+                          type="checkbox"
+                          id="cut-bite"
+                        />
+                        <label for="cut-bite"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="D13-caution-table__behave">要保定</th>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="nail-clipper-required-fixed"
+                          value="nail-clipper-required-fixed"
+                          type="checkbox"
+                          id="nail-clipper-required-fixed"
+                        />
+                        <label for="nail-clipper-required-fixed"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="ear-care-required-fixed"
+                          value="ear-care-required-fixed"
+                          type="checkbox"
+                          id="ear-care-required-fixed"
+                        />
+                        <label for="ear-care-required-fixed"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="anus-aperture-required-fixed"
+                          value="anus-aperture-required-fixed"
+                          type="checkbox"
+                          id="anus-aperture-required-fixed"
+                        />
+                        <label for="anus-aperture-required-fixed"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="shampoo-required-fixed"
+                          value="shampoo-required-fixed"
+                          type="checkbox"
+                          id="shampoo-required-fixed"
+                        />
+                        <label for="shampoo-required-fixed"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="blowing-required-fixed"
+                          value="blowing-required-fixed"
+                          type="checkbox"
+                          id="blowing-required-fixed"
+                        />
+                        <label for="blowing-required-fixed"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <!-- 選択肢 -->
+                      <div class="D13-caution-table__check check">
+                        <input
+                          name="cut-required-fixed"
+                          value="cut-required-fixed"
+                          type="checkbox"
+                          id="cut-required-fixed"
+                        />
+                        <label for="cut-required-fixed"></label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="D13-counseling__content D13-checklist D13-belongings">
+              <!-- 選択肢 -->
+              <ul class="D13-checklist__items D13-cut-option check">
+                <li class="D13-checklist__item">
+                  <input
+                    name="lead"
+                    value="lead"
+                    type="checkbox"
+                    id="lead"
+                  />
+                  <label for="lead">リード</label>
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="mouth"
+                    value="mouth"
+                    type="checkbox"
+                    id="mouth"
+                  />
+                  <label for="mouth">口輪</label>
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="color"
+                    value="color"
+                    type="checkbox"
+                    id="color"
+                  />
+                  <label for="color"
+                    >カラー</label
+                  >
+                </li>
+                <li class="D13-checklist__item check">
+                  <input
+                    name="groomers-helper"
+                    value="groomers-helper"
+                    type="checkbox"
+                    id="groomers-helper"
+                  />
+                  <label for="groomers-helper"
+                    >グルーマーズヘルパー</label
+                  >
+                </li>
+              </ul>
+              <!-- テキストエリア -->
+              <div class="D13-belongings__input textarea__wrapper">
+                <textarea name="D13-belongings__input" id="D13-belongings__input" class="textarea" placeholder="詳細"></textarea>
+              </div>
+            </div>
+
+
+            <!-- D13-price-menu -->
+            <dl class="D13-counseling__content D13-price-menu">
+              <div class="D13-price-menu__item">
+                <dt class="D13-price-menu__title">シャンプーコース</dt>
+                <dd class="D13-price-menu__price"><span>11,000</span>円（税抜）</dd>
+              </div>
+              <div class="D13-price-menu__item">
+                <dt class="D13-price-menu__title">トリートメント</dt>
+                <dd class="D13-price-menu__price"><span>+1,800</span>円（税抜）</dd>
+              </div>
+              <div class="D13-price-menu__item">
+                <dt class="D13-price-menu__title">オプション名がはいります</dt>
+                <dd class="D13-price-menu__price"><span>+500</span>円（税抜）</dd>
+              </div>
+              <div class="D13-price-menu__item">
+                <dt class="D13-price-menu__title">オプション名がはいります</dt>
+                <dd class="D13-price-menu__price"><span>+1,000</span>円（税抜）</dd>
+              </div>
+              <div class="D13-price-menu__item D13-price-menu__item--subtotal">
+                <dt class="D13-price-menu__title">小計</dt>
+                <dd class="D13-price-menu__price"><span>14,300</span>円（税抜）</dd>
+              </div>
+              <div class="D13-price-menu__item D13-price-menu__body--total">
+                <dt class="D13-price-menu__title">合計金額</dt>
+                <dd class="D13-price-menu__price"><span>15,730</span>円（税抜）</dd>
+              </div>
+              <div class="D13-fixed-amount">
+                <dt class="D13-fixed-amount__title">確定金額</dt>
+                <dd class="D13-fixedamout__price">
+                  <span>15,730</span>
+                  円（税抜）
+                </dd>
+              </div>
+            </dl>
+
+            <!-- D13-remarks -->
+            <div class="D13-counseling__content D13-remarks">
+              <p class="D13-remarks__title">備考</p>
+              <div class="D13-remarks__area-wrapper">
+                <textarea name="calculation-remarks" id="calculation-remarks" class="D13-remarks__textarea" placeholder="入力してください"></textarea>
+              </div>
+            </div>
+          </section>
+
+          <!-- D13-category-wrapper -->
+          <section class="D13-grooming-card D13-category-wrapper">
+            <!-- D13-category-bar -->
+            <h2 class="D13-category-bar">グルーミングカード</h2>
+            <div class="D13-grooming-card__content">
+              <!-- ボタン（サブ） 矢印なし -->
+              <a href="" class="small-button">ファイルを選択</a>
+            </div>
+            <!-- ボタン（サブ） 矢印なし -->
+            <div class="D13-grooming-card__confirmation-button">
+              <a href="" class="small-button">確認</a>
+            </div>
+          </section>
+
+          <!-- D13-category-wrapper -->
+          <section class="D13-update-info D13-category-wrapper">
+            <div class="D13-update-info__staff-date">
+              更新者：竹内真琴　更新日：2021/08/18
+            </div>
+            <div class="D13-update-info__barcode">
+              <img src="/image/barcode-img.jpg" alt="バーコード画像">
+            </div>
+          </section>
+        </div>
+        <!-- /.D13-shop-tab__area  -->
+      </div>
+    </div>
+
+    <!-- 追従ボタン -->
+    <div class="D13-button-bar sign-up-bar">
+      <!-- ボタン（最重要） -->
+    <a href="" class="most-important-button">更新</a>
+      <!-- ボタン（最重要　緑） -->
+      <a href="" class="most-important-button--green">印刷</a>
+    </div>
+
+  </body>
+</html>

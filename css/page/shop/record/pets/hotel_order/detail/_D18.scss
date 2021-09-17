@@ -1,0 +1,687 @@
+
+
+// D18-inner
+.D18-inner {
+  background-color: $color-shop-inner;
+  padding: 10px 10px 100px;
+}
+
+//D18-shop-tab
+.D18-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D18-shop-tab__customer,
+.D18-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D18-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./image/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D18-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./image/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D18-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 40px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+}
+
+// D18-pet-name
+.D18-pet-name {
+  font-size: 16px;
+}
+
+//D18-customerInput-btn
+.D18-customerInput-btn-box {
+  margin: 15px 0;
+}
+.customerInput-btn {
+  display: inline-block;
+  background-color: $color-main;
+  color: #fff;
+  padding: 10px 15px 10px 37px;
+  width: 178px;
+  border-radius: 17px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./image/icon-customer-input.svg);
+    background-position: center;
+    background-size: cover;
+    width: 14px;
+    height: 13.44px;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+//D18-menu-informaition
+.D18-menu-information {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-bright-green;
+}
+.D18-menu-information__items {
+  display: flex;
+  align-items: center;
+}
+.D18-menu-information__item {
+  font-size: 14px;
+  display: block;
+  margin-right: 4px;
+  background-color: $color-thin-green;
+  padding: 14px 22px 12px;
+  min-width: 100px;
+  border-radius: 6px 6px 0px 0px;
+  color: $color-main;
+  line-height: 1;
+  text-align: center;
+}
+.D18-menu-information__item.D18-menu-information__item--booking {
+  padding: 14px 30px 12px;
+}
+.D18-menu-information__item.menu-information__item--active {
+  color: #fff;
+  background-color: $color-bright-green;
+}
+.D18-menu-information__status {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 14px;
+}
+.D18-menu-information__status--active span {
+  color: $color-main;
+}
+.D18-menu-information__status--inactive {
+  display: none;
+}
+.D18-menu-information__status--inactive span {
+  color: $color-icon-default;
+}
+.D18-menu-information__button.small-button {
+  width: 104px;
+}
+
+//D18-category-wrapper
+.D18-category-wrapper {
+  margin-top: 15px;
+  & + & {
+    margin-top: 40px;
+  }
+}
+
+// D18-category-bar
+.D18-category-bar {
+  font-size: 14px;
+  background-color: $color-bright-green;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.D18-category-wrapper__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+// D18-table3
+.D18-table3 {
+  margin-top: 20px;
+}
+.D18-table3:not(:first-of-type) {
+  margin-top: 50px;
+}
+.D18-table3.table3 th {
+  padding: 11px 20px;
+  vertical-align: text-top;
+  line-height: 1.5;
+}
+.D18-table3.D18-table3--third.table3 th {
+  width: 280px;
+}
+.D18-table3.table3 td {
+  line-height: 1.5;
+  padding: 10.8px 20px;
+  width: 559px;
+}
+.D18-table3.D18-table3--third.table3 td {
+  width: 430px;
+}
+
+// D18-select-state
+.D18-select-state {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.D18-select-state__title {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.D18-select-state__pull-down .pull-down__select {
+  color: $color-text-main;
+  line-height: 1;
+  font-size: 14px;
+  padding: 6px 10px 6px;
+  width: 120px;
+  margin-right: 10px;
+}
+.D18-select-state__button .small-button {
+  width: 60px;
+}
+
+// D18-checkIn-advance
+.D18-checkIn-advance {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.D18-checkIn-advance__text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.D18-checkIn-advance__btnBox .small-button {
+  width: 60px;
+}
+.D18-checkIn-advance__btnBox .small-button:first-child {
+  margin-right: 8px;
+}
+
+// カウンセリングシート
+.D18-counseling__inner {
+  padding: 0 20px;
+}
+
+.D18-counseling__content-meal,
+.D18-counseling__content-condition,
+.D18-counseling__content-custody{
+  margin-top: 31px;
+}
+.D18-counseling__content-meal {
+  margin-top: 19px;
+}
+.D18-counseling__content-custody .D18-counseling__items {
+  &:nth-child(n + 3) {
+    margin-top: 23px;
+  }
+}
+
+
+
+.D18-counseling__contentTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-bright-green;
+}
+// counseling-QA
+.D18-counseling__items {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.counseling-item__Q {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.counseling-item__Q-text {
+  margin-right: 10px;
+}
+.counseling-item__A {
+  display: flex;
+  align-items: center;
+  margin-top: 10.5px;
+  &--second {
+    margin-top: 6px;
+  }
+}
+.D18-datepicker-meal {
+  margin: 0 30px 0 10px;
+  width: 215px;
+  padding: 0.9rem;
+}
+.D18-input__area--number {
+  min-width: 160px;
+  margin: 0 10px;
+  width: 10rem;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  border: 0.1rem solid $color-border-gray;
+  border-radius: 0.5rem;
+
+  &:focus {
+    border-color: $color-focus;
+  }
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.D18-input__area--counseling {
+  margin-top: 5px;
+  width: 746px;
+  padding: 1rem;
+  border: 0.1rem solid $color-border-gray;
+  border-radius: 0.5rem;
+
+  &::placeholder {
+    font-size: 16px;
+    color: #d5d5d5;
+  }
+  &:focus {
+    border: 0.1rem solid $color-focus;
+  }
+}
+
+.D18-input__area-counseling-md {
+  width: 500px;
+  margin-left: 30px;
+  
+  &::placeholder {
+    font-size: 16px;
+    color: #d5d5d5;
+  }
+}
+.D18-calender-wrapper__decoration {
+  display: inline-flex;
+  width: 370px;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+}
+.D18-radio__items {
+  display: flex;
+  align-items: center;
+}
+.D18-radio__item {
+  margin-right: 20px;
+}
+
+// D18備考欄
+.D18-counseling__remarks {
+  margin-top: 20px;
+}
+.D18-remarks__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.D18-remarks__area-wrapper {
+  margin-top: 6px;
+}
+.D18-remarks__textarea {
+  width: 100%;
+  height: 136px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #dedede;
+  border-radius: 0.5rem;
+
+  &::placeholder {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+
+//ホテルオーダーセクション
+.D18-hotel-order {
+  font-size: 14px;
+  font-weight: 500;
+}
+.D18-hotel-order__inner {
+  padding: 0 20px;
+}
+.D18-hotel-order__contents {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+//滞在情報
+.D18-stay-info {
+  width: 398px;
+  margin-right: 89px;
+}
+.D18-stay-info__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:first-of-type) {
+    margin-top: 19px;
+  }
+
+  &:last-of-type {
+    display: block;
+  }
+}
+.D18-stay-info__times {
+  margin-top: 8px;
+  font-weight: 400;
+}
+.D18-stay-info-item__title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D18-stay-info-item__calender {
+  padding: 0.8rem;
+}
+.D-18-input__area--relation,
+.D18-stay-info-item__select {
+  width: 173px;
+
+  &::placeholder {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.select__wrapper.is-empty {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 400;
+}
+.D18-stay-info-item__calender,
+.D-18-input__area--emergency {
+  width: 215px;
+
+  &::placeholder {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.D-18-input__area--hotel-name {
+  width: 398px;
+
+  &::placeholder {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+
+//groomming グルーミング
+.D18-grooming {
+  // width: 135px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D18-grooming__items {
+  margin-left: 30px;
+  margin-top: 13px;
+}
+.D18-grooming__item {
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+}
+
+// D18-price-calculation 料金計算セクション
+.D18-price-calculation__inner {
+  padding: 0 20px;
+}
+.D18-price-calculation__body {
+  display: flex;
+  justify-content: flex-start;
+}
+.D18-price-calculation__item {
+  &:nth-of-type(2) {
+    margin-top: 34px;
+  }
+}
+
+.D18-price-calculation__itemBox-1 {
+  margin-right: 72px;
+  margin-top: 20px;
+  width: 364px;
+}
+.D18-price-calculation__itemBox-2 {
+  width: 743px;
+  margin-top: 20px;
+}
+.D18-price-calclation__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.D18-price-calclation__select-stay,
+.D18-price-calclation__input-extra .input__area--number {
+  width: 282px;
+
+  &::placeholder {
+    color: #d5d5d5;
+  }
+}
+.D18-price-calclation__select {
+  width: 364px;
+  &:not(:first-of-type) {
+    margin-top: 16px;
+  }
+}
+
+.D18-price-calclation__select-cupon {
+  width: 364px;
+}
+.D18-price-calclation__input-extra span {
+  margin-left: 8px;
+}
+
+//D-18price-menu 料金表
+.D18--price-menu {
+  margin-top: 35px;
+}
+.D18-price-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+
+  &--subtotal {
+    border-bottom: solid 1px #707070;
+    padding-bottom: 13px;
+    padding-top: 3px;
+  }
+}
+.D18-fixed-amount {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.D18-fixed-amount__title {
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.D18-fixedamout__price {
+  span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+    min-width: 274px;
+    padding-left: 14px;
+    height: 46px;
+    border: solid 1px #d5d5d5;
+    border-radius: 5px;
+  }
+}
+.D18-price-menu__title {
+  font-size: 16px;
+}
+.D18-price-menu__price {
+  font-size: 12px;
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 3px;
+    font-family: 'Lato', sans-serif;
+  }
+}
+.D18-price-menu__price.D18-price-menu__price--cupon {
+  color: $color-warning;
+}
+
+
+
+// D-18-reseptionist 受付担当者
+.D-18-receptionist {
+  margin-top: 32px;
+}
+.D-18-receptionist p {
+  font-size: 14px;
+}
+.D-18-input__area--receptionist {
+  margin-top: 12px;
+  width: 363px;
+}
+
+// D18-belongings 当日のお持ち物セクション
+.D18-belongings__inner {
+  padding: 0 20px;
+}
+.D18-belongings__items {
+  margin-top: 20px;
+}
+.D18-belongings__item {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+.D18-belongings__select {
+  width: 178px;
+  margin-right: 10px;
+}
+.D-18-belongings__input {
+  width: 700px;
+  margin-right: 15px;
+  &::placeholder {
+    color: #d5d5d5;
+  }
+}
+.D18-belongings-add-option {
+  max-width: 887px;
+}
+.D18-belongings__del-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: $color-bright-green;
+}
+.D18-price-calculation__add-button,
+.D18-belongings__add-button {
+  width: 71px;
+  height: 25px;
+  border-radius: 24px;
+  border: 1px solid $color-main;
+  color: $color-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 12px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+
+// D18-hotel-order-sheet ホテルオーダーシートセクション
+.D18-hotel-order-sheet__content {
+  margin-top: 10px;
+  width: 982px;
+  height: 145px;
+  border-radius: 6px;
+  border: 1px dashed #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.D18-hotel-order-sheet__content .small-button {
+  width: 120px;
+}
+.D18-hotel-order-sheet__confirmation-button {
+  text-align: center;
+  margin-top: 10px;
+}
+.D18-hotel-order-sheet__confirmation-button .small-button {
+  height: 26px;
+  width: 60px;
+}
+
+// D18-update-info
+.D18-update-info.D18-category-wrapper {
+  margin-top: 63px;
+}
+.D18-update-info__staff-date {
+  font-size: 12px;
+  text-align: right;
+  line-height: 1;
+}

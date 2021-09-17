@@ -1,0 +1,334 @@
+
+// D22-inner
+.D22-inner {
+  background-color: $color-shop-inner;
+  padding: 10px 10px 100px;
+}
+
+
+//D22-shop-tab
+.D22-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D22-shop-tab__customer,
+.D22-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D22-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D22-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D22-shop-tab__area {
+  background: #fff;
+  padding: 29px 11px 40px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+}
+
+
+// D22-grooming-check-list-title
+.D22-grooming-check-list-title {
+  font-size: 18px;
+  color: $color-main;
+  font-weight: normal;
+  line-height: 1;
+}
+
+
+// D22-shop-tab-area-inner
+.D22-shop-tab-area-inner {
+  padding: 0 20px;
+}
+
+
+// D22-container
+.D22-container:first-child {
+  margin-top: 18px;
+}
+.D22-container {
+  margin-top: 32px;
+}
+
+
+// D22-reservation-detail
+.D22-reservation-detail__title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+}
+.D22-reservation-detail__box {
+  margin-top: 18px;
+  background-color: $color-thin-green;
+  border-radius: 10px;
+  padding: 20px 28px 22px;
+}
+.D22-reservation-detail__date {
+  font-size: 18px;
+  color: $color-main;
+  line-height: 1.5555556;
+}
+.D22-reservation-detail__info {
+  margin-top: -2px;
+  font-size: 16px;
+}
+
+
+// interview-title--optional
+.D22-interview-title {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.D22-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D22-interview-title__text.D22-interview-title__text--lh15 {
+  line-height: 1.5;
+}
+.D22-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.D22-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+.D22-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+
+// D22-wrapper
+.D22-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 31px;
+}
+.D22-wrapper .D22-interview.D22-container:first-of-type {
+  margin-right: 127px;
+  width: 364px;
+}
+
+
+// D22-animal-hospital
+.D22-animal-hospital.D22-container {
+  margin-top: 0;
+  margin-right: 127px;
+}
+.D22-animal-hospital__input {
+  margin-top: 10px;
+}
+.D22-animal-hospital__input .input__area--default {
+  width: 364px;
+  height: 46px;
+  font-size: 16px;
+  color: $color-text-main;
+}
+.D22-animal-hospital__input .input__area--default::placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+
+// D22-photo-permit
+.D22-photo-permit.D22-container {
+  margin-top: 0;
+}
+.D22-photo-permit .D22-interview-title {
+  align-items: flex-start;
+  margin-top: -5px;
+}
+.D22-photo-permit .D22-interview-title__icon {
+  margin-top: 6px;
+  margin-left: 8px;
+}
+.D22-photo-permit .D22-interview-title__text {
+  line-height: 1.5;
+}
+.D22-photo-permit__check {
+  margin-top: 13px;
+}
+
+
+// D22-checklist
+.D22-checklist {
+  display: flex;
+  margin-top: 11px;
+}
+.D22-checklist__item {
+  margin-right: 20px;
+}
+
+
+// D22-health-state
+.D22-health-state__table {
+  margin-top: 20px;
+}
+
+
+// D22-table
+.D22-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+}
+.D22-table th {
+  background-color: $color-bright-green;
+  border-right: 1px solid #fff;
+  height: 47px;
+  color: #fff;
+  font-weight: normal;
+}
+.D22-table th:first-child {
+  width: 317px;
+}
+.D22-table th:nth-child(2) {
+  width: 198px;
+}
+.D22-table th:nth-child(3) {
+  width: 425px;
+}
+.D22-table td {
+  height: 62px;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+.D22-table__td-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+.D22-table__check.check input[type="checkbox"] + label {
+  font-size: 16px;
+  padding-left: 36px;
+}
+.D22-table__check.check input[type="checkbox"] + label::before {
+  border-color: $color-main;
+}
+.D22-table__pull-down .pull-down__select {
+  width: 178px;
+  height: 46px;
+  color: $color-text-main;
+}
+.D22-table__pull-down .pull-down__select:invalid {
+  color: #DEDEDE;
+}
+.D22-table__input .input__area--default {
+  width: 405px;
+}
+.D22-table__input .input__area--default::placeholder {
+  color: #DEDEDE;
+}
+
+
+// D22-interview
+.D22-interview.D22-container {
+  margin-top: 0;
+}
+.D22-interview.D22-container:nth-of-type(2) .D22-interview__box:nth-child(3),
+.D22-interview.D22-container:nth-of-type(2) .D22-interview__box:nth-child(5) {
+  margin-top: 17px;
+}
+.D22-interview__box:first-child {
+  margin-top: 0px;
+}
+.D22-interview__box:nth-child(2) {
+  margin-top: 17px;
+}
+.D22-interview__box {
+  margin-top: 22px;
+}
+.D22-interview.D22-container:nth-of-type(1) .D22-interview__box:nth-child(6) .D22-interview-title__icon {
+  margin-top: 21px;
+}
+.D22-interview__items {
+  display: flex;
+  margin-top: 11px;
+}
+.D22-interview__items--column {
+  flex-direction: column;
+}
+.D22-interview__items--column .D22-interview__item:not(:first-child) {
+  margin-top: 10px;
+}
+.D22-interview__item {
+  margin-right: 20px;
+}
+.D22-interview__hidden-wrapper {
+  display: none;
+}
+.D22-interview__textarea {
+  margin-top: 15px;
+  width: 364px;
+  min-height: 100px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+}
+.D22-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+
+// D22-button-bar
+.D22-button-bar {
+  z-index: 30;
+}
+.D22-button-bar .sub-button {
+  margin-right: 16px;
+}

@@ -1,0 +1,229 @@
+
+// D02-inner
+.D02-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+//D02-shop-tab
+.D02-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.D02-shop-tab__customer,
+.D02-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D02-shop-tab__customer {
+  background: #fff;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./image/shop-tab-icon-customer.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.D02-shop-tab__pet {
+  background: $color-thin-green;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./image/shop-tab-icon-pet.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D02-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 20px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+//D01-body
+.D02-body {
+  display: flex;
+}
+
+//D02-customer-search 顧客検索
+.D02-customer-search {
+  width: 481px;
+  margin-right: 20px;
+}
+.D02-customer-search__bar {
+  background-color: $color-bright-green;
+  border-radius: 6px 6px 0 0;
+  padding: 0 17px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.D02-customer-search__bar .small-button--sign-up {
+  background-color: $color-background-base;
+}
+.D02-customer-search__area {
+  background-color: #f4f4f4;
+  padding: 25px 22px 25px 18px;
+}
+.D02-customer-search__title {
+  color: $color-background-base;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D02-customer-search__input {
+  & + & {
+    margin-top: 14px;
+  }
+}
+.D02-search-input {
+  display: flex;
+  align-items: center;
+}
+.D02-search-input__title {
+  font-size: 14px;
+  font-weight: 500;
+  width: 102px;
+  text-align: left;
+}
+.D02-search-input .input__area--default {
+  background-color: $color-background-base;
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #d5d5d5;
+  }
+}
+.D02-search-input-radio {
+  display: flex;
+  align-items: center;
+}
+.D02-search-input-radio label {
+  margin-right: 20px;
+}
+.D02-search-input__pull-down .pull-down__select {
+  width: 100px;
+}
+.D02-search-input__pull-down .pull-down__select:invalid {
+  background-color: $color-background-base;
+}
+.D02-search-input__pull-down.pull-down::after {
+  right: 30px;
+}
+.D02-customer-search__input .D02-search-input__pull-down {
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.D02-customer-search__btn {
+  margin-top: 22px;
+  text-align: center;
+}
+.D02-customer-search__btn .most-important-button {
+  width: 200px;
+}
+
+
+// D02table-wrapper
+//table-shopInfo
+.D02-search-results {
+  width: 487px;
+}
+.D02-search-results__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.D02-search-results__text {
+  font-size: 12px;
+}
+
+
+//D02-table-shopInfo 
+.D02-table-shopInfo {
+  margin-top: 14px;
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    text-align: center;
+    border: 1px solid #f4f4f4;
+    padding: 0;
+    line-height: 1.5;
+    padding: 5px;
+  }
+}
+.D02-table-shopInfo__head {
+  display: block;
+  width: 100%;
+}
+.D02-table-shopInfo__head th {
+  background: $color-bright-green;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+}
+.D02-table-shopInfo__body {
+  overflow-y: auto;
+  max-height: 549px;
+  display: block;
+  width: 100%;
+  color: $color-text-main;
+  font-size: 12px;
+}
+.D02-table-shopInfo__body td {
+  height: 32px;
+}
+.D02-table-shopInfo__cutomer-name {
+  width: 164px;
+}
+.D02-table-shopInfo__pet-name {
+  width: 91px;
+}
+.D02-table-shopInfo__breed {
+  width: 77px;
+}
+.D02-table-shopInfo__tel {
+  width: 119px;
+}
+.D02-table-shopInfo__latestDate {
+  width: 75px;
+}
+.D02-table-shopInfo__detail {
+  width: 70px;
+}
+
+

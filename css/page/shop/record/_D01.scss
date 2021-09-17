@@ -1,0 +1,143 @@
+@import "../../../../css/setting/setting";
+ 
+
+// D01-inner
+.D01-inner {
+  background-color: $color-shop-inner;
+  padding: 20px 10px 10px;
+}
+.D01-head-menu {
+  padding-left: 12px;
+}
+.D01-menu {
+  display: inline-block;
+  background: $color-background-base;
+  color: $color-bright-green;
+  position: relative;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 0 6px rgba(#000, 0.08);
+}
+.D01-head-menu__customer {
+  margin-right: 12px;
+  padding: 12px 39px 12px 58px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 34px;
+    width: 34px;
+    background-image: url(../../../../image/common/menu-icon-customer.svg);
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.D01-head-menu__pet {
+  padding: 12px 22px 12px 58px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 34px;
+    width: 34px;
+    background-image: url(../../../../image/common/menu-icon-pet.svg);
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.D01-body {
+  margin-top: 16px;
+  background: $color-background-base;
+  box-shadow: 0 0 6px rgba(#000, 0.08);
+  border-radius: 4px;
+  padding: 20px 10px 20px 11px;
+  min-height: 624px;
+  display: flex;
+  justify-content: center;
+}
+//D01-customer-search 顧客検索
+.D01-customer-search {
+  width: 481px;
+  margin-right: 20px;
+}
+.D01-customer-search__bar {
+  background-color: $color-bright-green;
+  border-radius: 6px 6px 0 0;
+  padding: 0 17px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.D01-customer-search__area {
+  background-color: #f4f4f4;
+  padding: 25px 22px 25px 18px;
+}
+.D01-customer-search__title {
+  color: $color-background-base;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D01-customer-search__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & + & {
+    margin-top: 13px;
+  }
+}
+.D01-search-input__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.D01-search-input .input__area--default {
+  background-color: $color-background-base;
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #d5d5d5;
+  }
+}
+.D01-customer-search__bar .small-button--sign-up {
+  background-color: $color-background-base;
+}
+.D01-customer-search__btn {
+  margin-top: 22px;
+  text-align: center;
+}
+.D01-customer-search__btn .most-important-button {
+  width: 200px;
+}
+
+//D01-latest-customer 最近ご利用のあったお客様
+.D01-latest-customer {
+  width: 481px;
+}
+.D01-latest-customer__bar {
+  background-color: $color-bright-green;
+  border-radius: 6px 6px 0 0;
+  padding: 0 17px;
+  height: 42px;
+  line-height: 42px;
+}
+.D01-latest-customer__cards {
+  height: 537px;
+  overflow-y: scroll;
+}
+.D01-card {
+  height: 137px;
+  border-radius: 10px;
+  background-color: $color-thin-green;
+  padding: 8px 14px 11px 20px;
+  margin-top: 5px;
+}
+.D01-card__info {
+  font-size: 14px;
+  font-weight: 400;
+}
+.D01-card__btn {
+  text-align: right;
+  margin-top: 2px;
+}

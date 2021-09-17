@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js" ></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+<script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ" />
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"
+        ><img
+          src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン"
+        />ログアウト</a
+      >
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class="header-booking__tab booking-tab">
+        <div class="booking-tab__buttons">
+          <a href="#" class="booking-tab__content1">予約管理</a>
+          <a href="#" class="booking-tab__content2">シフト管理</a>
+          <a href="#" class="booking-tab__content3">電子カルテ</a>
+          <div id="booking-tab__lamp" class="booking-tab__content3"></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- inner  -->
+  <div class="D23-inner">
+    <div class="D23-shop-tab">
+      <ul class="D23-shop-tab__inner">
+        <li><a href="" class="D23-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D23-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D23-shop-tab__area">
+      
+        <div class="D23-grooming-check-list">
+          <h2 class="D23-grooming-check-list__title">
+            グルーミング事前確認事項
+          </h2>
+          <!-- D13-table3 -->
+          <table class="D23-grooming-check-list__table table3">
+            <tbody>
+              <tr>
+                <th>かかりつけの動物病院</th>
+                <td>〇〇〇〇病院</td>
+              </tr>
+              <tr>
+                <th>グルーミング中や仕上がり後の写真を撮影してもよろしいですか？</th>
+                <td>同意する</td>
+              </tr>
+              <tr>
+                <th>健康状態</th>
+                <td>
+                  異常あり<br>
+                  <br>
+                  パテラ<br>
+                  グレード1<br>
+                  身体<br>
+                  詳細テキスト詳細テキスト<br>
+                  <br>
+                  ヘルニア<br>
+                  軽度<br>
+                  首<br>
+                  詳細テキスト詳細テキスト
+                </td>
+              </tr>
+              <tr>
+                <th>その他現在治療中の病気・怪我はございますか？</th>
+                <td>
+                  ある<br>
+                  詳細テキスト詳細テキスト
+                </td>
+              </tr>
+              <tr>
+                <th>最近動物病院を受診しましたか？</th>
+                <td>かかった</td>
+              </tr>
+              <tr>
+                <th>血液などの検査を1年以内にしていますか？</th>
+                <td>していない</td>
+              </tr>
+              <tr>
+                <th>心臓病の検査を1年以内にしていますか？</th>
+                <td>していない</td>
+              </tr>
+              <tr>
+                <th>投薬中の薬があれば教えてください。</th>
+                <td>ある</td>
+              </tr>
+              <tr>
+                <th>室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？</th>
+                <td>はい</td>
+              </tr>
+              <tr>
+                <th>いつものウンチの状態はいかがですか？</th>
+                <td>堅い</td>
+              </tr>
+              <tr>
+                <th>お水の飲み方はどちらですか？</th>
+                <td>お皿</td>
+              </tr>
+              <tr>
+                <th>預かり中に体調を崩したことはございますか？</th>
+                <td>
+                  ある<br>
+                  詳細テキスト詳細テキスト
+                </td>
+              </tr>
+              <tr>
+                <th>食べ物でアレルギーはございますか？</th>
+                <td>
+                  ある<br>
+                  詳細テキスト詳細テキスト
+                </td>
+              </tr>
+              <tr>
+                <th>ノミ・ダニ予防はされていますか？</th>
+                <td>
+                  していない
+                </td>
+              </tr>
+              <tr>
+                <th>同居している他のワンちゃん・ネコちゃんはいますか？</th>
+                <td>
+                  いる<br>
+                  詳細テキスト詳細テキスト
+                </td>
+              </tr>
+              <tr>
+                <th>その他、お手入れに関してお困りごとはありますか？</th>
+                <td>
+                  フケ<br>
+                  ベタつき
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追従ボタン -->
+  <div class="D23-button-bar sign-up-bar">
+    <!-- ボタン（戻る・修正など サブ） -->
+    <a href="" class="sub-button">前に戻る</a>
+    <!-- ボタン（最重要　緑） -->
+    <a href="" class="most-important-button--green">編集</a>
+  </div>
+
+</body>
+</html>

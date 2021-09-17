@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>PETEMO | PETLIFE STORE</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- datepicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min-1.10.4.js"></script>
+    <!-- js -->
+    <script defer type="text/javascript" src="/js/script.js"></script>
+<script defer type="text/javascript" src="/js/my-script.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="" />
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- D01-inner -->
+  <div class="D01-inner">
+    <div class="D01-head-menu">
+      <a class="D01-head-menu__customer D01-menu">顧客管理</a>
+      <a class="D01-head-menu__pet D01-menu">ペット管理</a>
+    </div>
+    <!-- D01-body  -->
+    <div class="D01-body">
+      <!-- D01-customer-search -->
+      <div class="D01-customer-search">
+        <div class="D01-customer-search__bar">
+          <h2 class="D01-customer-search__title">顧客検索</h2>
+          <a href="" class="small-button--sign-up"><img src="/image/common/signup-icon.png" alt="十字アイコン">新規登録</a>
+        </div>
+        <div class="D01-customer-search__area">
+          <div class="D01-customer-search__input D01-search-input">
+            <h3 class="D01-search-input__title">お客さま名</h3>
+            <input type="text" class="input__area--default" placeholder="入力してください">
+          </div>
+          <div class="D01-customer-search__input D01-search-input">
+            <h3 class="D01-search-input__title">ペット名</h3>
+            <input type="text" class="input__area--default" placeholder="入力してください">
+          </div>
+          <div class="D01-customer-search__input D01-search-input">
+            <h3 class="D01-search-input__title">電話番号</h3>
+            <input type="text" class="input__area--default" placeholder="09012345678">
+          </div>
+          <div class="D01-customer-search__btn">
+            <a href="" class="most-important-button most-important-button--icon"><img
+                src="../../../image/common/search-icon-white.png" alt="サーチアイコン">検索する</a>
+          </div>
+        </div>
+      </div>
+      <!-- D01-latest-customer -->
+      <div class="D01-latest-customer">
+        <div class="D01-latest-customer__bar">
+          <h2 class="D01-customer-search__title">最近ご利用のあったお客さま</h2>
+        </div>
+        <div class="D01-latest-customer__cards">
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+          <div class="D01-card">
+            <ul class="D01-card__info">
+              <li>ご利用日時：2021年00月00日　00:00</li>
+              <li>お客さま名：中野 恵志（なかの けいし）様</li>
+              <li>ペット名：コタローちゃん</li>
+              <li>コース名：ベーシックコース</li>
+            </ul>
+            <div class="D01-card__btn">
+              <a href="" class="small-button--right-arrow">詳細</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

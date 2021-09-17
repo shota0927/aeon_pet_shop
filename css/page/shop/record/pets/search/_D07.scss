@@ -1,0 +1,259 @@
+@import "../../../../../../css/setting/setting";
+
+// D07-inner
+.D07-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+//D07-shop-tab
+.D07-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D07-shop-tab__customer,
+.D07-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D07-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../../../../../../image/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D07-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../../../../../../image/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D07-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 20px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+//D01-body
+.D07-body {
+  display: flex;
+}
+//D07-pet-search ペット検索
+.D07-pet-search {
+  width: 481px;
+  margin-right: 20px;
+}
+.D07-pet-search__bar {
+  background-color: $color-bright-green;
+  border-radius: 6px 6px 0 0;
+  padding: 0 17px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.D07-pet-search__bar .small-button--sign-up {
+  background-color: $color-background-base;
+}
+.D07-pet-search__area {
+  background-color: #f4f4f4;
+  padding: 25px 22px 25px 18px;
+}
+.D07-pet-search__title {
+  color: $color-background-base;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D07-pet-search__input {
+  & + & {
+    margin-top: 14px;
+  }
+}
+
+// D07-input 入力検索
+.D07-input {
+  display: flex;
+  align-items: center;
+}
+.D07-pet-search__area .D07-input:nth-of-type(5)  {
+  align-items: flex-start;
+}
+.D07-input__title {
+  font-size: 14px;
+  font-weight: 500;
+  width: 102px;
+  text-align: left;
+}
+.D07-input .input__area--default,
+.D07-datepicker {
+  background-color: $color-background-base;
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #d5d5d5;
+  }
+}
+.D07-input-breed {
+  width: 140px;
+  margin-right: 10px;
+}
+.D07-input-btn {
+  width: 104px;
+}
+.D07-input-radio {
+  display: flex;
+  align-items: center;
+}
+.D07-input-radio label {
+  margin-right: 20px;
+}
+.D07-pet-birthDay {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '~';
+    transform: rotate(90deg);
+    top: 45%;
+    left: 43%;
+    width: 15px;
+    height: 15px;
+  }
+}
+.D07-pet-birthDay .calendar__wrapper:nth-of-type(2) {
+  margin-top: 12px;
+}
+.D07-pet-birthDay .calendar__wrapper {
+  width: 215px;
+  background-color: $color-background-base;
+}
+.D07-input-select__box {
+  display: flex;
+  align-items: center;
+}
+.D07-input-select__title {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.D07-input-select__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 11px;
+}
+.D07-input-select__subtitle:first-of-type {
+  margin-left: 10px;
+}
+.D07-input-select__box .pull-down__select {
+  width: 100px;
+  background: $color-background-base;
+}
+.D07-input-select__box .pull-down:first-of-type {
+  margin-right: 20px;
+}
+.D07-pet-search__btn {
+  margin-top: 31px;
+  text-align: center;
+}
+.D07-pet-search__btn .most-important-button {
+  width: 200px;
+}
+
+
+//.D07-search-results
+.D07-search-results {
+  width: 487px;
+}
+.D07-search-results__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.D07-search-results__text {
+  font-size: 12px;
+}
+
+//D07-table-shopInfo
+.D07-table-shopInfo {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    text-align: center;
+    border: 1px solid #f4f4f4;
+    padding: 0;
+    line-height: 1.5;
+    padding: 5px;
+  }
+}
+.D07-table-shopInfo__head {
+  display: block;
+  width: 100%;
+}
+.D07-table-shopInfo__head th {
+  background: $color-bright-green;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+}
+.D07-table-shopInfo__body {
+  overflow-y: auto;
+  max-height: 549px;
+  display: block;
+  width: 100%;
+  color: $color-text-main;
+  font-size: 12px;
+}
+.D07-table-shopInfo__body td {
+  height: 32px;
+}
+.D07-table-shopInfo__cutomer-name {
+  width: 164px;
+}
+.D07-table-shopInfo__pet-name {
+  width: 125px;
+}
+.D07-table-shopInfo__breed {
+  width: 119px;
+}
+.D07-table-shopInfo__detail {
+  width: 70px;
+}

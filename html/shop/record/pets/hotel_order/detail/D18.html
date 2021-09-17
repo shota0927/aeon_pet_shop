@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js"></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- <link rel="icon" href="" /> -->
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- inner  -->
+  <div class="D18-inner">
+    <div class="D18-shop-tab">
+      <ul class="D18-shop-tab__inner">
+        <li><a href="" class="D18-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D18-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D18-shop-tab__area">
+        <!-- pet-name -->
+        <div class="D18-pet-name">
+          コタロー （お客さま名：中野 恵志）
+        </div>
+
+        <!-- D18-menu-information -->
+        <div class="D18-menu-information">
+          <ul class="D18-menu-information__items">
+            <li><a href="#" class="D18-menu-information__item">詳細</a></li>
+            <li><a href="#" class="D18-menu-information__item">施術情報</a></li>
+            <li><a href="#" class="D18-menu-information__item D18-menu-information__item--booking">グルーミング予約情報</a></li>
+            <li><a href="#" class="D18-menu-information__item menu-information__item--active">宿泊情報</a></li>
+          </ul>
+          <a href="" class="D18-menu-information__button small-button">ペット一覧</a>
+        </div>
+
+        <!-- D18-customerInput-btn -->
+        <div class="D18-customerInput-btn-box">
+          <a href="" class="customerInput-btn">お客さま入力モード</a>
+        </div>
+
+        <!-- D18-pet-info ペット情報 セクション-->
+        <section class="D18-pet-info D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            ペット情報
+          </h2>
+          <!-- D18-table3 -->
+          <table class="D18-table3 table3">
+            <tbody>
+              <tr>
+                <th>飼い主氏名</th>
+                <td>中野 恵志（なかの けいし）</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td>09012345678<br>
+                  09012345678</td>
+              </tr>
+              <tr>
+                <th>ペットのお名前</th>
+                <td>小太郎（コタロウ）</td>
+              </tr>
+              <tr>
+                <th>ペットの性別</th>
+                <td>男の子</td>
+              </tr>
+              <tr>
+                <th>毛色</th>
+                <td>アイボリー</td>
+              </tr>
+              <tr>
+                <th>ペットの年齢</th>
+                <td>1999年 01月 01日　00歳00ヶ月 </td>
+              </tr>
+              <tr>
+                <th>ペットの種類</th>
+                <td>犬</td>
+              </tr>
+              <tr>
+                <th>犬種</th>
+                <td>トイプードル</td>
+              </tr>
+              <tr>
+                <th>混合ワクチン</th>
+                <td>済 (2021年01月23日）　△</td>
+              </tr>
+              <tr>
+                <th>狂犬病ワクチン</th>
+                <td>済 (2021年01月23日）　○</td>
+              </tr>
+              <tr>
+                <th>持病・けが確認</th>
+                <td>有（心疾患、胃疾患）　獣医師の許可：有</td>
+              </tr>
+              <tr>
+                <th>備考</th>
+                <td>ここに備考の内容。</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- D18-confirmation 事前確認事項セクション-->
+        <section class="D18-confirmation D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            事前確認事項
+          </h2>
+          <div class="D18-category-wrapper__content">
+            <!-- D18-table3 -->
+            <table class="D18-table3 D18-table3--third table3">
+              <tbody>
+                <tr>
+                  <th>健康状態</th>
+                  <td>
+                    異常あり<br>
+                    <br>
+                    パテラ<br>
+                    グレード1<br>
+                    身体<br>
+                    詳細テキスト詳細テキスト<br>
+                    <br>
+                    ヘルニア<br>
+                    軽度<br>
+                    首<br>
+                    詳細テキスト詳細テキスト
+                  </td>
+                </tr>
+                <tr>
+                  <th>その他現在治療中の病気・怪我はございますか？</th>
+                  <td>
+                    ある<br>
+                    詳細テキスト詳細テキスト
+                  </td>
+                </tr>
+                <tr>
+                  <th>室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？</th>
+                  <td>はい</td>
+                </tr>
+                <tr>
+                  <th>お水の飲み方はどちらですか？</th>
+                  <td>
+                    お皿
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- D18checkIn-advance-box -->
+            <div class="D18-confirmation__button D18-checkIn-advance">
+              <p class="D18-checkIn-advance__text">事前確認事項</p>
+              <div class="D18-checkIn-advance__btnBox">
+                <a href="" class="small-button">編集</a>
+                <a href="" class="small-button">確認</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- D18-counseling  カウンセリングシートセクション-->
+        <section class="D18-counseling D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            カウンセリングシート
+          </h2>
+          <!-- D18-counseling__inner -->
+          <div class="D18-counseling__inner">
+            <!-- ご飯コンテンツ -->
+            <div class="D18-counseling__content-meal">
+              <h3 class="D18-counseling__contentTitle">＜ご飯＞</h3>
+              <!-- ご飯の回数 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">1日にあげるご飯の回数</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <span>1日</span>
+                  <input type="number" class="D18-input__area--number" placeholder="3" step="1">
+                  <span>回</span>
+                </div>
+              </div>
+              <!-- ご飯の分量 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">1日にあげるご飯の分量</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <span>1回</span>
+                  <input type="number" class="D18-input__area--number" placeholder="2" step="1">
+                  <span>袋</span>
+                  <input type="text" class="input__area--default" placeholder="（例）ドライ1袋＋缶1/2など">
+                </div>
+              </div>
+              <!-- 滞在 ご飯 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">滞在中最初のご飯、滞在中最後のご飯</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <span>最初のご飯</span>
+                  <div class="D18-datepicker-meal calendar__wrapper">
+                    <div class="box__datepicker">
+                      <input type="text" class="datepicker" placeholder="2022年02月31日（火）">
+                    </div>
+                  </div>
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="morning" name="first-meal" value="morning">
+                      <label for="morning">朝</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="noon" name="first-meal" value="nonn">
+                      <label for="noon">昼</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="night" name="first-meal" value="night">
+                      <label for="night">夜</label>
+                    </li>
+                  </ul>
+                </div>
+                <span class="D18-calender-wrapper__decoration">〜</span>
+                <div class="counseling-item__A counseling-item__A--second">
+                  <span>最後のご飯</span>
+                  <div class="D18-datepicker-meal calendar__wrapper">
+                    <div class="box__datepicker">
+                      <input type="text" class="datepicker" placeholder="2022年02月31日（火）">
+                    </div>
+                  </div>
+                  <div class="select D18-radio__items">
+                    <div class="D18-radio__item">
+                      <input type="radio" id="morning-last" name="last-meal" value="morning-last">
+                      <label for="morning-last">朝</label>
+                    </div>
+                    <div class="D18-radio__item">
+                      <input type="radio" id="noon-last" name="last-meal" value="noon-last">
+                      <label for="noon-last">昼</label>
+                    </div>
+                    <div class="D18-radio__item">
+                      <input type="radio" id="night-last" name="last-meal" value="night-last">
+                      <label for="night-last">夜</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- おやつ -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">おやつ</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="give" name="snack" value="give">
+                      <label for="give">あげる</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="noGive" name="snack" value="noGive">
+                      <label for="noGive">あげない</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="counseling-item__A">
+                  <input type="text" class="D18-input__area--counseling" placeholder="（例）おやつの分量、食後ガム1本など">
+                </div>
+
+              </div>
+              <!-- 普段の食べ具合 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">普段の食べ具合</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="full" name="appetite" value="full">
+                      <label for="full">いつも完食</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="left-little" name="appetite" value="left-little">
+                      <label for="left-little">時々残す</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="left-alot" name="appetite" value="left-alot">
+                      <label for="left-alot">よく残す</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="other-appetite" name="appetite" value="other-appetite">
+                      <label for="other-appetite">その他</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="counseling-item__A">
+                  <input type="text" class="D18-input__area--counseling" placeholder="（例）食べない場合に何をしているかなど">
+                </div>
+              </div>
+            </div>
+            <!-- 体調コンテンツ -->
+            <div class="D18-counseling__content-condition">
+              <h3 class="D18-counseling__contentTitle">＜体調＞</h3>
+              <!-- 排便の有無 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">本日のおしっこ、うんちの有無</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="pee" name="excretion" value="pee">
+                      <label for="pee">おしっこした</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="poo" name="excretion" value="poo">
+                      <label for="poo">うんちした</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="both" name="excretion" value="both">
+                      <label for="both">両方した</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="none" name="excretion" value="none">
+                      <label for="none">両方していない</label>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+              <!-- 最近気になったこと -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">最近きになった事</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="bloody" name="worried" value="bloody">
+                      <label for="bloody">血便、血尿</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="loose-bowel" name="worried" value="loose-bowel">
+                      <label for="loose-bowel">軟便</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="vomiting" name="worried" value="vomiting">
+                      <label for="vomiting">嘔吐</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="other-worried" name="worried">
+                      <label for="other-worried">その他</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="nothing" name="worried" value="nothing">
+                      <label for="nothing">特に無し</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="counseling-item__A">
+                  <input type="text" class="D18-input__area--counseling" placeholder="（例）1週間前にソファから落ちて1時間くらい足を引きずっていた">
+                </div>
+
+              </div>
+            </div>
+            <!-- お預かり・質問コンテンツ -->
+            <div class="D18-counseling__content-custody">
+              <h3 class="D18-counseling__contentTitle">＜お預かり・質問＞</h3>
+              <!-- 普段おしっこ、うんちをする場所 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">普段おしっこ、うんちをする場所</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="outside" name="excretionArea" value="outside">
+                      <label for="outside">お外</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="petSheets" name="excretionArea" value="petSheets">
+                      <label for="petSheets">ペットシーツでも可</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="anywhere" name="excretionArea" value="anywhere">
+                      <label for="anywhere">どちらでも可</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 1日のうんちの回数 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">1日のうんちの回数</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="0~1" name="excretionTimes" value="0~1">
+                      <label for="0~1">0回～1回</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="1~2" name="excretionTimes" value="1~2">
+                      <label for="1~2">1回～2回</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="randam" name="excretionTimes" value="randam">
+                      <label for="randam">不定期</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- おはなこすりのクセ -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">お鼻こすりのクセ</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="towel" name="habit" value="towel">
+                      <label for="towel">タオルなどにこすることがある</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="never" name="habit" value="never">
+                      <label for="never">ない</label>
+                    </li>
+                  </ul>
+                </div>
+
+
+              </div>
+              <!-- 人見知りについて -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">人見知りについて</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="hateStrangers" name="aboutShy" value="hateStrangers">
+                      <label for="hateStrangers">知らない人が苦手</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="hateDogs" name="aboutShy" value="hateDogs">
+                      <label for="hateDogs">ワンちゃんが苦手</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="friendly" name="aboutShy" value="friendly">
+                      <label for="friendly">人もワンちゃんも好き</label>
+                    </li>
+                  </ul>
+                </div>
+
+
+              </div>
+              <!-- 過去のホテル滞在中のご様子 -->
+              <div class="D18-counseling__items">
+                <div class="counseling-item__Q">
+                  <p class="counseling-item__Q-text">過去のホテル滞在中のご様子</p>
+                  <p class="icon__text--required">必須</p>
+                </div>
+                <div class="counseling-item__A">
+                  <ul class="select D18-radio__items">
+                    <li class="D18-radio__item">
+                      <input type="radio" id="noAppetite" name="stayAppearance" value="noAppetite">
+                      <label for="noAppetite">ご飯を食べなくなった</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="noExcretion" name="stayAppearance" value="noExcretion">
+                      <label for="noExcretion">うんちを我慢してしまう</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="firsttimeStay" name="stayAppearance" value="firsttimeStay">
+                      <label for="firsttimeStay">初めての宿泊</label>
+                    </li>
+                    <li class="D18-radio__item">
+                      <input type="radio" id="other-stayAppearance" name="stayAppearance" value="other-stayAppearance">
+                      <label for="other-stayAppearance">その他</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="counseling-item__A">
+                  <input type="text" class="D18-input__area--counseling" placeholder="（例）嘔吐・下痢があったなど">
+                </div>
+              </div>
+            </div>
+            <!-- 備考欄 -->
+            <div class="D18-counseling__remarks D18-remarks">
+              <p class="D18-remarks__title">備考</p>
+              <div class="D18-remarks__area-wrapper">
+                <textarea name="counseling-remarks" id="counseling-remarks" class="D18-remarks__textarea"
+                  placeholder="入力して下さい"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- D18-hotel-order  ホテルオーダーセクション-->
+        <section class="D18-hotel-order D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            ホテルオーダー
+          </h2>
+          <div class="D18-hotel-order__inner">
+            <!-- ホテルオーダーコンテンツ -->
+            <div class="D18-hotel-order__contents">
+              <!-- stay-info 滞在情報 -->
+              <div class=" D18-stay-info">
+                <!-- お預かり日時 -->
+                <div class="D18-stay-info__items">
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">お預かり日</p>
+                    <div class="D18-stay-info-item__calender  calendar__wrapper">
+                      <div class="box__datepicker">
+                        <input type="text" class="datepicker" placeholder="2022年02月31日（火）">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">お預かり時間</p>
+                    <div class="D18-stay-info-item__select  input__wrapper select__wrapper--shevron">
+                      <select name="pick-up-time" class="select__wrapper is-empty">
+                        <option value="" class="select__option" selected="">選択して下さい</option>
+                        <option value="option1" class="select__option">選択済み項目1</option>
+                        <option value="option2" class="select__option">選択済み項目2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="D18-stay-info__times">ご利用回数　00</div>
+                <!-- お迎え日時 -->
+                <div class="D18-stay-info__items">
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">お迎え日</p>
+                    <div class="D18-stay-info-item__calender  calendar__wrapper">
+                      <div class="box__datepicker">
+                        <input type="text" class="datepicker" placeholder="2022年02月31日（火）">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">お迎え時間</p>
+                    <div class="D18-stay-info-item__select  input__wrapper select__wrapper--shevron">
+                      <select name="pick-up-time" class="select__wrapper is-empty">
+                        <option value="" class="select__option" selected="">選択して下さい</option>
+                        <option value="option1" class="select__option">選択済み項目1</option>
+                        <option value="option2" class="select__option">選択済み項目2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- 緊急連絡先 -->
+                <div class="D18-stay-info__items">
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">緊急連絡先</p>
+                    <input type="text" class="D-18-input__area--emergency input__area--default"
+                      placeholder="01234567890">
+                  </div>
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">緊急連絡先とお客様の関係</p>
+                    <input type="text" class="D-18-input__area--relation input__area--default" placeholder="家族">
+                  </div>
+                </div>
+                <!-- 滞在先名 -->
+                <div class="D18-stay-info__items">
+                  <div class="D18-stay-info__item">
+                    <p class="D18-stay-info-item__title">滞在先名</p>
+                    <input type="text" class="D-18-input__area--hotel-name input__area--default" placeholder="入力して下さい">
+                  </div>
+                </div>
+              </div>
+              <!-- groomming グルーミング -->
+              <div class="D18-grooming check">
+                <input type="checkbox" id="grooming" checked="checked">
+                <label for="grooming">グルーミング有</label>
+                <ul class="D18-grooming__items">
+                  <li class="D18-grooming__item">
+                    <input type="checkbox" id="single-item" name="grooming-item" value="single-item">
+                    <label for="single-item">単品のみ</label>
+                  </li>
+                  <li class="D18-grooming__item">
+                    <input type="checkbox" id="shampoo" name="grooming-item" value="shampoo">
+                    <label for="shampoo">シャンプー</label>
+                  </li>
+                  <li class="D18-grooming__item">
+                    <input type="checkbox" id="cut" name="grooming-item" value="cut">
+                    <label for="cut">カット</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 備考欄 -->
+            <div class="D18-counseling__remarks D18-remarks">
+              <p class="D18-remarks__title">備考</p>
+              <div class="D18-remarks__area-wrapper">
+                <textarea name="hotel-order-remarks" id="hotel-order-remarks" class="D18-remarks__textarea"
+                  placeholder="入力して下さい"></textarea>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+        <!-- D18-price-calculation 料金計算セクション -->
+        <section class="D18-price-calculation D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            料金計算
+          </h2>
+          <div class="D18-price-calculation__inner">
+            <div class="D18-price-calculation__body">
+              <div class="D18-price-calculation__itemBox-1">
+                <div class="D18-price-calculation__item">
+                  <p class="D18-price-calclation__title">ホテル・部屋・タイプ</p>
+                  <div class="D18-price-calclation__select-stay  input__wrapper select__wrapper--shevron">
+                    <select name="hotl-room-type" class="select__wrapper is-empty">
+                      <option value="" class="select__option" selected="">選択して下さい</option>
+                      <option value="option1" class="select__option">選択済み項目1</option>
+                      <option value="option2" class="select__option">選択済み項目2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="D18-price-calculation__item">
+                  <p class="D18-price-calclation__title">オプション</p>
+                  <div id="D18-price-calculation__item-option">
+                    <div class="D18-price-calclation__select  input__wrapper select__wrapper--shevron">
+                      <select name="stay-option" class="select__wrapper is-empty">
+                        <option value="" class="select__option" selected="">選択して下さい</option>
+                        <option value="option1" class="select__option">選択済み項目1</option>
+                        <option value="option2" class="select__option">選択済み項目2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="D18-price-calclation__select  input__wrapper select__wrapper--shevron">
+                    <select name="stay-option" class="select__wrapper is-empty">
+                      <option value="" class="select__option" selected="">選択して下さい</option>
+                      <option value="option1" class="select__option">選択済み項目1</option>
+                      <option value="option2" class="select__option">選択済み項目2</option>
+                    </select>
+                  </div>
+                  <div class="D18-price-calclation__select  input__wrapper select__wrapper--shevron">
+                    <select name="stay-option" class="select__wrapper is-empty">
+                      <option value="" class="select__option" selected="">選択して下さい</option>
+                      <option value="option1" class="select__option">選択済み項目1</option>
+                      <option value="option2" class="select__option">選択済み項目2</option>
+                    </select>
+                  </div>
+                  <input type="button" value="＋ 追加" class="D18-price-calculation__add-button">
+                </div>
+              </div>
+              <div class="D18-price-calculation__itemBox-2  ">
+                <div class="D18-price-calculation__item">
+                  <p class="D18-price-calclation__title">割増料金（税抜）</p>
+                  <div class="D18-price-calclation__input-extra  input__wrapper">
+                    <input type="number" class="input__area--number" placeholder="0" step="1000">
+                    <span>円</span>
+                  </div>
+                </div>
+                <div class="D18-price-calculation__item">
+                  <p class="D18-price-calclation__title">使用予定クーポン</p>
+                  <div class="D18-price-calclation__select-cupon  input__wrapper select__wrapper--shevron">
+                    <select name="cupon" class="select__wrapper is-empty">
+                      <option value="" class="select__option" selected="">選択して下さい</option>
+                      <option value="option1" class="select__option">選択済み項目1</option>
+                      <option value="option2" class="select__option">選択済み項目2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- D18ページ 料金表 -->
+            <dl class="D18--price-menu">
+              <div class="D18-price-menu__item">
+                <dt class="D18-price-menu__title">宿泊基本料金</dt>
+                <dd class="D18-price-menu__price"><span>11,900</span>円（税抜）</dd>
+              </div>
+              <div class="D18-price-menu__item">
+                <dt class="D18-price-menu__title">割増料金</dt>
+                <dd class="D18-price-menu__price"><span>+2,000</span>円（税抜）</dd>
+              </div>
+              <div class="D18-price-menu__item">
+                <dt class="D18-price-menu__title">オプション名がはいります</dt>
+                <dd class="D18-price-menu__price"><span>+500</span>円（税抜）</dd>
+              </div>
+              <div class="D18-price-menu__item">
+                <dt class="D18-price-menu__title">クーポン名がはいります</dt>
+                <dd class="D18-price-menu__price D18-price-menu__price--cupon"><span>13,400</span>円（税抜）</dd>
+              </div>
+              <div class="D18-price-menu__item D18-price-menu__item--subtotal">
+                <dt class="D18-price-menu__title">小計</dt>
+                <dd class="D18-price-menu__price"><span>13,400</span>円（税抜）</dd>
+              </div>
+              <div class="D18-price-menu__item D18-price-menu__body--total">
+                <dt class="D18-price-menu__title">合計金額</dt>
+                <dd class="D18-price-menu__price"><span>13,400</span>円（税抜）</dd>
+              </div>
+              <div class="D18-fixed-amount">
+                <dt class="D18-fixed-amount__title">確定金額</dt>
+                <dd class="D18-fixedamout__price">
+                  <span>13,400</span>
+                  円（税抜）
+                </dd>
+              </div>
+            </dl>
+            <!-- D-18-reseptionist 受付担当者 -->
+            <div class="D-18-receptionist">
+              <p>受付担当者</p>
+              <input type="text" class="D-18-input__area--receptionist input__area--default" placeholder="入力して下さい">
+            </div>
+          </div>
+        </section>
+
+        <!-- .D18-belongings 当日のお持ち物セクション -->
+        <section class="D18-belongings D18-category-wrapper">
+          <h2 class="D18-category-bar">
+            当日のお持ち物
+          </h2>
+          <!-- D18-belongings__inner  -->
+          <div class="D18-belongings__inner">
+            <div class="D18-belongings__items" id="D18-belongings__item-select">
+              <div class="D18-belongings__item">
+                <div class="D18-belongings__select  input__wrapper select__wrapper--shevron">
+                  <select name="belongings" class="select__wrapper is-empty">
+                    <option value="" class="select__option" selected="">選択して下さい</option>
+                    <option value="option1" class="select__option">選択済み項目1</option>
+                    <option value="option2" class="select__option">選択済み項目2</option>
+                  </select>
+                </div>
+                <input type="text" class="D-18-belongings__input input__area--default" placeholder="入力して下さい">
+                <input type="button" value="×" class="D18-belongings__del-button">
+              </div>
+              <div class="D18-belongings__item">
+                <div class="D18-belongings__select  input__wrapper select__wrapper--shevron">
+                  <select name="belongings" class="select__wrapper is-empty">
+                    <option value="" class="select__option" selected="">選択して下さい</option>
+                    <option value="option1" class="select__option">選択済み項目1</option>
+                    <option value="option2" class="select__option">選択済み項目2</option>
+                  </select>
+                </div>
+                <input type="text" class="D-18-belongings__input input__area--default" placeholder="入力して下さい">
+                <input type="button" value="×" class="D18-belongings__del-button">
+              </div>
+              <div class="D18-belongings__item">
+                <div class="D18-belongings__select  input__wrapper select__wrapper--shevron">
+                  <select name="belongings" class="select__wrapper is-empty">
+                    <option value="" class="select__option" selected="">選択して下さい</option>
+                    <option value="option1" class="select__option">選択済み項目1</option>
+                    <option value="option2" class="select__option">選択済み項目2</option>
+                  </select>
+                </div>
+                <input type="text" class="D-18-belongings__input input__area--default" placeholder="入力して下さい">
+                <input type="button" value="×" class="D18-belongings__del-button">
+              </div>
+              <div class="D18-belongings__item">
+                <div class="D18-belongings__select  input__wrapper select__wrapper--shevron">
+                  <select name="belongings" class="select__wrapper is-empty">
+                    <option value="" class="select__option" selected="">選択して下さい</option>
+                    <option value="option1" class="select__option">選択済み項目1</option>
+                    <option value="option2" class="select__option">選択済み項目2</option>
+                  </select>
+                </div>
+                <input type="text" class="D-18-belongings__input input__area--default" placeholder="入力して下さい">
+                <input type="button" value="×" class="D18-belongings__del-button">
+              </div>
+            </div>
+            <div class="D18-belongings-add-option">
+              <input type="button" value="＋ 追加" class="D18-belongings__add-button">
+            </div>
+
+          </div>
+        </section>
+
+        <!-- D18-hotel-order-sheet ホテルオーダーシートセクション -->
+        <section class="D18-hotel-order-sheet D18-category-wrapper">
+          <!-- D18-category-bar -->
+          <h2 class="D18-category-bar">ホテルオーダーシート</h2>
+          <div class="D18-hotel-order-sheet__content">
+            <!-- ボタン（サブ） 矢印なし -->
+            <a href="" class="small-button">ファイルを選択</a>
+          </div>
+          <!-- ボタン（サブ） 矢印なし -->
+          <div class="D18-hotel-order-sheet__confirmation-button">
+            <a href="" class="small-button">確認</a>
+          </div>
+        </section>
+
+        <!-- D18-category-wrapper -->
+        <section class="D18-update-info D18-category-wrapper">
+          <div class="D18-update-info__staff-date">
+            更新者：竹内真琴　更新日：2021/08/18
+          </div>
+        </section>
+
+
+
+
+
+      </div><!-- D18-shop-tab__area -->
+
+
+
+
+
+
+
+
+    </div> <!-- /.D18-shop-tab  -->
+  </div>
+
+</body>
+
+</html>
