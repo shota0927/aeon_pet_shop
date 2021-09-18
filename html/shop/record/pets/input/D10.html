@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <!-- ************************************** -->
+  <!-- ********* 以下、パス指定あり ********* -->
+  <!-- ************************************** -->
+  <script src="/js/jquery-ui.min-1.10.4.js" ></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/PAGE/D10/D10.css">
+  <!-- ************************************** -->
+  <!-- ************** ここまで ************** -->
+  <!-- ************************************** -->
+  <link rel="icon" href="" /><!-- favicon未設定 -->
+</head>
+<body>
+
+  
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <!-- ************************************** -->
+          <!-- ********* 以下、パス指定あり ********* -->
+          <!-- ************************************** -->
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+      <!-- ************************************** -->
+      <!-- ********* 以下、パス指定あり ********* -->
+      <!-- ************************************** -->
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- inner  -->
+  <div class="D10-inner">
+    <div class="D10-shop-tab">
+      <ul class="D10-shop-tab__inner">
+        <li><a href="" class="D10-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D10-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D10-shop-tab__area">
+        <!-- D10-category-bar -->
+        <h2 class="D10-category-bar">ペット情報の登録</h2>
+        
+        <!-- D10-wrapper -->
+        <div class="D10-wrapper">
+          <!-- D10-interview D10-container -->
+          <div class="D10-interview D10-container">
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  お名前
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D10-interview__items">
+                <div class="D10-interview__item input__wrapper">
+                  <input name="pet-name" type="text" class="input__area--default" placeholder="小太郎">
+                </div>
+              </div>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  お名前（カナ）
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D10-interview__items">
+                <div class="D10-interview__item input__wrapper">
+                  <input name="pet-name-furigana" type="text" class="input__area--default" placeholder="コタロウ">
+                </div>
+              </div>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  性別
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="male" name="gender" checked>
+                  <label for="male">男の子</label>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="female" name="gender">
+                  <label for="female">女の子</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  毛色
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D10-interview__items D10-interview__items--coat-color">
+                <div class="D10-interview__item D10-interview__item pull-down">
+                  <select name="coat-color1" class="pull-down__select" required>
+                    <option value="" selected>選択して下さい</option>
+                    <option value="option1">オプション1</option>
+                    <option value="option2">オプション2</option>
+                  </select>
+                </div>
+                <span>×</span>
+                <div class="D10-interview__item D10-interview__item pull-down">
+                  <select name="coat-color2" class="pull-down__select" required>
+                    <option value="" selected>選択して下さい</option>
+                    <option value="option1">オプション1</option>
+                    <option value="option2">オプション2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  生年月日
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D10-interview__items D10-birthday-input">
+                <div class="D10-birthday-input__pull-down pull-down">
+                  <select id="year" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>年</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+                <div class="D10-birthday-input__pull-down pull-down">
+                  <select id="month" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>月</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+                <div class="D10-birthday-input__pull-down pull-down">
+                  <select id="day" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>日</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+              </div>
+              <p class="D10-interview-title__text D10-interview-title__text--age">
+                00歳00ヶ月
+              </p>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  ペットの種類
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="dog" name="gender" checked>
+                  <label for="dog">犬</label>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="cat" name="gender">
+                  <label for="cat">猫</label>
+                </li>
+              </ul>
+              <div class="D10-interview__items D10-interview__items">
+                <div class="D10-interview__item--pet-type input__wrapper">
+                  <input name="pet-type" type="text" class="input__area--default" placeholder="" value="トイプードル">
+                </div>
+                <div class="D10-interview__button">
+                  <!-- ボタン（サブ） 矢印なし -->
+                  <a href="#" class="small-button">種類を選択</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- D10-interview D10-container -->
+          <div class="D10-interview D10-container">
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  有効な狂犬病・ワクチン接種
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text D10-interview-title__text--vaccine">
+                  混合ワクチン
+                </p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="combination-vaccine-done" name="combination-vaccine">
+                  <label for="combination-vaccine-done">済</label>
+                </li>
+                <li class="D10-interview__item calendar__wrapper">
+                  <div class="box__datepicker">
+                    <input type="text" name="combination-vaccine-date" class="datepicker" placeholder="2022年02月31日（火）">
+                  </div>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="combination-vaccine-yet" name="combination-vaccine">
+                  <label for="combination-vaccine-yet">未</label>
+                </li>
+              </ul>
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text D10-interview-title__text--vaccine">
+                  狂犬病ワクチン
+                </p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="rabies-vaccine-done" name="rabies-vaccine">
+                  <label for="combination-vaccine-done">済</label>
+                </li>
+                <li class="D10-interview__item calendar__wrapper">
+                  <div class="box__datepicker">
+                    <input type="text" name="rabies-vaccine-date" class="datepicker" placeholder="2022年02月31日（火）">
+                  </div>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="rabies-vaccine-yet" name="rabies-vaccine">
+                  <label for="combination-vaccine-yet">未</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  保健所登録
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="health-center-registration-done" name="health-center-registration">
+                  <label for="health-center-registration-done">済</label>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="health-center-registration-yet" name="health-center-registration">
+                  <label for="health-center-registration-yet">未</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  避妊・去勢
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="contraception-done" name="contraception">
+                  <label for="contraception-done">済</label>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="contraception-yet" name="contraception">
+                  <label for="contraception-yet">未</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  マイクロチップの有無
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items select">
+                <li class="D10-interview__item">
+                  <input type="radio" id="has-micro-chip" name="micro-chip">
+                  <label for="has-micro-chip">あり</label>
+                </li>
+                <li class="D10-interview__item">
+                  <input type="radio" id="no-micro-chip" name="micro-chip">
+                  <label for="no-micro-chip">なし</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  持病・けが確認
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D10-interview__box2">
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items check">
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="injury"
+                    value="injury"
+                    type="checkbox"
+                    id="injury"
+                  />
+                  <label for="injury">持病・けが確認</label>
+                </li>
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="heart-disease"
+                    value="heart-disease"
+                    type="checkbox"
+                    id="heart-disease"
+                  />
+                  <label for="heart-disease">心疾患</label>
+                </li>
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="endocrine-disease"
+                    value="endocrine-disease"
+                    type="checkbox"
+                    id="endocrine-disease"
+                  />
+                  <label for="endocrine-disease">内分泌疾患</label>
+                </li>
+                <li class="D10-interview__item  D10-interview__item--check">
+                  <input
+                    name="cancerous-disease"
+                    value="cancerous-disease"
+                    type="checkbox"
+                    id="cancerous-disease"
+                  />
+                  <label for="cancerous-disease">腫癌性疾患</label>
+                </li>
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="others"
+                    value="others"
+                    type="checkbox"
+                    id="others"
+                  />
+                  <label for="others">その他</label>
+                </li>
+              </ul>
+              <!-- 選択肢 -->
+              <ul class="D10-interview__items check">
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="veterinarian"
+                    value="veterinarian"
+                    type="checkbox"
+                    id="veterinarian"
+                  />
+                  <label for="veterinarian">獣医師の許可</label>
+                </li>
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="stomach-disease"
+                    value="stomach-disease"
+                    type="checkbox"
+                    id="stomach-disease"
+                  />
+                  <label for="stomach-disease">胃疾患</label>
+                </li>
+                <li class="D10-interview__item D10-interview__item--check">
+                  <input
+                    name="neurological-disorder"
+                    value="neurological-disorder"
+                    type="checkbox"
+                    id="neurological-disorder"
+                  />
+                  <label for="neurological-disorder">神経疾患</label>
+                </li>
+                <li class="D10-interview__item  D10-interview__item--check">
+                  <input
+                    name="respiratory-and-digestive-disorders"
+                    value="respiratory-and-digestive-disorders"
+                    type="checkbox"
+                    id="respiratory-and-digestive-disorders"
+                  />
+                  <label for="respiratory-and-digestive-disorders">呼吸器・消化器系疾患</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D10-interview__box">
+              <!-- D10-interview-title -->
+              <div class="D10-interview-title">
+                <p class="D10-interview-title__text">
+                  備考
+                </p>
+                <p class="D10-interview-title__icon D10-interview-title__icon--optional">任意</p>
+              </div>
+              <textarea name="get-sick-detail" id="get-sick-detail" class="D10-interview__textarea" placeholder="入力して下さい"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- /.D10-shop-tab__area -->
+    </div>
+  </div>
+
+  <!-- 追従ボタン -->
+  <div class="D10-button-bar sign-up-bar">
+    <!-- ボタン（戻る・修正など サブ） -->
+    <a href="" class="sub-button">キャンセル</a>
+    <!-- ボタン（最重要） -->
+    <a href="" class="most-important-button">新規登録</a>
+  </div>
+
+  </div>
+
+</body>
+</html>

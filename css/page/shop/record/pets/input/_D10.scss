@@ -1,0 +1,274 @@
+//**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+
+// D10-inner
+.D10-inner {
+  background-color: $color-shop-inner;
+  padding: 10px 10px 100px;
+}
+
+//D10-shop-tab
+.D10-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D10-shop-tab__customer,
+.D10-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D10-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    //**************************************//
+    //********* 以下、パス指定あり *********//
+    //**************************************//
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D10-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    //**************************************//
+    //********* 以下、パス指定あり *********//
+    //**************************************//
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D10-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 37px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+
+// D13-category-bar
+.D10-category-bar {
+  font-size: 14px;
+  background-color: $color-bright-green;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+
+// interview-title--optional
+.D10-interview-title {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.D10-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D10-interview-title__text--age {
+  margin-top: 11px;
+  line-height: 1;
+}
+.D10-interview-title__text--vaccine {
+  margin-top: 14px;
+}
+.D10-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.D10-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+.D10-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+
+// D10-wrapper
+.D10-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+.D10-wrapper .D10-interview.D10-container:first-of-type {
+  margin-right: 107px;
+  // width: 379px;
+}
+
+
+// D10-interview
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(1) .D10-interview__items {
+  margin-left: 15px;
+}
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(5) {
+  margin-top: 24px;
+}
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(5) .D10-interview__items {
+  margin-top: 14px;
+}
+.D10-interview__box:first-child {
+  margin-top: 0px;
+}
+.D10-interview__box {
+  margin-top: 22px;
+}
+.D10-interview__box:nth-child(6) .D10-interview__item:not(:last-child) {
+  margin-right: 40px;
+}
+.D10-interview__box2 {
+  display: flex;
+}
+.D10-interview__items {
+  display: flex;
+  align-items: center;
+  margin-top: 10.5px;
+}
+.D10-interview__items.D10-interview__items--coat-color {
+  display: block;
+}
+.D10-interview__items--coat-color span {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: -10px;
+  text-align: center;
+  width: 364px;
+}
+.D10-interview__items .pull-down__select {
+  width: 364px;
+  padding-left: 15px;
+  height: 46px;
+  color: $color-text-main;
+}
+.D10-interview__items .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+.D10-interview__items.check {
+  display: block;
+}
+.D10-interview__items .D10-birthday-input__pull-down:not(:last-of-type) {
+  margin-right: 10px;
+}
+.D10-interview__item:not(:last-child) {
+  margin-right: 20px;
+}
+.D10-interview__item .input__area--default {
+  width: 364px;
+  height: 46px;
+  padding-left: 15px;
+  color: $color-text-main;
+}
+.D10-interview__item .input__area--default::placeholder {
+  color: #D5D5D5;
+}
+.D10-interview__item.calendar__wrapper {
+  // padding-left: 5px;
+  height: 46px;
+  width: 215px;
+}
+.D10-interview__item .datepicker::placeholder {
+  color: #D5D5D5;
+}
+.D10-interview__item--pet-type .input__area--default {
+  width: 247px;
+}
+.D10-interview__item.D10-interview__item--check:not(:first-child) {
+  margin-top: 11px;
+  margin-left: 30px;
+}
+.D10-interview__item--pet-type .input__area--default {
+  color: $color-text-main;
+}
+.D10-interview__button {
+  margin-left: 10px;
+}
+.D10-interview__button .small-button {
+  width: 104px;
+  height: 26px;
+}
+.D10-interview__textarea {
+  margin-top: 9px;
+  width: 374px;
+  min-height: 140px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+  color: $color-text-main;
+}
+.D10-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+
+// D10-birthday-input
+.D10-birthday-input {
+  display: flex;
+  align-items: center;
+}
+.D10-birthday-input__pull-down .pull-down__select {
+  width: 100px;
+  height: 46px;
+  background-color: $color-background-base;
+  color: $color-text-main;
+  padding-left: 15px;
+}
+.D10-birthday-input__pull-down .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+
+// D10-button-bar
+.D10-button-bar {
+  z-index: 30;
+}
+.D10-button-bar .sub-button {
+  margin-right: 16px;
+}

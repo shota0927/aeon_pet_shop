@@ -7453,6 +7453,665 @@ a:hover {
   width: 70px;
 }
 
+.D05-inner {
+  background-color: #E5EFCA;
+  padding: 10px 10px 100px;
+}
+
+.D05-shop-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.D05-shop-tab__customer,
+.D05-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: #6F8D1B;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D05-shop-tab__customer {
+  background: #fff;
+  margin-right: 4px;
+  position: relative;
+}
+
+.D05-shop-tab__customer::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-customer.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D05-shop-tab__pet {
+  background: #F2F5E9;
+  position: relative;
+}
+
+.D05-shop-tab__pet::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-pet.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D05-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 50px;
+  -webkit-box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+          box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+.D05-category-bar {
+  font-size: 14px;
+  background-color: #98AD5C;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.D05-interview-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.D05-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.D05-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.D05-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+
+.D05-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+.D05-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+
+.D05-wrapper .D05-interview.D05-container:first-of-type {
+  margin-right: 100px;
+}
+
+.D05-interview__box:first-child {
+  margin-top: 0px;
+}
+
+.D05-interview__box.D05-interview__box--prefectures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D05-interview__box {
+  margin-top: 22px;
+}
+
+.D05-interview__box2:not(:first-child) {
+  margin-left: 10px;
+}
+
+.D05-interview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10.5px;
+}
+
+.D05-interview__item.D05-interview__item--name.D05-interview__item.input__wrapper {
+  margin-right: 12px;
+}
+
+.D05-interview__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.D05-interview__item.D05-interview__item--postal-code {
+  margin-right: 10px;
+}
+
+.D05-interview__item--name span {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.D05-interview__item .input__area--default {
+  width: 364px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.D05-interview__item--name .input__area--default {
+  width: 160px;
+  height: 46px;
+}
+
+.D05-interview__item--postal-code .input__area--default {
+  width: 120px;
+  height: 46px;
+}
+
+.D05-interview__item--city .input__area--default {
+  width: 234px;
+}
+
+.D05-interview__item .input__area--default::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__item .input__area--default:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__item .input__area--default::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__item .input__area--default::placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__item--prefectures .pull-down__select {
+  width: 120px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.D05-interview__item--prefectures .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D05-interview__items .D05-birthday-input__pull-down:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.D05-interview__small-button {
+  width: 81px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #888;
+  font-size: 14px;
+  font-family: 'Lato';
+  padding-top: 1px;
+}
+
+.D05-interview__textarea {
+  margin-top: 15px;
+  width: 432px;
+  min-height: 140px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+}
+
+.D05-interview__textarea::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__textarea:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__textarea::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D05-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+.D05-birthday-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D05-birthday-input__pull-down .pull-down__select {
+  width: 100px;
+  height: 46px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 15px;
+}
+
+.D05-birthday-input__pull-down .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D05-button-bar {
+  z-index: 30;
+}
+
+.D05-button-bar .sub-button {
+  margin-right: 16px;
+}
+
+.D06-inner {
+  background-color: #E5EFCA;
+  padding: 10px 10px 100px;
+}
+
+.D06-shop-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.D06-shop-tab__customer,
+.D06-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: #6F8D1B;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D06-shop-tab__customer {
+  background: #fff;
+  margin-right: 4px;
+  position: relative;
+}
+
+.D06-shop-tab__customer::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-customer.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D06-shop-tab__pet {
+  background: #F2F5E9;
+  position: relative;
+}
+
+.D06-shop-tab__pet::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-pet.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D06-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 50px;
+  -webkit-box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+          box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+.D06-category-bar {
+  font-size: 14px;
+  background-color: #98AD5C;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.D06-interview-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.D06-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.D06-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.D06-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+
+.D06-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+.D06-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+
+.D06-wrapper .D06-interview.D06-container:first-of-type {
+  margin-right: 100px;
+}
+
+.D06-interview__box:first-child {
+  margin-top: 0px;
+}
+
+.D06-interview__box.D06-interview__box--prefectures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D06-interview__box {
+  margin-top: 22px;
+}
+
+.D06-interview__box2:not(:first-child) {
+  margin-left: 10px;
+}
+
+.D06-interview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10.5px;
+}
+
+.D06-interview__item.D06-interview__item--name.D06-interview__item.input__wrapper {
+  margin-right: 12px;
+}
+
+.D06-interview__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.D06-interview__item.D06-interview__item--postal-code {
+  margin-right: 10px;
+}
+
+.D06-interview__item--name span {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.D06-interview__item .input__area--default {
+  width: 364px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+  background-color: #fff;
+}
+
+.D06-interview__item--name .input__area--default {
+  width: 160px;
+  height: 46px;
+}
+
+.D06-interview__item--postal-code .input__area--default {
+  width: 120px;
+  height: 46px;
+}
+
+.D06-interview__item--city .input__area--default {
+  width: 234px;
+}
+
+.D06-interview__item .input__area--default::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__item .input__area--default:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__item .input__area--default::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__item .input__area--default::placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__item--prefectures .pull-down__select {
+  width: 120px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.D06-interview__item--prefectures .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D06-interview__items .D06-birthday-input__pull-down:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.D06-interview__small-button {
+  width: 81px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #888;
+  font-size: 14px;
+  font-family: 'Lato';
+  padding-top: 1px;
+}
+
+.D06-interview__textarea {
+  margin-top: 15px;
+  width: 432px;
+  min-height: 140px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+}
+
+.D06-interview__textarea::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__textarea:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__textarea::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+.D06-interview__box.D06-interview__box--my-page {
+  margin-top: 40px;
+  padding: 21px 20px;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+}
+
+.D06-birthday-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D06-birthday-input__pull-down .pull-down__select {
+  width: 100px;
+  height: 46px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 15px;
+}
+
+.D06-birthday-input__pull-down .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D06-update-staff {
+  font-size: 12px;
+  margin-top: 18px;
+  text-align: right;
+  margin-right: 108px;
+}
+
+.D06-button-bar {
+  z-index: 30;
+}
+
+.D06-button-bar .sub-button {
+  margin-right: 16px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -7855,6 +8514,759 @@ a:hover {
 
 .D07-table-shopInfo__detail {
   width: 70px;
+}
+
+.D10-inner {
+  background-color: #E5EFCA;
+  padding: 10px 10px 100px;
+}
+
+.D10-shop-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.D10-shop-tab__customer,
+.D10-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: #6F8D1B;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D10-shop-tab__customer {
+  background: #F2F5E9;
+  margin-right: 4px;
+  position: relative;
+}
+
+.D10-shop-tab__customer::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-customer-active.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D10-shop-tab__pet {
+  background: #fff;
+  position: relative;
+}
+
+.D10-shop-tab__pet::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D10-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 37px;
+  -webkit-box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+          box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+.D10-category-bar {
+  font-size: 14px;
+  background-color: #98AD5C;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.D10-interview-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.D10-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.D10-interview-title__text--age {
+  margin-top: 11px;
+  line-height: 1;
+}
+
+.D10-interview-title__text--vaccine {
+  margin-top: 14px;
+}
+
+.D10-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.D10-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+
+.D10-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+.D10-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+
+.D10-wrapper .D10-interview.D10-container:first-of-type {
+  margin-right: 107px;
+}
+
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(1) .D10-interview__items {
+  margin-left: 15px;
+}
+
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(5) {
+  margin-top: 24px;
+}
+
+.D10-interview:nth-child(2) .D10-interview__box:nth-child(5) .D10-interview__items {
+  margin-top: 14px;
+}
+
+.D10-interview__box:first-child {
+  margin-top: 0px;
+}
+
+.D10-interview__box {
+  margin-top: 22px;
+}
+
+.D10-interview__box:nth-child(6) .D10-interview__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.D10-interview__box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.D10-interview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10.5px;
+}
+
+.D10-interview__items.D10-interview__items--coat-color {
+  display: block;
+}
+
+.D10-interview__items--coat-color span {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: -10px;
+  text-align: center;
+  width: 364px;
+}
+
+.D10-interview__items .pull-down__select {
+  width: 364px;
+  padding-left: 15px;
+  height: 46px;
+  color: #333;
+}
+
+.D10-interview__items .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D10-interview__items.check {
+  display: block;
+}
+
+.D10-interview__items .D10-birthday-input__pull-down:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.D10-interview__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.D10-interview__item .input__area--default {
+  width: 364px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.D10-interview__item .input__area--default::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .input__area--default:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .input__area--default::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .input__area--default::placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item.calendar__wrapper {
+  height: 46px;
+  width: 215px;
+}
+
+.D10-interview__item .datepicker::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .datepicker:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .datepicker::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item .datepicker::placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__item--pet-type .input__area--default {
+  width: 247px;
+}
+
+.D10-interview__item.D10-interview__item--check:not(:first-child) {
+  margin-top: 11px;
+  margin-left: 30px;
+}
+
+.D10-interview__item--pet-type .input__area--default {
+  color: #333;
+}
+
+.D10-interview__button {
+  margin-left: 10px;
+}
+
+.D10-interview__button .small-button {
+  width: 104px;
+  height: 26px;
+}
+
+.D10-interview__textarea {
+  margin-top: 9px;
+  width: 374px;
+  min-height: 140px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+  color: #333;
+}
+
+.D10-interview__textarea::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__textarea:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__textarea::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D10-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+.D10-birthday-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D10-birthday-input__pull-down .pull-down__select {
+  width: 100px;
+  height: 46px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 15px;
+}
+
+.D10-birthday-input__pull-down .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D10-button-bar {
+  z-index: 30;
+}
+
+.D10-button-bar .sub-button {
+  margin-right: 16px;
+}
+
+.D11-inner {
+  background-color: #E5EFCA;
+  padding: 10px 10px 100px;
+}
+
+.D11-shop-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.D11-shop-tab__customer,
+.D11-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: #6F8D1B;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D11-shop-tab__customer {
+  background: #F2F5E9;
+  margin-right: 4px;
+  position: relative;
+}
+
+.D11-shop-tab__customer::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-customer-active.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D11-shop-tab__pet {
+  background: #fff;
+  position: relative;
+}
+
+.D11-shop-tab__pet::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D11-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 37px;
+  -webkit-box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+          box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+.D11-category-bar {
+  font-size: 14px;
+  background-color: #98AD5C;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.D11-interview-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.D11-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.D11-interview-title__text--age {
+  margin-top: 11px;
+  line-height: 1;
+}
+
+.D11-interview-title__text--vaccine {
+  margin-top: 14px;
+}
+
+.D11-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.D11-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+
+.D11-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+.D11-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+
+.D11-wrapper .D11-interview.D11-container:first-of-type {
+  margin-right: 107px;
+}
+
+.D11-interview:nth-child(2) .D11-interview__box:nth-child(1) .D11-interview__items {
+  margin-left: 15px;
+}
+
+.D11-interview:nth-child(2) .D11-interview__box:nth-child(5) {
+  margin-top: 24px;
+}
+
+.D11-interview:nth-child(2) .D11-interview__box:nth-child(5) .D11-interview__items {
+  margin-top: 14px;
+}
+
+.D11-interview__box:first-child {
+  margin-top: 0px;
+}
+
+.D11-interview__box {
+  margin-top: 22px;
+}
+
+.D11-interview__box:nth-child(6) .D11-interview__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.D11-interview__box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.D11-interview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10.5px;
+}
+
+.D11-interview__items.D11-interview__items--coat-color {
+  display: block;
+}
+
+.D11-interview__items--coat-color span {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: -10px;
+  text-align: center;
+  width: 364px;
+}
+
+.D11-interview__items .pull-down__select {
+  width: 364px;
+  padding-left: 15px;
+  height: 46px;
+  color: #333;
+}
+
+.D11-interview__items .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D11-interview__items.check {
+  display: block;
+}
+
+.D11-interview__items .D11-birthday-input__pull-down:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.D11-interview__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.D11-interview__item .input__area--default {
+  width: 364px;
+  height: 46px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.D11-interview__item .input__area--default::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .input__area--default:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .input__area--default::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .input__area--default::placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item.calendar__wrapper {
+  height: 46px;
+  width: 215px;
+}
+
+.D11-interview__item .datepicker::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .datepicker:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .datepicker::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item .datepicker::placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__item--pet-type .input__area--default {
+  width: 247px;
+}
+
+.D11-interview__item.D11-interview__item--check:not(:first-child) {
+  margin-top: 11px;
+  margin-left: 30px;
+}
+
+.D11-interview__item--pet-type .input__area--default {
+  color: #333;
+}
+
+.D11-interview__button {
+  margin-left: 10px;
+}
+
+.D11-interview__button .small-button {
+  width: 104px;
+  height: 26px;
+}
+
+.D11-interview__textarea {
+  margin-top: 9px;
+  width: 374px;
+  min-height: 140px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+  color: #333;
+}
+
+.D11-interview__textarea::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__textarea:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__textarea::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D11-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+.D11-birthday-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.D11-birthday-input__pull-down .pull-down__select {
+  width: 100px;
+  height: 46px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 15px;
+}
+
+.D11-birthday-input__pull-down .pull-down__select:invalid {
+  color: #D5D5D5;
+}
+
+.D11-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 76px;
+  padding: 10px 15px 10px 20px;
+  background-color: #F4F4F4;
+  width: 364px;
+}
+
+.D11-status__title {
+  font-size: 14px;
+}
+
+.D11-status__title .D13-status__visible {
+  color: #6F8D1B;
+  margin-left: 13px;
+  font-size: 16px;
+}
+
+.D11-status__title .D13-status__invisible {
+  display: none;
+  color: #A3A3A3;
+  margin-left: 13px;
+  font-size: 16px;
+}
+
+.D11-status .switch__wrapper {
+  width: 87px;
+}
+
+.D11-update-staff {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 13px;
+}
+
+.D11-button-bar {
+  z-index: 30;
+}
+
+.D11-button-bar .sub-button {
+  margin-right: 16px;
 }
 
 html {
@@ -11426,6 +12838,527 @@ a:hover {
 }
 
 .D25-button-bar .sub-button {
+  margin-right: 16px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail {
+  overflow-x: hidden;
+  background-color: #E5EFCA;
+  padding: 10px 10px 0 10px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail .container {
+  position: relative;
+  top: -17px;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  z-index: 10;
+  margin-bottom: 90px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__shift__title {
+  position: relative;
+  z-index: 1;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__shift__title .shift-title__item a {
+  width: 156px;
+  height: 53px;
+  padding-right: 25px;
+  padding-bottom: 16px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__shift__title .shift-title__item a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__title {
+  color: #6F8D1B;
+  font-size: 1.8rem;
+  margin: 27px 11px 20px 11px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 {
+  width: 100%;
+  margin: 0 11px 40px 11px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 tr th {
+  vertical-align: top;
+  width: 356px;
+  height: 40px;
+  padding: 12px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 tr td {
+  padding: 12px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-health-flag {
+  padding: 12px 0 14px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-health-name {
+  padding: 11px 0 6px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-health-level {
+  padding: 0 0 6px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-health-position {
+  padding: 0 0 6px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-health-text {
+  padding: 0 0 12px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-title {
+  height: 57px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-flag {
+  padding-bottom: 6px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-text {
+  padding-top: 0;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-longq-title {
+  height: 75px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__customerdate .table2 .table-longtext {
+  display: inline-table;
+  margin: 29px 0  30px 20px;
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__button .sign-up-bar {
+  background-color: rgba(242, 245, 233, 0.8);
+}
+
+.main__shop__record__pets__hotelorder__interview__detail__button .sign-up-bar__button.sub-button {
+  margin-right: 16px;
+}
+
+.D27-inner {
+  background-color: #E5EFCA;
+  padding: 10px 10px 100px;
+}
+
+.D27-shop-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.D27-shop-tab__customer,
+.D27-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: #6F8D1B;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D27-shop-tab__customer {
+  background: #F2F5E9;
+  margin-right: 4px;
+  position: relative;
+}
+
+.D27-shop-tab__customer::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-customer-active.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D27-shop-tab__pet {
+  background: #fff;
+  position: relative;
+}
+
+.D27-shop-tab__pet::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+  background-position: center;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.D27-shop-tab__area {
+  background: #fff;
+  padding: 29px 11px 40px;
+  -webkit-box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+          box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+}
+
+.D27-stay-check-list-title {
+  font-size: 18px;
+  color: #6F8D1B;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.D27-shop-tab-area-inner {
+  padding: 0 20px;
+}
+
+.D27-container:first-child {
+  margin-top: 18px;
+}
+
+.D27-container {
+  margin-top: 32px;
+}
+
+.D27-reservation-detail__title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.D27-reservation-detail__box {
+  margin-top: 18px;
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 20px 28px 22px;
+}
+
+.D27-reservation-detail__date {
+  font-size: 18px;
+  color: #6F8D1B;
+  line-height: 1.5555556;
+}
+
+.D27-reservation-detail__info {
+  margin-top: -2px;
+  font-size: 16px;
+}
+
+.D27-interview-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.D27-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.D27-interview-title__text.D27-interview-title__text--lh15 {
+  line-height: 1.5;
+}
+
+.D27-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.D27-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+
+.D27-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+.D27-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 31px;
+}
+
+.D27-wrapper .D27-interview.D27-container:first-of-type {
+  margin-right: 127px;
+  width: 364px;
+}
+
+.D27-animal-hospital.D27-container {
+  margin-top: 0;
+  margin-right: 127px;
+}
+
+.D27-animal-hospital__input {
+  margin-top: 10px;
+}
+
+.D27-animal-hospital__input .input__area--default {
+  width: 364px;
+  height: 46px;
+  font-size: 16px;
+  color: #333;
+}
+
+.D27-animal-hospital__input .input__area--default::-webkit-input-placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+.D27-animal-hospital__input .input__area--default:-ms-input-placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+.D27-animal-hospital__input .input__area--default::-ms-input-placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+.D27-animal-hospital__input .input__area--default::placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+.D27-photo-permit.D27-container {
+  margin-top: 0;
+}
+
+.D27-photo-permit__check {
+  margin-top: 13px;
+}
+
+.D27-checklist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+}
+
+.D27-checklist__item {
+  margin-right: 20px;
+}
+
+.D27-health-state__table {
+  margin-top: 20px;
+}
+
+.D27-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+}
+
+.D27-table th {
+  background-color: #98AD5C;
+  border-right: 1px solid #fff;
+  height: 47px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.D27-table th:first-child {
+  width: 317px;
+}
+
+.D27-table th:nth-child(2) {
+  width: 198px;
+}
+
+.D27-table th:nth-child(3) {
+  width: 425px;
+}
+
+.D27-table td {
+  height: 62px;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.D27-table__td-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6px;
+}
+
+.D27-table__check.check input[type="checkbox"] + label {
+  font-size: 16px;
+  padding-left: 36px;
+}
+
+.D27-table__check.check input[type="checkbox"] + label::before {
+  border-color: #6F8D1B;
+}
+
+.D27-table__pull-down .pull-down__select {
+  width: 178px;
+  height: 46px;
+  color: #333;
+}
+
+.D27-table__pull-down .pull-down__select:invalid {
+  color: #DEDEDE;
+}
+
+.D27-table__input .input__area--default {
+  width: 405px;
+}
+
+.D27-table__input .input__area--default::-webkit-input-placeholder {
+  color: #DEDEDE;
+}
+
+.D27-table__input .input__area--default:-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.D27-table__input .input__area--default::-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.D27-table__input .input__area--default::placeholder {
+  color: #DEDEDE;
+}
+
+.D27-interview.D27-container {
+  margin-top: 0;
+}
+
+.D27-interview.D27-container:nth-of-type(2) .D27-interview__box:nth-child(3),
+.D27-interview.D27-container:nth-of-type(2) .D27-interview__box:nth-child(5) {
+  margin-top: 17px;
+}
+
+.D27-interview__box:first-child {
+  margin-top: 0px;
+}
+
+.D27-interview__box:nth-child(2) {
+  margin-top: 17px;
+}
+
+.D27-interview__box {
+  margin-top: 22px;
+}
+
+.D27-interview.D27-container:nth-of-type(1) .D27-interview__box:nth-child(6) .D27-interview-title__icon {
+  margin-top: 21px;
+}
+
+.D27-interview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+}
+
+.D27-interview__items--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.D27-interview__items--column .D27-interview__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.D27-interview__item {
+  margin-right: 20px;
+}
+
+.D27-interview__hidden-wrapper {
+  display: none;
+}
+
+.D27-interview__textarea {
+  margin-top: 15px;
+  width: 364px;
+  min-height: 100px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+}
+
+.D27-interview__textarea::-webkit-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D27-interview__textarea:-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D27-interview__textarea::-ms-input-placeholder {
+  color: #D5D5D5;
+}
+
+.D27-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+.D27-button-bar {
+  z-index: 30;
+}
+
+.D27-button-bar .sub-button {
   margin-right: 16px;
 }
 

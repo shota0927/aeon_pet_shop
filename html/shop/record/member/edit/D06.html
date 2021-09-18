@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <!-- ************************************** -->
+  <!-- ********* 以下、パス指定あり ********* -->
+  <!-- ************************************** -->
+  <script src="/js/jquery-ui.min-1.10.4.js" ></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- ************************************** -->
+  <!-- ************** ここまで ************** -->
+  <!-- ************************************** -->
+  <link rel="icon" href="" /><!-- favicon未設定 -->
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <!-- ************************************** -->
+          <!-- ********* 以下、パス指定あり ********* -->
+          <!-- ************************************** -->
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+      <!-- ************************************** -->
+      <!-- ********* 以下、パス指定あり ********* -->
+      <!-- ************************************** -->
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- inner  -->
+  <div class="D06-inner">
+    <div class="D06-shop-tab">
+      <ul class="D06-shop-tab__inner">
+        <li><a href="" class="D06-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D06-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D06-shop-tab__area">
+        <!-- D06-category-bar -->
+        <h2 class="D06-category-bar">お客さま情報の登録</h2>
+        
+        <!-- D06-wrapper -->
+        <div class="D06-wrapper">
+          <!-- D06-interview D06-container -->
+          <div class="D06-interview D06-container">
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  お名前
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D06-interview__items select">
+                <!-- インプット -->
+                <li class="D06-interview__item D06-interview__item--name input__wrapper">
+                  <span>姓</span>
+                  <input name="last-name" type="text" class="input__area--default" placeholder="日本">
+                </li>
+                <li class="D06-interview__item D06-interview__item--name input__wrapper">
+                  <span>名</span>
+                  <input name="first-name" type="text" class="input__area--default" placeholder="花子">
+                </li>
+              </ul>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  ふりがな
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D06-interview__items select">
+                <!-- インプット -->
+                <li class="D06-interview__item D06-interview__item--name input__wrapper">
+                  <span>姓</span>
+                  <input name="last-name-furigana" type="text" class="input__area--default" placeholder="にほん">
+                </li>
+                <li class="D06-interview__item D06-interview__item--name input__wrapper">
+                  <span>名</span>
+                  <input name="first-name-furigana" type="text" class="input__area--default" placeholder="はなこ">
+                </li>
+              </ul>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  性別
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D06-interview__items select">
+                <li class="D06-interview__item">
+                  <input type="radio" id="male" name="gender" checked>
+                  <label for="male">男性</label>
+                </li>
+                <li class="D06-interview__item">
+                  <input type="radio" id="female" name="gender">
+                  <label for="female">女性</label>
+                </li>
+                <li class="D06-interview__item">
+                  <input type="radio" id="no-answer" name="gender">
+                  <label for="no-answer">無回答</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  生年月日
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D06-interview__items D06-birthday-input">
+                <div class="D06-birthday-input__pull-down pull-down">
+                  <select id="year" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>年</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+                <div class="D06-birthday-input__pull-down pull-down">
+                  <select id="month" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>月</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+                <div class="D06-birthday-input__pull-down pull-down">
+                  <select id="day" name="birthDay" class="pull-down__select" required>
+                    <option value="" selected>日</option>
+                    <!-- jsでoption記述 -->
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  電話番号1
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="tel-number-1" type="text" class="input__area--default" placeholder="09012345678">
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  電話番号2
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="tel-number-2" type="text" class="input__area--default" placeholder="09012345678">
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  代理人電話番号
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="agent-tel-number" type="text" class="input__area--default" placeholder="09012345678">
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  代理人のご本人との関係
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="relationship" type="text" class="input__area--default" placeholder="父">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- D06-interview D06-container -->
+          <div class="D06-interview D06-container">
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  郵便番号
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item D06-interview__item--postal-code input__wrapper">
+                  <input name="postal-code" type="text" class="input__area--default" placeholder="1234567">
+                </div>
+                <a href="#" class="D06-interview__small-button">住所検索</a>
+              </div>
+            </div>
+            <div class="D06-interview__box D06-interview__box--prefectures">
+              <div class="D06-interview__box2">
+                <!-- D06-interview-title -->
+                <div class="D06-interview-title">
+                  <p class="D06-interview-title__text">
+                    住所
+                  </p>
+                  <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+                </div>
+                <div class="D06-interview__items">
+                  <div class="D06-interview__item D06-interview__item--prefectures pull-down">
+                    <select id="prefectures" name="prefectures" class="pull-down__select" required>
+                      <option value="" selected>都道府県</option>
+                      <option value="北海道">北海道</option>
+                      <option value="青森県">青森県</option>
+                      <option value="岩手県">岩手県</option>
+                      <option value="宮城県">宮城県</option>
+                      <option value="秋田県">秋田県</option>
+                      <option value="山形県">山形県</option>
+                      <option value="福島県">福島県</option>
+                      <option value="茨城県">茨城県</option>
+                      <option value="栃木県">栃木県</option>
+                      <option value="群馬県">群馬県</option>
+                      <option value="埼玉県">埼玉県</option>
+                      <option value="千葉県">千葉県</option>
+                      <option value="東京都">東京都</option>
+                      <option value="神奈川県">神奈川県</option>
+                      <option value="新潟県">新潟県</option>
+                      <option value="富山県">富山県</option>
+                      <option value="石川県">石川県</option>
+                      <option value="福井県">福井県</option>
+                      <option value="山梨県">山梨県</option>
+                      <option value="長野県">長野県</option>
+                      <option value="岐阜県">岐阜県</option>
+                      <option value="静岡県">静岡県</option>
+                      <option value="愛知県">愛知県</option>
+                      <option value="三重県">三重県</option>
+                      <option value="滋賀県">滋賀県</option>
+                      <option value="京都府">京都府</option>
+                      <option value="大阪府">大阪府</option>
+                      <option value="兵庫県">兵庫県</option>
+                      <option value="奈良県">奈良県</option>
+                      <option value="和歌山県">和歌山県</option>
+                      <option value="鳥取県">鳥取県</option>
+                      <option value="島根県">島根県</option>
+                      <option value="岡山県">岡山県</option>
+                      <option value="広島県">広島県</option>
+                      <option value="山口県">山口県</option>
+                      <option value="徳島県">徳島県</option>
+                      <option value="香川県">香川県</option>
+                      <option value="愛媛県">愛媛県</option>
+                      <option value="高知県">高知県</option>
+                      <option value="福岡県">福岡県</option>
+                      <option value="佐賀県">佐賀県</option>
+                      <option value="長崎県">長崎県</option>
+                      <option value="熊本県">熊本県</option>
+                      <option value="大分県">大分県</option>
+                      <option value="宮崎県">宮崎県</option>
+                      <option value="鹿児島県">鹿児島県</option>
+                      <option value="沖縄県">沖縄県</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="D06-interview__box2">
+                <!-- D06-interview-title -->
+                <div class="D06-interview-title">
+                  <p class="D06-interview-title__text">
+                    市区町村
+                  </p>
+                  <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+                </div>
+                <div class="D06-interview__items">
+                  <div class="D06-interview__item D06-interview__item--city input__wrapper">
+                    <input name="relationship" type="text" class="input__area--default" placeholder="渋谷区渋谷">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  番地
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--required">必須</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="address" type="text" class="input__area--default" placeholder="1-15-21">
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  ビル・建物名
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="relationship" type="text" class="input__area--default" placeholder="ポーラ渋谷ビル4F">
+                </div>
+              </div>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  DM発送承諾
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <!-- 選択肢 -->
+              <ul class="D06-interview__items select">
+                <li class="D06-interview__item">
+                  <input type="radio" id="ok" name="dm" checked>
+                  <label for="ok">可</label>
+                </li>
+                <li class="D06-interview__item">
+                  <input type="radio" id="no" name="dm">
+                  <label for="no">不可</label>
+                </li>
+              </ul>
+            </div>
+            <div class="D06-interview__box">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  備考
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <textarea name="get-sick-detail" id="get-sick-detail" class="D06-interview__textarea" placeholder="入力して下さい"></textarea>
+            </div>
+            <div class="D06-interview__box D06-interview__box--my-page">
+              <!-- D06-interview-title -->
+              <div class="D06-interview-title">
+                <p class="D06-interview-title__text">
+                  マイページID
+                </p>
+                <p class="D06-interview-title__icon D06-interview-title__icon--optional">任意</p>
+              </div>
+              <div class="D06-interview__items">
+                <div class="D06-interview__item input__wrapper">
+                  <input name="relationship" type="text" class="input__area--default" placeholder="1234567890">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="D06-update-staff">
+          <span>更新者：竹内真琴　更新日：2021/08/18</span>
+        </div>
+
+      </div><!-- /.D06-shop-tab__area -->
+    </div>
+  </div>
+
+  <!-- 追従ボタン -->
+  <div class="D06-button-bar sign-up-bar">
+    <!-- ボタン（戻る・修正など サブ） -->
+    <a href="" class="sub-button">キャンセル</a>
+    <!-- ボタン（最重要） -->
+    <a href="" class="most-important-button">更新する</a>
+  </div>
+
+</body>
+</html>
