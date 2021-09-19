@@ -1,0 +1,50 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.e19__cimrc__header__pull-down {
+    left: 10.5px;
+}
+
+.e19__cimrc__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+
+    .e19__cimrc__background--white {
+        width: 748px;
+        height: 954px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding-top: 197px;
+
+
+        .e19__cimrc__txt--registration-complete {
+            font-size: 24px;
+            text-align: center;
+            color: $color-main;
+        }
+
+        .e19__cimrc__txt--registration-complete-sub {
+            margin-top: 39px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+
+
+
+
+        .e19__cimrc__btn--orange {
+            margin-top: 73px;
+            margin-left: 264px;
+
+        }
+
+
+
+
+
+
+
+
+    }
+}

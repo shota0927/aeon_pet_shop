@@ -53,7 +53,7 @@ $(function () {
 
   // datepicker
   $("#datepicker").datepicker({
-    buttonImage: "image/common/icon__calendar.png",        // カレンダーアイコン画像
+    buttonImage: "/image/common/icon_calender.png",        // カレンダーアイコン画像
     buttonText: "カレンダーを表示",
     buttonImageOnly: true,           // 画像として表示
     showOn: "both",                  // カレンダー呼び出し元の定義

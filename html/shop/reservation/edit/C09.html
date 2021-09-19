@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>予約内容変更｜PETEMO グルーミングサロン 予約サイト管理</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="" />
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a class='booking-tab__content1'>予約管理</a>
+          <a class='booking-tab__content2'>シフト管理</a>
+          <a class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down c09__cr__header__pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>○○○○店</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <div class="c09__cr__background--green">
+    <div class="c09__cr__background--white">
+      <img class="c09__cr__img--change-reservation-logo" src="/image/common/icon_reservation_change.png" alt="ロゴ">
+      <p class="c09__cr__txt--change-reservation-detail">予約内容変更</p>
+      <a href="" class="small-button c09__cr__btn--cancel-this-reservation">この予約をキャンセル</a>
+      <!-- カテゴリータイトル　お客様・ペット情報 -->
+      <div class="booking-category-title c09__cr__category-title--custoemr-pets-infomation">
+        <span>お客様・ペット情報</span>
+      </div>
+      <!-- 顧客名・電話番号 -->
+      <div class="c09__cr__reflected__wrapper--customer-name">
+        <p class="c09__cr__txt--customer-name">顧客名</p>
+        <p class="c09__cr__txt--reflected--customer-name">竹内 真琴</p>
+      </div>
+      <div class="c09__cr__input__wrapper--phone-number">
+        <p class="c09__cr__txt--phone-number">電話番号</p>
+        <p class="c09__cr__txt--reflected-phone-number">09012345678</p>
+
+      </div>
+      <!-- グレーエリア -->
+      <div class="c09__cr__gray__wrapper">
+        <div class="c09__cr__gray__inner--left">
+          <!-- ペット名 -->
+          <div class="c09__cr__reflected__wrapper--select-pet-name">
+            <p class="c09__cr__txt--select-pet-name">ペット名</p>
+            <p class="c09__cr__txt--reflected-select-pet-name">小太郎</p>
+          </div>
+          <!-- 犬種 -->
+          <div class="c09__cr__txt__wrapper--type-of-pet">
+            <p class="c09__cr__txt--type-of-pet">犬種</p>
+            <p class="c09__cr__txt--reflected-type-of-pet">大型犬：ゴールデンレトリバー</p>
+          </div>
+          <!-- 生年月日 -->
+          <div class="c09__cr__txt__wrapper--ages">
+            <p class="c09__cr__txt--ages">年齢</p>
+            <p class="c09__cr__txt--years-month-old">00歳00ヶ月</p>
+          </div>
+        </div>
+        <div class="c09__cr__gray__inner--right">
+          <!-- ワクチン接触　確認 -->
+          <div class="c09__cr__vaccine-check__wapper">
+            <div class="c09__cr__rabies-vaccine-check__wrapper">
+              <p class="c09__cr__txt--rabies-vaccine-check">狂犬病ワクチン確認：</p>
+              <p class="c09__cr__txt--reflected-rabies-vaccine-check">○</p>
+            </div>
+            <div class="c09__cr__mixed-vaccine-check__wrapper">
+              <p class="c09__cr__txt--mixed-vaccine-check">混合ワクチン：</p>
+              <p class="c09__cr__txt--reflected-mixed-vaccine-check">△</p>
+            </div>
+          </div>
+          <!-- 持病　けが確認 -->
+          <div class="c09__cr__check-list__wapper">
+            <div class="c09__cr__chronic-disease-hurtcheck__wrapper">
+              <p class="c09__cr__txt--chronic-disease-hurtcheck">持病・けが確認：</p>
+              <p class="c09__cr__txt--reflected-chronic-disease-hurtcheck">○</p>
+            </div>
+            <div class="c09__cr__veterinarian-permission__wrapper">
+              <p class="c09__cr__txt--veterinarian-permission">獣医師の許可：</p>
+              <p class="c09__cr__txt--reflected-veterinarian-permission">○</p>
+            </div>
+            <div class="c09__cr__chronic-disease__wrapper">
+              <p class="c09__cr__txt--chronic-disease">持病：</p>
+              <div class="c09__cr__txt--chronic-disease__inner">
+                <p class="c09__cr__txt--reflected-chronic-disease--1">心疾患</p>
+                <p class="c09__cr__txt--reflected-chronic-disease--2">腫癌性疾患</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- カテゴリータイトル　予約情報 -->
+      <div class="booking-category-title c09__cr__category-title--reservation-infomation">
+        <span>予約情報</span>
+      </div>
+      <!-- コース・スタッフ・オプション・キャンペーン -->
+      <div class="c09__cr__course-stuff-option-campaign__group__wrapper">
+        <div class="c09__cr__input__wrapper--select-course">
+          <p class="c09__cr__txt--select-course">コース</p>
+          <div class="pull-down c09__cr__drop-down--select-course">
+            <select class="pull-down__select c09__cr__select__area--course" required>
+              <option value="" selected>シャンプーコース</option>
+              <option value="option2">○○</option>
+              <option value="option3">○○</option>
+            </select>
+          </div>
+        </div>
+        <div class="c09__cr__input__wrapper--select-stuff">
+          <p class="c09__cr__txt--select-stuff">スタッフ指名</p>
+          <div class="pull-down c09__cr__drop-down--select-stuff">
+            <select class="pull-down__select c09__cr__select__area--stuff" required>
+              <option value="" selected>指名なし</option>
+              <option value="option2">○○</option>
+              <option value="option3">○○</option>
+            </select>
+          </div>
+        </div>
+        <div class="c09__cr__input__wrapper--select-option">
+          <p class="c09__cr__txt--select-option">オプション</p>
+          <div class="pull-down c09__cr__drop-down--select-option">
+            <select class="pull-down__select c09__cr__select__area--option" required>
+              <option value="" selected>薬用シャンプー</option>
+              <option value="option2">○○</option>
+              <option value="option3">○○</option>
+            </select>
+          </div>
+        </div>
+        <div class="c09__cr__input__wrapper--select-campaign">
+          <p class="c09__cr__txt--select-campaign">キャンペーン</p>
+          <div class="pull-down c09__cr__drop-down--select-campaign">
+            <select class="pull-down__select c09__cr__select__area--campaign" required>
+              <option value="" selected>初回体験キャンペーン</option>
+              <option value="option2">○○</option>
+              <option value="option3">○○</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- ボタン　追加 -->
+      <a href="" class="small-button--sign-up c09__cr__add-btn"><img src="/image/common/signup-icon.png"
+          alt="十字アイコン">追加</a>
+
+      <!-- 毛玉・もつれ -->
+      <div class="c09__cr__check-group__wrapper--furball-snarl">
+        <div class="check c09__cr__check__wrapper">
+          <input type="checkbox" id="test2" checked="checked">
+          <label for="test2">毛玉・もつれ</label>
+        </div>
+        <div class="pull-down c09__cr__drop-down--furball-snarl">
+          <select class="pull-down__select c09__cr__select__area--furball-snarl" required>
+            <option value="" selected>状態を選択</option>
+            <option value="option2">○○</option>
+            <option value="option3">○○</option>
+          </select>
+        </div>
+      </div>
+      <!-- 予約経路 -->
+      <div class="c09__cr__select__group--how-to-reserve">
+        <p class="c09__cr__txt--how-to-reserve">予約経路</p>
+        <div class="select c09__cr__select__wrapper--how-to-reserve">
+          <input type="radio" id="test4" name="radio" checked="checked">
+          <label class="c09__cr__select__choices--web" for="test4">Web</label>
+          <input type="radio" id="test3" name="radio">
+          <label class="c09__cr__select__choices--counter" for="test3">店頭</label>
+          <input type="radio" id="test3" name="radio">
+          <label class="c09__cr__select__choices--phone" for="test3">電話</label>
+        </div>
+      </div>
+      <!-- 備考 -->
+      <div class="c09__cr__input__group--remarks">
+        <p class="c09__cr__txt--remarks">備考</p>
+        <div class="textarea__wrapper c09__cr__textarea__wrapper--remarks">
+          <textarea name="" id="" class="textarea" placeholder="入力してください"></textarea>
+        </div>
+      </div>
+      <!-- 更新日・更新者 -->
+      <p class="c09__cr__txt--update-person-date">更新者：竹内真琴　更新日：2021/08/18</p>
+    </div>
+    <!-- 追従ボタン -->
+    <div class="sign-up-bar c09__cr__sign-up-bar">
+      <a href="" class="sub-button c09__cr__sign-up-bar__btn--white">タブごと削除する</a>
+      <a href="" class="most-important-button--green c09__cr__sign-up-bar__btn--green">予約状況を確認</a>
+    </div>
+  </div>
+
+
+
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

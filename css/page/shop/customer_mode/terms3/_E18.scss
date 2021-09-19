@@ -1,0 +1,88 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.e18__cimsua__header__pull-down {
+    left: 10.5px;
+}
+
+.e18__cimsua__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+
+    .e18__cimsua__background--white {
+        width: 748px;
+        height: 954px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding-top: 42px;
+
+        .e18__cimsua__txt--shorthair-usage-agreement {
+            font-size: 18px;
+            text-align: center;
+            color: $color-main;
+        }
+
+        .e18__cimsua__scroll__wrapper {
+            display: inline-block;
+            width: 686px;
+            height: 516px;
+            border-radius: 10px;
+            border: solid #d5d5d5 1px;
+            margin-top: 14px;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 31px;
+
+            .e18__cimsua__scroll__txt {
+                font-size: 16px;
+                padding-right: 20px;
+                overflow-y: scroll;
+                height: 456px;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #f4f4f4;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #a3a3a3;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .e18__cimsua__sign-area__wrapper {
+            margin-top: 20px;
+            margin-left: 29px;
+
+            .e18__cimsua__txt--sign {
+                font-size: 16px;
+            }
+
+            .e18__cimsua__customer-sign-area {
+                width: 688px;
+                height: 170px;
+                border: solid #d5d5d5 1px;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+        }
+
+        .e18__cimsua__btn__wrapper {
+            text-align: center;
+            margin-top: 40px;
+
+            .e18__cimsua__btn--white {
+                margin-right: 16px;
+            }
+        }
+
+
+
+    }
+}

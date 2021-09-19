@@ -48,22 +48,24 @@
 @import "module/calender2";
 
 @import "page/test";
+@import "page/shop/A02_login";
+@import "page/shop/attendance_month/B02";
+@import "page/shop/attendance_day/B04_shift-management-day_add";
+@import "page/shop/attendance_day/B04_shift-management-day_edit";
+@import "page/shop/reservation_month/C02_reservation-status-display-month";
+@import "page/shop/reservation_month/C02_reservation-status-display-Month_reservation-list";
+@import "page/shop/reservation_new/input/C06_make-reservation-new-customer-multiple";
+@import "page/shop/reservation_new/input/C06_make-reservation-new-customer";
+@import "page/shop/reservation_new/input/C06_make-reservation_no-reservation";
 @import "page/shop/reservation/C04";
 @import "page/shop/reservation/C05";
+@import "page/shop/reservation_existing/C08";
+@import "page/shop/reservation_existing/C08_cannot";
+@import "page/shop/reservation/edit/C09";
+@import "page/shop/reservation/edit/C09_cancel";
+@import "page/shop/reservation/elderly_dog/C17";
+@import "page/shop/reservation/vaccination/C18";
 @import "page/shop/reservation/C20";
-@import "page/shop/record/pets/hotel_order/interview/detail/D26";
-@import "page/shop/record/pets/grooming_order/order_sheet/D28";
-@import "page/shop/record/pets/hotel_order/order_sheet/D29";
-@import "page/shop/customer_mode/member/input/E01";
-@import "page/shop/customer_mode/member/confirm/E02";
-@import "page/shop/customer_mode/member/finish/E03";
-@import "page/shop/customer_mode/pets_information/input/E04";
-@import "page/shop/customer_mode/pets_information/confirm/E05";
-@import "page/shop/customer_mode/pets_information/finish/E06";
-@import "page/shop/customer_mode/interview/confirm/E08";
-@import "page/shop/customer_mode/interview/finish/E09";
-@import "page/shop/customer_mode/all_information/finish/E11";
-@import "page/shop/customer_mode/login/E12";
 @import "page/shop/record/D01";
 @import "page/shop/record/member/search/D02";
 @import "page/shop/record/member/D03";
@@ -86,10 +88,28 @@
 @import "page/shop/record/pets/hotel_order/interview/input/D25";
 @import "page/shop/record/pets/hotel_order/interview/detail/D26";
 @import "page/shop/record/pets/hotel_order/interview/edit/D27";
+@import "page/shop/record/pets/hotel_order/interview/detail/D26";
+@import "page/shop/record/pets/grooming_order/order_sheet/D28";
+@import "page/shop/record/pets/hotel_order/order_sheet/D29";
+@import "page/shop/customer_mode/member/input/E01";
+@import "page/shop/customer_mode/member/confirm/E02";
+@import "page/shop/customer_mode/member/finish/E03";
+@import "page/shop/customer_mode/pets_information/input/E04";
+@import "page/shop/customer_mode/pets_information/confirm/E05";
+@import "page/shop/customer_mode/pets_information/finish/E06";
 @import "page/shop/customer_mode/interview/input/E07";
+@import "page/shop/customer_mode/interview/confirm/E08";
+@import "page/shop/customer_mode/interview/finish/E09";
 @import "page/shop/customer_mode/all_information/confirm/E10";
-@import "page/shop/customer_mode/identification/E13";
-
+@import "page/shop/customer_mode/all_information/finish/E11";
+@import "page/shop/customer_mode/login/E12";
+@import "page/shop/customer_mode/all_information/staff_confirm/E13";
+@import "page/shop/customer_mode/identification/E14";
+@import "page/shop/customer_mode/vaccination/E15";
+@import "page/shop/customer_mode/terms1/E16";
+@import "page/shop/customer_mode/terms2/E17";
+@import "page/shop/customer_mode/terms3/E18";
+@import "page/shop/customer_mode/finish/E19";
 
 // @import "page/index";
 

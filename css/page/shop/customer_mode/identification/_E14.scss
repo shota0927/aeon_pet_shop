@@ -1,0 +1,62 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.e14__cimi__header__pull-down {
+    left: 10.5px;
+}
+
+.e14__cimi__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+
+    .e14__cimi__background--white {
+        width: 748px;
+        height: 954px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding-top: 197px;
+
+
+        .e14__cimi__txt--id-verification {
+            font-size: 24px;
+            text-align: center;
+            color: $color-main;
+        }
+
+        .e14__cimi__txt--please-check-your-id {
+            margin-top: 39px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .e14__cimi__check__wrapper {
+            margin-top: 23px;
+            display: inline-block;
+            margin-left: 264px;
+
+            .e14__cimi__check-box__input {
+
+                &:checked~.e14__cimi__btn--orange {
+                    background-color: $color-accent-orange;
+                }
+
+            }
+
+            .e14__cimi__check-box__label {
+                margin-left: 24px;
+            }
+
+            .e14__cimi__btn--orange {
+                margin-top: 70px;
+                background: #d5d5d5;
+            }
+
+
+        }
+
+
+
+
+
+    }
+}

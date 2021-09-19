@@ -1,0 +1,580 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.c06__mrncm__header__pull-down {
+    left: 10.5px;
+}
+
+.c06__mrncm__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+    height: 1215px;
+    width: 1024px;
+
+    .c06__mrncm__background--white {
+        width: 1004px;
+        height: 1116px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding: 11px 10px 22px 10px;
+
+
+        .c06__mrncm__img--reservation-logo {
+            width: 37px;
+            height: 37px;
+            position: relative;
+            left: 20px;
+        }
+
+        .c06__mrncm__txt--make-reservation {
+            color: $color-main;
+            font-size: 18px;
+            display: inline-block;
+            position: relative;
+            left: 27px;
+            top: -12px;
+        }
+
+        .c06__mrncm__pet-name-list__wrapper {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border-bottom: solid $color-main 1px;
+            // width: 944px;
+
+            .c06__mrncm__select__pet-name-list {
+                background: none;
+
+                .c06__mrncm__select__pet-name--1 {
+                    background: $color-thin-green;
+                    position: relative;
+                    top: 2px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+
+                    .c06__mrncm__link__pet-name--1 {
+                        width: 140px;
+                    }
+
+                }
+
+                .c06__mrncm__select__pet-name--2 {
+                    background: $color-bright-green;
+                    position: relative;
+                    top: 2px;
+                    left: 4px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+
+
+
+
+                    .c06__mrncm__link__pet-name--2 {
+                        background: none;
+                        color: $color-background-base;
+                        box-shadow: none;
+                        width: 140px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .c06__mrncm__category-title--custoemr-pets-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+        }
+
+        .c06__mrncm__input__wrapper--customer-name {
+            display: inline-block;
+            position: relative;
+            left: 40px;
+            top: 34px;
+
+            .c06__mrncm__txt--customer-name {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c06__mrncm__input--customer-name {
+                display: inline-block;
+                margin-left: 26px;
+
+                .c06__mrncm__input__area--customer-name {
+                    height: 46px;
+                    width: 340px;
+                }
+            }
+        }
+
+        .c06__mrncm__input__wrapper--phone-number {
+            display: inline-block;
+            position: relative;
+            left: 97px;
+            top: 34px;
+
+            .c06__mrncm__txt--phone-number {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c06__mrncm__input--phone-number {
+                display: inline-block;
+                margin-left: 12px;
+
+                .c06__mrncm__input__area--phone-number {
+                    height: 46px;
+                    width: 340px;
+                }
+
+            }
+        }
+
+        .c06__mrncm__gray__wrapper {
+            width: 944px;
+            height: 311px;
+            background: #F4F4F4;
+            border-radius: 10px;
+            position: relative;
+            left: 20px;
+            top: 52px;
+            padding-top: 18px;
+
+            .c06__mrncm__gray__inner--1 {
+
+
+                .c06__mrncm__input__wrapper--pet-name {
+                    display: inline-block;
+                    position: relative;
+                    left: 20px;
+
+                    .c06__mrncm__txt--pet-name {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c06__mrncm__input--pet-name {
+                        display: inline-block;
+                        margin-left: 12px;
+
+                        .c06__mrncm__input__area--pet-name {
+                            height: 46px;
+                            width: 340px;
+                            background: $color-background-base;
+                        }
+
+                    }
+                }
+
+                .c06__mrncm__input__wrapper--select-pet-type {
+                    display: inline-block;
+                    position: relative;
+                    left: 77px;
+
+                    .c06__mrncm__txt--select-pet-type {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c06__mrncm__drop-down--select-pet-type {
+                        display: inline-block;
+                        margin-left: 12px;
+
+                        .c06__mrncm__select__area--pet-type {
+                            height: 46px;
+                            width: 340px;
+                            background: $color-background-base;
+                        }
+                    }
+                }
+
+
+            }
+
+            .c06__mrncm__gray__inner--2 {
+                margin-top: 18px;
+
+                .c06__mrncm__input__wrapper--birth-date {
+                    display: inline-block;
+                    margin-left: 20px;
+
+                    .c06__mrncm__txt--birth-date {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c06__mrncm__select__area--year {
+                        width: 100px;
+                        height: 46px;
+                        margin-left: 12px;
+                        background: $color-background-base;
+
+                    }
+
+                    .c06__mrncm__select__area--month {
+                        width: 100px;
+                        height: 46px;
+                        margin-left: 10px;
+                        background: $color-background-base;
+                    }
+
+                    .c06__mrncm__select__area--day {
+                        width: 100px;
+                        height: 46px;
+                        margin-left: 10px;
+                        background: $color-background-base;
+                    }
+
+
+                }
+
+                .c06__mrncm__check-box__wapper--1 {
+                    display: inline-block;
+                    position: relative;
+                    right: -70px;
+                    top: -11px;
+
+
+                    .c06__mrncm__check-box--rabies-vaccine {
+                        display: inline-block;
+                    }
+
+                    .c06__mrncm__check-box--mixed-vaccine {
+                        display: inline-block;
+                        margin-left: 30px;
+                    }
+                }
+
+                .c06__mrncm__txt--years-month-old {
+                    margin-top: 10px;
+                    margin-left: 92px;
+                }
+
+                .c06__mrncm__check-box__wapper--2 {
+                    display: inline-block;
+                    width: 353px;
+                    height: 153px;
+                    position: relative;
+                    right: -492px;
+                    bottom: 36px;
+
+                    .c06__mrncm__check-box--chronic-disease_hurt-check {
+                        display: inline-block;
+                    }
+
+                    .c06__mrncm__check-box--veterinarian-permission {
+                        display: inline-block;
+                        position: relative;
+                        left: 24px;
+                    }
+
+                    .c06__mrncm__check-box--heart-disease {
+                        display: inline-block;
+                        position: relative;
+                        top: 35px;
+                        left: -219px;
+                    }
+
+                    .c06__mrncm__check-box--endocrine-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 34px;
+                        top: 42px;
+                    }
+
+                    .c06__mrncm__check-box--cancerous-tumour-disease {
+                        display: inline-block;
+                        position: relative;
+                        left: -72px;
+                        top: 75px;
+                    }
+
+                    .c06__mrncm__check-box--others {
+                        display: inline-block;
+                        position: relative;
+                        top: 107px;
+                        left: -177px;
+                    }
+
+                    .c06__mrncm__check-box--gastric-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 181px;
+                        top: -15px;
+
+                    }
+
+                    .c06__mrncm__check-box--neurological-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 103px;
+                        top: 17px;
+                    }
+
+                    .c06__mrncm__check-box--respiratory-digestive-system-diseases {
+                        display: inline-block;
+                        position: relative;
+                        left: 12px;
+                        top: 50px;
+
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        .c06__mrncm__category-title--reservation-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+            top: 72px;
+        }
+
+        .c06__mrncm__course-stuff-option-campaign__group__wrapper {
+            position: relative;
+            top: 68px;
+            left: 20px;
+            padding-left: 20px;
+            padding-top: 22px;
+            width: 944px;
+
+            .c06__mrncm__input__wrapper--select-course {
+                position: relative;
+                display: inline-block;
+
+                .c06__mrncm__txt--select-course {
+                    font-size: 14px;
+
+                }
+
+                .c06__mrncm__drop-down--select-course {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c06__mrncm__select__area--course {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c06__mrncm__input__wrapper--select-stuff {
+                position: relative;
+                display: inline-block;
+                margin-left: 132px;
+
+                .c06__mrncm__txt--select-stuff {
+                    font-size: 14px;
+                }
+
+                .c06__mrncm__drop-down--select-stuff {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c06__mrncm__select__area--stuff {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+
+            }
+
+            .c06__mrncm__input__wrapper--select-option {
+                display: inline-block;
+
+                .c06__mrncm__txt--select-option {
+                    font-size: 14px;
+                }
+
+                .c06__mrncm__drop-down--select-option {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c06__mrncm__select__area--option {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c06__mrncm__input__wrapper--select-campaign {
+                display: inline-block;
+                margin-left: 132px;
+                margin-top: 20px;
+
+                .c06__mrncm__txt--select-campaign {
+                    font-size: 14px;
+
+                }
+
+                .c06__mrncm__drop-down--select-campaign {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c06__mrncm__select__area--campaign {
+                        width: 341px;
+                        height: 46px;
+
+                    }
+                }
+            }
+
+        }
+
+        .c06__mrncm__add-btn {
+            position: relative;
+            top: 45px;
+            width: 71px;
+            left: 310px;
+        }
+
+        .c06__mrncm__input__wrapper--select-reception-date-time {
+            display: inline-block;
+            position: relative;
+            top: 86px;
+            left: 442px;
+
+
+
+            .c06__mrncm__txt--select-reception-date-time {
+                font-size: 14px;
+
+            }
+
+            .c06__mrncm__calendar__wrapper--select-reception-date-time {
+                width: 215px;
+                height: 46px;
+                display: inline-block;
+                margin-top: 8px;
+
+                .c06__mrncm__img__calender-logo {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    position: absolute;
+                    top: 32%;
+                    right: 1.6rem;
+                }
+            }
+
+            .c06__mrncm__drop-down--select-reception-date-time {
+                display: inline-block;
+                margin-left: 5px;
+                position: relative;
+                bottom: 1px;
+
+                .c06__mrncm__select__area--reception-date-time {
+                    width: 118px;
+                    height: 46px;
+                }
+
+            }
+        }
+
+        .c06__mrncm__check-group__wrapper--furball-snarl {
+            position: relative;
+            left: 40px;
+            top: 70px;
+
+            .c06__mrncm__check__wrapper {
+                display: inline-block;
+
+
+            }
+
+            .c06__mrncm__drop-down--furball-snarl {
+                display: inline-block;
+                margin-left: 12px;
+
+                .c06__mrncm__select__area--furball-snarl {
+                    width: 214px;
+                }
+            }
+        }
+
+        .c06__mrncm__select__group--how-to-reserve {
+
+            position: relative;
+            left: 40px;
+            top: 103px;
+
+            .c06__mrncm__txt--how-to-reserve {
+                font-size: 14px;
+                display: inline-block;
+                margin-right: 53px;
+
+            }
+
+            .c06__mrncm__select__wrapper--how-to-reserve {
+                display: inline-block;
+
+                .c06__mrncm__select__choices--web {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+
+                .c06__mrncm__select__choices--counter {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+
+                }
+
+                .c06__mrncm__select__choices--phone {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+            }
+
+        }
+
+        .c06__mrncm__input__group--remarks {
+            position: relative;
+            left: 517px;
+            top: 29px;
+
+            .c06__mrncm__txt--remarks {
+                font-size: 14px;
+
+            }
+
+            .c06__mrncm__textarea__wrapper--remarks {
+                width: 432px;
+                height: 140px;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .c06__mrncm__sign-up-bar {
+        width: 1024px;
+
+        .c06__mrncm__sign-up-bar__btn--white {
+            height: 48px;
+            margin-right: 14px;
+        }
+    }
+}

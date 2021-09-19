@@ -1,0 +1,62 @@
+@import "../../../../css/setting/reset";
+@import "../../../../css/setting/setting";
+
+.c08__reccr__background {
+    height: 768px;
+    background: $color-icon-default;
+
+    .c08__reccr__container--white {
+        width: 863px;
+        height: 144px;
+        background: $color-background-base;
+        margin: 312px 80px 312px 81px;
+        display: inline-block;
+        border-radius: 10px;
+
+        .c08__reccr__main__wrapper {
+            width: 801px;
+            height: 107px;
+            margin: 19px 35px 18px 27px;
+
+            .c08__reccr__txt--reservations-not-available {
+                background: $color-error;
+                border-radius: 10px;
+                display: inline-block;
+                font-size: 18px;
+                color: $color-warning;
+                padding: 34px 51px 35px 52px;
+                position: relative;
+                bottom: 29px;
+            }
+
+            .c08__reccr__txt__no-available-slots {
+                font-size: 16px;
+                display: inline-block;
+                position: relative;
+                bottom: 30px;
+                left: 20px;
+
+            }
+
+            .c08__reccr__btn-wrapper {
+                display: inline-block;
+                position: relative;
+                left: 117px;
+
+
+                .c08__reccr__btn--green {
+                    display: block;
+                }
+
+                .c08__reccr__btn--white {
+                    display: block;
+                    margin-top: 10px;
+                    height: 48px;
+                }
+            }
+
+        }
+
+    }
+
+}

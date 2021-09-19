@@ -1,0 +1,95 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.c09__crcr__background {
+    height: 768px;
+    background: $color-icon-default;
+
+    .c09__crcr__container--white {
+        width: 576px;
+        height: 539px;
+        background: $color-background-base;
+        margin: 115px 224px 114px 224px;
+        display: inline-block;
+        border-radius: 10px;
+
+        .c09__crcr__main__wrapper {
+            width: 486px;
+            height: 463px;
+            margin: 36px 45px 40px 45px;
+
+            .c09__crcr__alert__wrapper {
+                width: 486px;
+                height: 100px;
+                text-align: center;
+
+                .c09__crcr__alert__icon {
+                    width: 31px;
+                    height: 31px;
+                }
+
+                .c09__crcr__alert__txt {
+                    color: $color-warning;
+                    font-size: 16px;
+                }
+
+                .c09__crcr__alert__txt--sub {
+                    font-size: 12px;
+                }
+
+            }
+
+            .c09__crcr__cancel-reason__wrapper {
+                margin-top: 25px;
+
+                .c09__crcr__txt--cancel-reason {
+                    font-size: 14px;
+
+
+                }
+
+                .c09__crcr__cancel-reason__input__wrapper {
+                    margin-top: 6px;
+                    height: 46px;
+
+                }
+
+            }
+
+            .c09__crcr__other-memos__wrapper {
+                margin-top: 18px;
+
+                .c09__crcr__txt--other-memos {
+                    font-size: 14px;
+                }
+
+                .c09__crcr__other-memos__textarea__wrapper {
+                    margin-top: 6px;
+                    height: 140px;
+                }
+            }
+
+
+
+            .c09__crcr__btn-wrapper {
+                margin-top: 30px;
+                text-align: center;
+
+                .c09__crcr__btn--white {
+                    display: inline-block;
+                    margin-right: 20px;
+                    height: 48px;
+                }
+
+                .c09__crcr__btn--red {
+                    background: $color-warning;
+                    display: inline-block;
+                    height: 48px;
+                }
+            }
+
+        }
+
+    }
+
+}

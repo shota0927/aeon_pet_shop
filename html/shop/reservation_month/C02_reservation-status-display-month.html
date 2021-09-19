@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>予約管理（月表示）｜PETEMO グルーミングサロン 予約サイト管理</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="C02_reservation-status-display-month.css">
+  <link rel="icon" href="" />
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a class='booking-tab__content1'>予約管理</a>
+          <a class='booking-tab__content2'>シフト管理</a>
+          <a class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down c02__rsdm__header__pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>○○○○店</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <div class="c02__rsdm__background--green">
+    <div class="c02__rsdm__background--white">
+      <!-- カテゴリータイトル -->
+      <div class="shift-title">
+        <div class="shift-title__title">
+          2021年7月<a class="shift-title__arrow-button" href=""><img src="/image/common/arrow-last-button-greem.png"
+              alt="下矢印ボタン"></a>
+        </div>
+
+        <ul class="shift-title__list">
+          <li class="shift-title__item">
+            <a href="">日別に表示</a>
+          </li>
+          <li class="shift-title__item current">
+            <a href="">週ごとに表示</a>
+          </li>
+          <li class="shift-title__item">
+            <a href="">月ごとに表示</a>
+          </li>
+        </ul>
+      </div>
+      <div class="c02__rsdm__button-wrapper">
+        <!-- 前月ボタン -->
+        <a href="" class="small-button--left-arrow c02__rsdm__arrow-button c02__rsdm__arrow-button--previous">前月</a>
+        <!-- 翌月ボタン  -->
+        <a href="" class="small-button--right-arrow c02__rsdm__arrow-button c02__rsdm__arrow-button--next">翌月</a>
+      </div>
+
+      <!-- カレンダー -->
+      <table class="calendar-table">
+        <tbody>
+          <tr>
+            <th>月</th>
+            <th>火</th>
+            <th>水</th>
+            <th>木</th>
+            <th>金</th>
+            <th>土</th>
+            <th>日</th>
+          </tr>
+          <tr>
+            <td class="calendar-table__not-current-month">28</td>
+            <td class="calendar-table__not-current-month">29</td>
+            <td class="calendar-table__not-current-month">30</td>
+            <td>
+              1
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              2
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-faulse.png" alt="バツ">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              3
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-triangle.png" alt="三角">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              4
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              5
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              6
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              7
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              8
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              9
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              10
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              11
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              12
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              13
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              14
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              15
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              16
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              17
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              18
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              19
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              20
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              21
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              22
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              23
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              24
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              25
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              26
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              27
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              28
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              29
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              30
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td>
+              31
+              <div class="calender-table__icon">
+                <img src="/image/common/calender-circle.png" alt="丸">
+              </div>
+              <span class="calender-table__reservation-count">ご予約 123件</span>
+            </td>
+            <td class="calendar-table__not-current-month">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

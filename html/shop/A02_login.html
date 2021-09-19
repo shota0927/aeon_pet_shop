@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO グルーミングサロン 予約サイト管理</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="" />
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <a href="" class="header-booking__login-button">ログイン</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <span class='booking-tab__content1'>予約管理</span>
+          <span class='booking-tab__content2'>シフト管理</span>
+          <span class='booking-tab__content3'>電子カルテ</span>
+          <div id='booking-tab__lamp' class='booking-tab__content1'></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <div class="a02__login__background--green">
+    <div class="a02__login__background--white">
+      <div class="a02__login__main-area__wrapper">
+        <p class="a02__login__txt--login">ログイン</p>
+        <!-- インプット ID・パスワード -->
+        <div class="input__wrapper a02__login__input__wrapper--user-id">
+          <input type="text" class="input__area--default a02__login__input--user-id" placeholder="ユーザーID">
+        </div>
+        <div class="input__wrapper a02__login__input__wrapper--password">
+          <input type="text" class="input__area--default a02__login__input--password" placeholder="パスワード">
+        </div>
+        <!-- パスワードをお忘れの場合リンク -->
+        <div class="a02__login__forgot-password__wrapper">
+          <a class="a02__login__forgot-password" href="#">パスワードをお忘れの場合</a>
+          <img class="a02__login__forgot-password__img" src="/image/common/icon_fogot-password.png" alt="ロゴ">
+        </div>
+        <!-- ログインボタン -->
+        <a href="" class="most-important-button--green a02__login__button--green">ログイン</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

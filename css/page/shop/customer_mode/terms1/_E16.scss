@@ -1,0 +1,73 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.e16__cimtoua__header__pull-down {
+    left: 10.5px;
+}
+
+.e16__cimtoua__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+
+    .e16__cimtoua__background--white {
+        width: 748px;
+        height: 954px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding-top: 42px;
+
+        .e16__cimtoua__txt--terms-of-use-agreement {
+            font-size: 18px;
+            text-align: center;
+            color: $color-main;
+        }
+
+        .e16__cimtoua__scroll__wrapper {
+            display: inline-block;
+            width: 686px;
+            height: 684px;
+            border-radius: 10px;
+            border: solid #d5d5d5 1px;
+            margin-top: 14px;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 31px;
+
+            .e16__cimtoua__scroll__txt {
+                font-size: 16px;
+                padding-right: 20px;
+                overflow-y: scroll;
+                height: 624px;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #f4f4f4;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #a3a3a3;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .e16__cimtoua__check__wrapper {
+            margin-top: 30px;
+            margin-left: 281px;
+        }
+
+        .e16__cimtoua__btn--orange {
+            margin: 40px auto 0 auto;
+            text-align: center;
+            display: block;
+        }
+
+
+
+    }
+}

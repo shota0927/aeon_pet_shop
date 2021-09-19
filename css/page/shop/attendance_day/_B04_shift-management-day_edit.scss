@@ -1,0 +1,655 @@
+@import "../../../../css/setting/reset";
+@import "../../../../css/setting/setting";
+
+.b04__smde__background {
+    height: 768px;
+    background: $color-icon-default;
+
+    .b04__smde__container--white {
+        width: 721px;
+        height: 510px;
+        background: $color-background-base;
+        margin: 129px 151px 129px 152px;
+        display: inline-block;
+        border-radius: 15px;
+
+        .b04__smde__txt--stuff-name {
+            display: inline-block;
+            margin: 35px 0 16px 40px;
+        }
+
+        .b04__smde__wrapper--main-edit-area {
+            height: 320px;
+            width: 641px;
+            margin-left: 40px;
+            margin-right: 40px;
+            display: inline-block;
+
+
+            .b04__smde__wrapper--status {
+                display: inline-block;
+                width: 641px;
+                height: 62px;
+                border-top: solid $color-border-gray 0.5px;
+
+                .b04__smde__txt--status {
+                    display: inline-block;
+                    padding: 20px 20px 20px 12px;
+                    font-size: 14px;
+                    background: $color-bright-green;
+                    color: $color-text-sub;
+                    margin-right: 20px;
+                }
+            }
+
+            .b04__smde__wrapper--time {
+                display: inline-block;
+                width: 641px;
+                height: 62px;
+                border-top: solid $color-border-gray 0.5px;
+
+                .b04__smde__txt--time {
+                    display: inline-block;
+                    padding: 20px 20px 20px 12px;
+                    font-size: 14px;
+                    background: $color-bright-green;
+                    color: $color-text-sub;
+                    margin-right: 20px;
+                }
+
+                .b04__smde__wrapper--start-finish {
+                    display: inline-block;
+                    position: relative;
+
+                    .b04__smde__input__wrapper--work-start-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--work-start-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--work-finish-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--work-finish-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+                    }
+
+                }
+
+
+            }
+
+            .b04__smde__wrapper--break {
+                display: inline-block;
+                width: 641px;
+                height: 96px;
+                border-top: solid $color-border-gray 0.5px;
+
+                .b04__smde__txt--break {
+                    display: inline-block;
+                    padding: 18px 48px 55px 12px;
+                    font-size: 14px;
+                    background: $color-bright-green;
+                    color: $color-text-sub;
+                    margin-right: 20px;
+                }
+
+                .b04__smde__wrapper--start-finish {
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+
+                    .b04__smde__input__wrapper--break-start-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--break-start-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+
+                    }
+
+                    .b04__smde__input__wrapper--break-finish-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--break-finish-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+                    }
+                }
+
+                .b04__smde__add-button--break {
+                    position: absolute;
+                    right: 191px;
+                    bottom: 354px;
+                }
+
+
+            }
+
+            .b04__smde__wrapper--indirect-duties {
+                display: inline-block;
+                width: 641px;
+                height: 96px;
+                border-top: solid $color-border-gray 0.5px;
+                border-bottom: solid $color-border-gray 0.5px;
+
+                .b04__smde__txt--indirect-duties {
+                    display: inline-block;
+                    padding: 18px 20px 55px 12px;
+                    font-size: 14px;
+                    background: $color-bright-green;
+                    color: $color-text-sub;
+                    margin-right: 20px;
+                }
+
+                .b04__smde__wrapper--start-finish {
+
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+
+                    .b04__smde__input__wrapper--indirect-duties-start-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--indirect-duties-start-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+
+                    }
+
+                    .b04__smde__input__wrapper--indirect-duties-finish-time-h {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--hour {
+                        display: inline-block;
+                        margin: 0 7px 0 3px;
+                    }
+
+                    .b04__smde__input__wrapper--indirect-duties-finish-time-m {
+                        position: relative;
+                        width: 76px;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "\f077";
+                            top: 10px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "\f078";
+                            bottom: 11px;
+                            right: 12px;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1rem;
+                            color: #98ad5c;
+                            pointer-events: none;
+                        }
+
+                        .b04__smde__input--time {
+                            border-radius: 10px;
+                            width: 76px;
+                            padding-left: 18px;
+                        }
+                    }
+
+                    .b04__smde__txt--minute {
+                        display: inline-block;
+                        margin: 0 17px 0 3px;
+                    }
+
+                }
+
+
+
+                .b04__smde__add-button--indirect-duties {
+                    position: absolute;
+                    right: 191px;
+                    bottom: 257px;
+                }
+
+            }
+        }
+
+        .b04__smde__button-wrapper {
+            margin-top: 26px;
+            text-align: center;
+
+            .b04__smde__button--cancel {
+                margin-right: 16px;
+            }
+        }
+
+        .b04__smde__minus-icon-wrapper {
+            display: inline-block;
+            width: 26px;
+            margin: 0;
+            position: absolute;
+            right: 191px;
+            bottom: 300px;
+
+            .b04__smde__minus-icon--red {
+                background-color: $color-alert;
+                width: 26px;
+                height: 26px;
+
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,69 @@
+@import "../../../css/setting/reset";
+@import "../../../css/setting/setting";
+
+.a02__login__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+    text-align: center;
+
+    .a02__login__background--white {
+        width: 1004px;
+        height: 698px;
+        background: $color-background-base;
+        border-radius: 5px;
+
+        .a02__login__main-area__wrapper {
+            display: inline-block;
+            width: 554px;
+            height: 390px;
+            background: $color-thin-green;
+            border-radius: 10px;
+            margin-top: 55px;
+
+            .a02__login__txt--login {
+                color: $color-main;
+                font-size: 24px;
+                margin-top: 43px;
+            }
+
+            .a02__login__input__wrapper--user-id {
+                margin-top: 24px;
+
+                .a02__login__input--user-id {
+                    background: $color-background-base;
+                    width: 364px;
+                }
+            }
+
+            .a02__login__input__wrapper--password {
+                margin-top: 20px;
+
+                .a02__login__input--password {
+                    background: $color-background-base;
+                    width: 364px;
+                }
+            }
+
+            .a02__login__forgot-password__wrapper {
+                margin-top: 24px;
+
+                .a02__login__forgot-password {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: $color-main;
+                }
+
+                .a02__login__forgot-password__img {
+                    width: 15px;
+                    height: 12px;
+                }
+            }
+
+            .a02__login__button--green {
+                margin-top: 22px;
+            }
+
+        }
+
+    }
+}

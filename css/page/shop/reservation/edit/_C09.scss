@@ -1,0 +1,492 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.c09__cr__header__pull-down {
+    left: 10.5px;
+}
+
+.c09__cr__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+    height: 1030px;
+    width: 1024px;
+
+    .c09__cr__background--white {
+        width: 1004px;
+        height: 920px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding: 19px 10px 22px 10px;
+
+
+        .c09__cr__img--change-reservation-logo {
+            width: 37px;
+            height: 37px;
+            position: relative;
+            left: 20px;
+        }
+
+        .c09__cr__txt--change-reservation-detail {
+            color: $color-main;
+            font-size: 18px;
+            display: inline-block;
+            position: relative;
+            left: 27px;
+            top: -12px;
+        }
+
+        .c09__cr__btn--cancel-this-reservation {
+            width: 178px;
+            position: relative;
+            left: 635px;
+            bottom: 14px;
+
+        }
+
+        .c09__cr__category-title--custoemr-pets-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+            margin-top: 6px;
+        }
+
+        .c09__cr__reflected__wrapper--customer-name {
+            display: inline-block;
+            position: relative;
+            left: 40px;
+            top: 18px;
+
+            .c09__cr__txt--customer-name {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c09__cr__txt--reflected--customer-name {
+                display: inline-block;
+                margin-left: 46px;
+                font-size: 16px;
+            }
+
+        }
+
+        .c09__cr__input__wrapper--phone-number {
+            display: inline-block;
+            position: relative;
+            left: 316px;
+            top: 18px;
+
+            .c09__cr__txt--phone-number {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c09__cr__txt--reflected-phone-number {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 27px;
+            }
+
+
+        }
+
+        .c09__cr__gray__wrapper {
+            width: 944px;
+            height: 166px;
+            background: #F4F4F4;
+            border-radius: 10px;
+            position: relative;
+            left: 20px;
+            top: 35px;
+            padding: 34px 97px 30px 20px;
+
+            .c09__cr__gray__inner--left {
+                width: 45%;
+                height: 100%;
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                vertical-align: top;
+
+
+                .c09__cr__reflected__wrapper--select-pet-name {
+                    display: inline-block;
+                    position: relative;
+                    left: 20px;
+
+                    .c09__cr__txt--select-pet-name {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c09__cr__txt--reflected-select-pet-name {
+                        display: inline-block;
+                        font-size: 16px;
+                        margin-left: 27px;
+                    }
+
+                }
+
+                .c09__cr__txt__wrapper--type-of-pet {
+                    position: relative;
+                    left: 20px;
+                    top: 11px;
+
+                    .c09__cr__txt--type-of-pet {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c09__cr__txt--reflected-type-of-pet {
+                        display: inline-block;
+                        margin-left: 55px;
+                    }
+                }
+
+                .c09__cr__txt__wrapper--ages {
+                    margin-left: 20px;
+                    position: relative;
+                    top: 21px;
+
+                    .c09__cr__txt--ages {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c09__cr__txt--years-month-old {
+                        display: inline-block;
+                        font-size: 16px;
+                        margin-left: 55px;
+                    }
+
+
+                }
+
+
+            }
+
+
+            .c09__cr__gray__inner--right {
+                display: inline-block;
+                width: 41%;
+                height: 100%;
+                position: relative;
+                top: -5px;
+                left: 116px;
+
+                .c09__cr__vaccine-check__wapper {
+                    display: inline-block;
+                    position: relative;
+
+
+                    .c09__cr__rabies-vaccine-check__wrapper {
+                        display: inline-block;
+
+                        .c09__cr__txt--rabies-vaccine-check {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c09__cr__txt--reflected-rabies-vaccine-check {
+                            display: inline-block;
+                        }
+                    }
+
+                    .c09__cr__mixed-vaccine-check__wrapper {
+                        display: inline-block;
+                        margin-left: 44px;
+
+                        .c09__cr__txt--mixed-vaccine-check {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c09__cr__txt--reflected-mixed-vaccine-check {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .c09__cr__check-list__wapper {
+                    display: inline-block;
+                    position: relative;
+                    margin-top: 6px;
+
+                    .c09__cr__chronic-disease-hurtcheck__wrapper {
+                        display: inline-block;
+
+                        .c09__cr__txt--chronic-disease-hurtcheck {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c09__cr__txt--reflected-chronic-disease-hurtcheck {
+                            display: inline-block;
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .c09__cr__veterinarian-permission__wrapper {
+                        display: inline-block;
+                        margin-left: 63px;
+
+                        .c09__cr__txt--veterinarian-permission {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c09__cr__txt--reflected-veterinarian-permission {
+                            display: inline-block;
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .c09__cr__chronic-disease__wrapper {
+
+                        margin-top: 6px;
+
+                        .c09__cr__txt--chronic-disease {
+                            font-size: 14px;
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        .c09__cr__txt--chronic-disease__inner {
+                            display: inline-block;
+                            margin-left: 10px;
+
+                            .c09__cr__txt--reflected-chronic-disease--1 {
+                                font-size: 16px;
+                            }
+
+                            .c09__cr__txt--reflected-chronic-disease--2 {
+                                font-size: 16px;
+                            }
+                        }
+
+
+                    }
+
+
+
+
+                }
+            }
+        }
+
+        .c09__cr__category-title--reservation-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+            top: 72px;
+        }
+
+        .c09__cr__course-stuff-option-campaign__group__wrapper {
+            position: relative;
+            top: 68px;
+            left: 20px;
+            padding-left: 20px;
+            padding-top: 22px;
+            width: 944px;
+
+            .c09__cr__input__wrapper--select-course {
+                position: relative;
+                display: inline-block;
+
+                .c09__cr__txt--select-course {
+                    font-size: 14px;
+
+                }
+
+                .c09__cr__drop-down--select-course {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c09__cr__select__area--course {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c09__cr__input__wrapper--select-stuff {
+                position: relative;
+                display: inline-block;
+                margin-left: 132px;
+
+                .c09__cr__txt--select-stuff {
+                    font-size: 14px;
+                }
+
+                .c09__cr__drop-down--select-stuff {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c09__cr__select__area--stuff {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+
+            }
+
+            .c09__cr__input__wrapper--select-option {
+                display: inline-block;
+
+                .c09__cr__txt--select-option {
+                    font-size: 14px;
+                }
+
+                .c09__cr__drop-down--select-option {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c09__cr__select__area--option {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c09__cr__input__wrapper--select-campaign {
+                display: inline-block;
+                margin-left: 132px;
+                margin-top: 20px;
+
+                .c09__cr__txt--select-campaign {
+                    font-size: 14px;
+
+                }
+
+                .c09__cr__drop-down--select-campaign {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c09__cr__select__area--campaign {
+                        width: 341px;
+                        height: 46px;
+
+                    }
+                }
+            }
+
+        }
+
+        .c09__cr__add-btn {
+            position: relative;
+            top: 81px;
+            width: 71px;
+            left: 310px;
+        }
+
+
+
+        .c09__cr__check-group__wrapper--furball-snarl {
+            position: relative;
+            left: 40px;
+            top: 115px;
+
+            .c09__cr__check__wrapper {
+                display: inline-block;
+            }
+
+            .c09__cr__drop-down--furball-snarl {
+                display: inline-block;
+                margin-left: 12px;
+
+                .c09__cr__select__area--furball-snarl {
+                    width: 214px;
+                }
+            }
+        }
+
+        .c09__cr__select__group--how-to-reserve {
+
+            position: relative;
+            left: 40px;
+            top: 147px;
+
+            .c09__cr__txt--how-to-reserve {
+                font-size: 14px;
+                display: inline-block;
+                margin-right: 53px;
+
+            }
+
+            .c09__cr__select__wrapper--how-to-reserve {
+                display: inline-block;
+
+                .c09__cr__select__choices--web {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+
+                .c09__cr__select__choices--counter {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+
+                }
+
+                .c09__cr__select__choices--phone {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+            }
+
+        }
+
+        .c09__cr__input__group--remarks {
+            position: relative;
+            left: 517px;
+            top: -14px;
+
+            .c09__cr__txt--remarks {
+                font-size: 14px;
+
+            }
+
+            .c09__cr__textarea__wrapper--remarks {
+                width: 432px;
+                height: 140px;
+                margin-top: 8px;
+            }
+        }
+
+        .c09__cr__txt--update-person-date {
+            font-size: 12px;
+            display: inline-block;
+            position: relative;
+            left: 730px;
+            top: 63px;
+        }
+    }
+
+    .c09__cr__sign-up-bar {
+        width: 1024px;
+
+        .c09__cr__sign-up-bar__btn--white {
+            height: 48px;
+            margin-right: 14px;
+        }
+    }
+}

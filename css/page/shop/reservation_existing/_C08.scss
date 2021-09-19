@@ -1,0 +1,536 @@
+
+.c08__mrec__header__pull-down {
+    left: 10.5px;
+}
+
+.c08__mrec__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+    height: 1181px;
+    width: 1024px;
+
+    .c08__mrec__background--white {
+        width: 1004px;
+        height: 1071px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding: 11px 10px 22px 10px;
+
+
+        .c08__mrec__img--reservation-logo {
+            width: 37px;
+            height: 37px;
+            position: relative;
+            left: 20px;
+        }
+
+        .c08__mrec__txt--make-reservation {
+            color: $color-main;
+            font-size: 18px;
+            display: inline-block;
+            position: relative;
+            left: 27px;
+            top: -12px;
+        }
+
+        .c08__mrec__category-title--custoemr-pets-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+        }
+
+        .c08__mrec__serch__wrapper--customer-name {
+            display: inline-block;
+            position: relative;
+            left: 40px;
+            top: 34px;
+
+            .c08__mrec__txt--customer-name {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c08__mrec__serch__wrapper--customer-name {
+                display: inline-block;
+                margin-left: 26px;
+                top: 0px;
+                left: 0px;
+
+                .c08__mrec__box__serch {
+                    height: 46px;
+                    width: 340px;
+                }
+            }
+        }
+
+        .c08__mrec__input__wrapper--phone-number {
+            display: inline-block;
+            position: relative;
+            left: 97px;
+            top: 34px;
+
+            .c08__mrec__txt--phone-number {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .c08__mrec__txt--reflected-phone-number {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 27px;
+            }
+
+
+        }
+
+        .c08__mrec__gray__wrapper {
+            width: 944px;
+            height: 292px;
+            background: #F4F4F4;
+            border-radius: 10px;
+            position: relative;
+            left: 20px;
+            top: 52px;
+            padding-top: 18px;
+
+            .c08__mrec__gray__inner--1 {
+
+
+                .c08__mrec__select__wrapper--select-pet-name {
+                    display: inline-block;
+                    position: relative;
+                    left: 20px;
+
+                    .c08__mrec__txt--select-pet-name {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c08__mrec__drop-down--select-pet-name {
+                        display: inline-block;
+                        margin-left: 12px;
+
+                        .c08__mrec__select__area--pet-name {
+                            height: 46px;
+                            width: 340px;
+                            background: $color-background-base;
+                        }
+
+                    }
+                }
+
+                .c08__mrec__txt__wrapper--type-of-pet {
+                    display: inline-block;
+                    position: relative;
+                    left: 77px;
+
+                    .c08__mrec__txt--type-of-pet {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c08__mrec__txt--reflected-type-of-pet {
+                        display: inline-block;
+                        margin-left: 55px;
+
+
+                    }
+                }
+
+
+            }
+
+            .c08__mrec__gray__inner--2 {
+                margin-top: 18px;
+
+                .c08__mrec__txt__wrapper--ages {
+                    display: inline-block;
+                    margin-left: 20px;
+                    position: relative;
+                    top: -32px;
+
+                    .c08__mrec__txt--ages {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .c08__mrec__txt--years-month-old {
+                        display: inline-block;
+                        font-size: 16px;
+                        margin-left: 55px;
+                    }
+
+
+                }
+
+                .c08__mrec__vaccine-check__wapper--1 {
+                    display: inline-block;
+                    position: relative;
+                    top: -62px;
+                    left: 300px;
+
+                    .c08__mrec__rabies-vaccine-check__wrapper {
+                        display: inline-block;
+
+                        .c08__mrec__txt--rabies-vaccine-check {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c08__mrec__txt--reflected-rabies-vaccine-check {
+                            display: inline-block;
+                        }
+                    }
+
+                    .c08__mrec__mixed-vaccine-check__wrapper {
+                        display: inline-block;
+                        margin-left: 37px;
+
+                        .c08__mrec__txt--mixed-vaccine-check {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+
+                        .c08__mrec__txt--reflected-mixed-vaccine-check {
+                            display: inline-block;
+                        }
+                    }
+
+
+
+                }
+
+
+                .c08__mrec__check-box__wapper--2 {
+                    display: inline-block;
+                    width: 353px;
+                    height: 153px;
+                    position: relative;
+                    right: 20px;
+                    top: 30px;
+
+                    .c08__mrec__check-box--chronic-disease_hurt-check {
+                        display: inline-block;
+                    }
+
+                    .c08__mrec__check-box--veterinarian-permission {
+                        display: inline-block;
+                        position: relative;
+                        left: 24px;
+                    }
+
+                    .c08__mrec__check-box--heart-disease {
+                        display: inline-block;
+                        position: relative;
+                        top: 35px;
+                        left: -219px;
+                    }
+
+                    .c08__mrec__check-box--endocrine-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 34px;
+                        top: 42px;
+                    }
+
+                    .c08__mrec__check-box--cancerous-tumour-disease {
+                        display: inline-block;
+                        position: relative;
+                        left: -72px;
+                        top: 75px;
+                    }
+
+                    .c08__mrec__check-box--others {
+                        display: inline-block;
+                        position: relative;
+                        top: 107px;
+                        left: -177px;
+                    }
+
+                    .c08__mrec__check-box--gastric-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 181px;
+                        top: -15px;
+
+                    }
+
+                    .c08__mrec__check-box--neurological-disorder {
+                        display: inline-block;
+                        position: relative;
+                        left: 103px;
+                        top: 17px;
+                    }
+
+                    .c08__mrec__check-box--respiratory-digestive-system-diseases {
+                        display: inline-block;
+                        position: relative;
+                        left: 12px;
+                        top: 50px;
+
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        .c08__mrec__category-title--reservation-infomation {
+            width: 944px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 20px;
+            position: relative;
+            left: 20px;
+            top: 72px;
+        }
+
+        .c08__mrec__course-stuff-option-campaign__group__wrapper {
+            position: relative;
+            top: 68px;
+            left: 20px;
+            padding-left: 20px;
+            padding-top: 22px;
+            width: 944px;
+
+            .c08__mrec__input__wrapper--select-course {
+                position: relative;
+                display: inline-block;
+
+                .c08__mrec__txt--select-course {
+                    font-size: 14px;
+
+                }
+
+                .c08__mrec__drop-down--select-course {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c08__mrec__select__area--course {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c08__mrec__input__wrapper--select-stuff {
+                position: relative;
+                display: inline-block;
+                margin-left: 132px;
+
+                .c08__mrec__txt--select-stuff {
+                    font-size: 14px;
+                }
+
+                .c08__mrec__drop-down--select-stuff {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c08__mrec__select__area--stuff {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+
+            }
+
+            .c08__mrec__input__wrapper--select-option {
+                display: inline-block;
+
+                .c08__mrec__txt--select-option {
+                    font-size: 14px;
+                }
+
+                .c08__mrec__drop-down--select-option {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c08__mrec__select__area--option {
+                        width: 341px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            .c08__mrec__input__wrapper--select-campaign {
+                display: inline-block;
+                margin-left: 132px;
+                margin-top: 20px;
+
+                .c08__mrec__txt--select-campaign {
+                    font-size: 14px;
+
+                }
+
+                .c08__mrec__drop-down--select-campaign {
+                    width: 341px;
+                    height: 46px;
+                    margin-top: 8px;
+
+                    .c08__mrec__select__area--campaign {
+                        width: 341px;
+                        height: 46px;
+
+                    }
+                }
+            }
+
+        }
+
+        .c08__mrec__add-btn {
+            position: relative;
+            top: 45px;
+            width: 71px;
+            left: 310px;
+        }
+
+        .c08__mrec__input__wrapper--select-reception-date-time {
+            display: inline-block;
+            position: relative;
+            top: 86px;
+            left: 442px;
+
+
+
+            .c08__mrec__txt--select-reception-date-time {
+                font-size: 14px;
+
+            }
+
+            .c08__mrec__calendar__wrapper--select-reception-date-time {
+                width: 215px;
+                height: 46px;
+                display: inline-block;
+                margin-top: 8px;
+
+                .c08__mrec__img__calender-logo {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    position: absolute;
+                    top: 32%;
+                    right: 1.6rem;
+                }
+            }
+
+            .c08__mrec__drop-down--select-reception-date-time {
+                display: inline-block;
+                margin-left: 5px;
+                position: relative;
+                bottom: 1px;
+
+                .c08__mrec__select__area--reception-date-time {
+                    width: 118px;
+                    height: 46px;
+                }
+
+            }
+        }
+
+        .c08__mrec__check-group__wrapper--furball-snarl {
+            position: relative;
+            left: 40px;
+            top: 70px;
+
+            .c08__mrec__check__wrapper {
+                display: inline-block;
+
+
+            }
+
+            .c08__mrec__drop-down--furball-snarl {
+                display: inline-block;
+                margin-left: 12px;
+
+                .c08__mrec__select__area--furball-snarl {
+                    width: 214px;
+                }
+            }
+        }
+
+        .c08__mrec__select__group--how-to-reserve {
+
+            position: relative;
+            left: 40px;
+            top: 103px;
+
+            .c08__mrec__txt--how-to-reserve {
+                font-size: 14px;
+                display: inline-block;
+                margin-right: 53px;
+
+            }
+
+            .c08__mrec__select__wrapper--how-to-reserve {
+                display: inline-block;
+
+                .c08__mrec__select__choices--web {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+
+                .c08__mrec__select__choices--counter {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+
+                }
+
+                .c08__mrec__select__choices--phone {
+                    display: inline-block;
+
+                    &::after {
+                        left: 5.5px;
+                    }
+                }
+            }
+
+        }
+
+        .c08__mrec__input__group--remarks {
+            position: relative;
+            left: 517px;
+            top: 29px;
+
+            .c08__mrec__txt--remarks {
+                font-size: 14px;
+
+            }
+
+            .c08__mrec__textarea__wrapper--remarks {
+                width: 432px;
+                height: 140px;
+                margin-top: 8px;
+            }
+        }
+
+        .c08__mrec__txt--update-person-date {
+            font-size: 12px;
+            display: inline-block;
+            position: relative;
+            left: 730px;
+            top: 41px;
+        }
+    }
+
+    .c08__mrec__sign-up-bar {
+        width: 1024px;
+
+        .c08__mrec__sign-up-bar__btn--white {
+            height: 48px;
+            margin-right: 14px;
+        }
+    }
+}

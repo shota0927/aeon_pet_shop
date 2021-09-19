@@ -1,0 +1,81 @@
+@import "../../../../../css/setting/reset";
+@import "../../../../../css/setting/setting";
+
+.c18__vwi__header__pull-down {
+    left: 10.5px;
+}
+
+.c18__vwi__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+
+    .c18__vwi__background--white {
+        width: 1004px;
+        height: 698px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding-top: 45px;
+        padding-left: 59px;
+        padding-right: 56px;
+
+        .c18__vwi__txt--precautions-for-vaccination {
+            font-size: 18px;
+            text-align: center;
+            color: $color-main;
+        }
+
+        .c18__vwi__scroll__wrapper {
+            display: inline-block;
+            width: 889px;
+            height: 489px;
+            border-radius: 10px;
+            border: solid #d5d5d5 1px;
+            margin-top: 23px;
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-right: 20px;
+
+            .c18__vwi__scroll__txt {
+                font-size: 16px;
+                padding-right: 30px;
+                overflow-y: scroll;
+                height: 400px;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #f4f4f4;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #a3a3a3;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .c18__vwi__orange__btn__wrapper {
+            margin-top: 30px;
+            text-align: right;
+
+            .c18__vwi__btn--orange--1 {
+                margin-right: 66px;
+                display: inline-block;
+            }
+
+            .c18__vwi__btn--orange--2 {
+                display: inline-block;
+                margin-right: 50px;
+            }
+
+        }
+
+
+
+
+
+    }
+}

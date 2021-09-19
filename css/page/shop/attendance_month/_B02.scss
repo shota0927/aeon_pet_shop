@@ -1,0 +1,77 @@
+@import "../../../../css/setting/reset";
+@import "../../../../css/setting/setting";
+
+.b02__smm__header__pull-down {
+    left: 10.5px;
+}
+
+.b02__smm__background--green {
+    padding: 10px;
+    background: #E5EFCA;
+    text-align: center;
+
+    .b02__smm__background--white {
+        width: 1004px;
+        height: 698px;
+        background: $color-background-base;
+        border-radius: 5px;
+        padding: 11px 10px 22px 10px;
+
+        .b02__smm__button-wrapper {
+            height: 49px;
+
+            .b02__smm__arrow-button {
+                margin-top: 12px;
+                width: 44px;
+                height: 22px;
+                font-size: 10px;
+            }
+
+            .b02__smm__arrow-button--previous {
+                padding: 4.6px 8px 7px 13px;
+                position: relative;
+                right: 446px;
+
+                &::after {
+                    position: absolute;
+                    border: 0px;
+                    border-bottom: solid 1px #6F8D1B;
+                    border-left: solid 1px #6F8D1B;
+                    transform: rotate(45deg) translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    top: 45%;
+                    left: 6px;
+                }
+            }
+
+            .b02__smm__arrow-button--next {
+                padding: 4.6px 13px 7px 9px;
+                position: relative;
+                left: 446px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border: 0px;
+                    border-top: solid 1px #6F8D1B;
+                    border-right: solid 1px #6F8D1B;
+                    transform: rotate(45deg) translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    top: 45%;
+                    right: 8px;
+                }
+            }
+        }
+
+        .b02__smm__number-of-stuff {
+            background: $color-main;
+            color: $color-background-base;
+            position: relative;
+            top: 4px;
+        }
+
+
+    }
+}
