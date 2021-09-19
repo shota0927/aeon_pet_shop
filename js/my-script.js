@@ -106,6 +106,25 @@ $(function () {
     } 
   });
 
+  $(".E07-js-radio").change(function () {
+    var val = $(this).attr("class");
+    if (val == "E07-js-open E07-js-radio" && $(this).prop("checked")) {
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".E07-interview__hidden-wrapper")
+        .slideDown();
+    } else if (val == "E07-js-hidden E07-js-radio" && $(this).prop("checked")) {
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".E07-interview__hidden-wrapper")
+        .slideUp();
+    }
+  });
+
   $(".datepicker").datepicker({
     buttonImage: "/image/common/icon-calenderInput.svg",        // カレンダーアイコン画像
     buttonText: "カレンダーを表示",
