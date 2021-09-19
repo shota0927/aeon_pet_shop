@@ -1,0 +1,313 @@
+//**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+
+// inner
+.E07-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+// E07-wrapper
+.E07-wrapper {
+  background-color: #fff;
+  padding: 17px 11px 40px;
+  box-shadow: 0 0 6px rgba(#343434, 0.08);
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+
+// E07-steps
+.E07-steps {
+  display: flex;
+  justify-content: space-between;
+  max-width: 663px;
+  margin-left: 27px;
+  position: relative;
+}
+.E07-steps::before {
+  position: absolute;
+  content: "";
+  width: 376px;
+  height: 4px;
+  left: 36%;
+  bottom: 12px;
+  transform: translate(-50%);
+  background-color: $color-main;
+}
+.E07-steps::after {
+  position: absolute;
+  content: "";
+  width: 172px;
+  height: 4px;
+  left: 80%;
+  bottom: 12px;
+  transform: translate(-50%);
+  background-color: #F4F4F4;
+}
+
+// E07-step
+.E07-step {
+  // width: 25%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.E07-step__title {
+  font-family: "Lato";
+  color: $color-main;
+}
+.E07-step__subtitle {
+  line-height: 1;
+  margin-top: 3px;
+}
+.E07-step__title--yet,
+.E07-step__subtitle--yet {
+  color: #D5D5D5;
+}
+.E07-step__circle {
+  display: inline-block;
+}
+.E07-step__circle--current-not {
+  margin-top: 11px;
+  width: 11px;
+  height: 11px;
+  background-color: $color-main;
+  border-radius: 50%;
+}
+.E07-step__circle--current {
+  margin-top: 7px;
+  width: 19px;
+  height: 19px;
+  border: 4px solid #e7ecd7;
+  background-color: $color-main;
+  border-radius: 50%;
+}
+.E07-step__circle--current-yet {
+  margin-top: 11px;
+  width: 11px;
+  height: 11px;
+  background-color: #D5D5D5;
+  border-radius: 50%;
+}
+
+// E07-category-bar
+.E07-category-bar {
+  margin-top: 16px;
+}
+.E07-category-bar__title {
+  font-size: 14px;
+  background-color: $color-bright-green;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+// E07-interview-wrapper
+.E07-interview-wrapper {
+  padding: 0 20px;
+}
+
+
+// E07-container
+.E07-container {
+  margin-top: 22px;
+}
+
+
+// interview-title--optional
+.E07-interview-title {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.E07-interview-title__text {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.E07-interview-title__text.E07-interview-title__text--lh15 {
+  line-height: 1.5;
+}
+.E07-interview-title__icon {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  width: 32px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.E07-interview-title__icon--optional {
+  background-color: #bcbcbc;
+}
+.E07-interview-title__icon--required {
+  background-color: #f4451c;
+}
+
+
+// E07-animal-hospital
+.E07-animal-hospital__input {
+  margin-top: 10px;
+}
+.E07-animal-hospital__input .input__area--default {
+  width: 364px;
+  height: 46px;
+  font-size: 16px;
+  color: $color-text-main;
+}
+.E07-animal-hospital__input .input__area--default::placeholder {
+  color: #D5D5D5;
+  font-size: 16px;
+}
+
+
+// E07-photo-permit
+.E07-photo-permit .E07-interview-title {
+  align-items: flex-start;
+}
+.E07-photo-permit__check {
+  margin-top: 11px;
+}
+
+
+// E07-checklist
+.E07-checklist {
+  display: flex;
+  margin-top: 11px;
+}
+.E07-checklist__item {
+  margin-right: 20px;
+}
+
+
+// E07-health-state
+.E07-health-state__table {
+  margin-top: 20px;
+}
+.E07-health-state__wrapper {
+  width: 686px;
+  overflow-x: scroll;
+}
+
+
+// E07-table
+.E07-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  table-layout: fixed;
+}
+.E07-table th {
+  background-color: $color-bright-green;
+  border-right: 1px solid #fff;
+  height: 47px;
+  color: #fff;
+  font-weight: normal;
+}
+.E07-table th:first-child {
+  width: 317px;
+}
+.E07-table th:nth-child(2) {
+  width: 198px;
+}
+.E07-table th:nth-child(3) {
+  width: 425px;
+}
+.E07-table td {
+  height: 62px;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+.E07-table__td-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+.E07-table__check.check input[type="checkbox"] + label {
+  font-size: 16px;
+  padding-left: 36px;
+}
+.E07-table__check.check input[type="checkbox"] + label::before {
+  border-color: $color-main;
+}
+.E07-table__pull-down .pull-down__select {
+  width: 178px;
+  height: 46px;
+  color: $color-text-main;
+}
+.E07-table__pull-down .pull-down__select:invalid {
+  color: #DEDEDE;
+}
+.E07-table__input .input__area--default {
+  width: 405px;
+}
+.E07-table__input .input__area--default::placeholder {
+  color: #DEDEDE;
+}
+
+
+// E07-interview
+.E07-interview.E07-container {
+  margin-top: 31px;
+}
+.E07-interview__box:first-child {
+  margin-top: 0px;
+}
+.E07-interview__box:nth-child(2), 
+.E07-interview__box:nth-child(10),
+.E07-interview__box:nth-child(11),
+.E07-interview__box:nth-child(13) {
+  margin-top: 17px;
+}
+.E07-interview__box {
+  margin-top: 22px;
+}
+.E07-interview.E07-container .E07-interview__box:nth-child(6) .E07-interview-title__icon {
+  margin-top: 21px;
+}
+.E07-interview__items {
+  display: flex;
+  margin-top: 11px;
+}
+.E07-interview__items--column {
+  flex-direction: column;
+}
+.E07-interview__items--column .E07-interview__item:not(:first-child) {
+  margin-top: 10px;
+}
+.E07-interview__item {
+  margin-right: 20px;
+}
+.E07-interview__hidden-wrapper {
+  display: none;
+}
+.E07-interview__textarea {
+  margin-top: 15px;
+  width: 364px;
+  min-height: 100px;
+  resize: none;
+  padding: 7px 15px;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 0.5rem;
+}
+.E07-interview__textarea::placeholder {
+  color: #D5D5D5;
+}
+
+
+// E07-button
+.E07-button {
+  margin-top: 50px;
+  text-align: center;
+}

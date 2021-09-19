@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min-1.10.4.js" ></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <link rel="icon" href="" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/" >
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- D16-inner -->
+  <div class="D16-inner">
+
+    <!-- D16-shop-tab-inner  -->
+    <div class="D16-shop-tab">
+      <ul class="D16-shop-tab__inner">
+        <li><a href="" class="D16-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D16-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D16-shop-tab__area">
+
+        <!-- D16-pet-name -->
+        <div class="D16-pet-name">
+          コタロー　（お客さま名：中野 恵志）
+        </div>
+
+        <!-- D16-menu-information -->
+        <div class="D16-menu-information">
+          <ul class="D16-menu-information__items">
+            <li><a href="#" class="D16-menu-information__item">詳細</a></li>
+            <li><a href="#" class="D16-menu-information__item">施術情報</a></li>
+            <li><a href="#" class="D16-menu-information__item D16-menu-information__item--booking menu-information__item--active">グルーミング予約情報</a></li>
+            <li><a href="#" class="D16-menu-information__item">宿泊情報</a></li>
+          </ul>
+          <a href="" class="D16-menu-information__button small-button">ペット一覧</a>
+        </div>
+
+        <!-- D16-table3 -->
+        <table class="D16-table3 table3">
+          <tbody>
+            <tr>
+              <th>日時</th>
+              <td>2021年7月1日<br>受付時間：9：00<br>お迎え時間：15：00</td>
+            </tr>
+            <tr>
+              <th>店舗</th>
+              <td>PETEMO札幌苗穂店</td>
+            </tr>
+            <tr>
+              <th>担当スタッフ</th>
+              <td>竹内 真琴</td>
+            </tr>
+            <tr>
+              <th>状態</th>
+              <td>キャンセル</td>
+            </tr>
+            <tr>
+              <th>キャンセル理由</th>
+              <td>飼い主の方の体調不良のため</td>
+            </tr>
+            <tr>
+              <th>その他メモ</th>
+              <td>メモ内容メモ内容メモ内容メモ内容</td>
+            </tr>
+          </tbody>
+        </table>
+          
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

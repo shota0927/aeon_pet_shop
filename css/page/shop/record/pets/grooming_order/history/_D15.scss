@@ -1,0 +1,201 @@
+
+
+// D15-inner
+.D15-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+//D15-shop-tab
+.D15-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.D15-shop-tab__customer,
+.D15-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D15-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.D15-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.D15-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 20px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+// D15-pet-name
+.D15-pet-name {
+  font-size: 16px;
+}
+
+//D15-menu-informaition
+.D15-menu-information {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-bright-green;
+}
+
+.D15-menu-information__items {
+  display: flex;
+  align-items: center;
+}
+.D15-menu-information__item {
+  font-size: 14px;
+  display: block;
+  margin-right: 4px;
+  background-color: $color-thin-green;
+  padding: 14px 22px 12px;
+  min-width: 100px;
+  border-radius: 6px 6px 0px 0px;
+  color: $color-main;
+  line-height: 1;
+  text-align: center;
+}
+.D15-menu-information__item.D15-menu-information__item--booking {
+  padding: 14px 30px 12px;
+}
+.D15-menu-information__item.menu-information__item--active {
+  color: #fff;
+  background-color: $color-bright-green;
+}
+.D15-menu-information__status {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 14px;
+}
+.D15-menu-information__status--active span {
+  color: $color-main;
+}
+.D15-menu-information__status--inactive {
+  display: none;
+}
+.D15-menu-information__status--inactive span {
+  color: $color-icon-default;
+}
+.D15-menu-information__button.small-button {
+  width: 104px;
+}
+
+//table-shopInfo
+.D15-table-shopInfo__wrapper {
+  margin-top: 15px;
+}
+
+.D15-table-shopInfo {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    text-align: center;
+    border: 1px solid #f4f4f4;
+    padding: 0;
+    line-height: 1.5;
+    padding: 5px;
+  }
+}
+
+.D15-table-shopInfo__head {
+  display: block;
+  width: 100%;
+}
+
+.D15-table-shopInfo__head th {
+  background: $color-bright-green;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+}
+
+.D15-table-shopInfo__body {
+  overflow-y: auto;
+  max-height: 498px;
+  display: block;
+  width: 100%;
+  color: $color-text-main;
+  font-size: 12px;
+}
+
+.D15-table-shopInfo__body td {
+  height: 32px;
+}
+
+.D15-table-shopInfo__date {
+  width: 240px;
+}
+
+.D15-table-shopInfo__reservation {
+  width: 86px;
+}
+
+.D15-table-shopInfo__course {
+  width: 172px;
+}
+
+.D15-table-shopInfo__shop {
+  width: 200px;
+}
+
+.D15-table-shopInfo__staff {
+  width: 140px;
+}
+
+.D15-table-shopInfo__situation {
+  width: 73px;
+}
+
+.D15-table-shopInfo__detail {
+  width: 70px;
+}

@@ -1,0 +1,71 @@
+
+// inner
+.E13-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+// E13-wrapper
+.E13-wrapper {
+  background-color: #fff;
+  padding: 19px 11px 40px;
+  box-shadow: 0 0 6px rgba(#343434, 0.08);
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+
+// E13-category-bar
+.E13-category-bar__title {
+  font-size: 14px;
+  background-color: $color-bright-green;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+// E13-table3
+.E13-table3 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.E13-table3:not(:first-of-type) {
+  margin-top: 50px;
+}
+.E13-table3.table3 th {
+  padding: 11px 10px;
+  vertical-align: text-top;
+  line-height: 1.5;
+}
+.E13-table3.table3 td {
+  padding: 5px 10px;
+  line-height: 1.5;
+}
+.E13-table3.table3 td,
+.E13-table3.E13-table3--second.table3 td {
+  width: 535px;
+}
+.E13-table3.E13-table3--second.table3 th,
+.E13-table3.E13-table3--second.table3 td,
+.E13-table3.E13-table3--third.table3 th,
+.E13-table3.E13-table3--third.table3 td {
+  padding: 10.8px 20px;
+}
+.E13-table3.E13-table3--third.table3 th {
+  width: 280px;
+}
+.E13-table3.E13-table3--third.table3 td {
+  width: 406px;
+}
+
+// E13-edit-button
+.E13-edit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+.E13-edit-button .sub-button {
+  height: 48px;
+}

@@ -1,0 +1,146 @@
+
+
+// D09-inner
+.D09-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+// D09-shop-tab
+.D09-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D09-shop-tab__customer,
+.D09-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D09-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D09-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D09-shop-tab__area {
+  background: #fff;
+  padding: 16px 11px 27px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+}
+
+// D09-pet-name
+.D09-pet-name {
+  font-size: 16px;
+}
+
+// D09-menu-information
+.D09-menu-information {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-bright-green;
+}
+
+.D09-menu-information__items {
+  display: flex;
+  align-items: center;
+}
+.D09-menu-information__item {
+  font-size: 14px;
+  display: block;
+  margin-right: 4px;
+  background-color: $color-thin-green;
+  padding: 14px 22px 12px;
+  min-width: 100px;
+  border-radius: 6px 6px 0px 0px;
+  color: $color-main;
+  line-height: 1;
+  text-align: center;
+}
+.D09-menu-information__item.D09-menu-information__item--booking {
+  padding: 14px 30px 12px;
+}
+.D09-menu-information__item.menu-information__item--active {
+  color: #fff;
+  background-color: $color-bright-green;
+}
+.D09-menu-information__status {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 14px;
+}
+.D09-menu-information__status--active span {
+  color: $color-main;
+}
+.D09-menu-information__status--inactive {
+  display: none;
+}
+.D09-menu-information__status--inactive span {
+  color: $color-icon-default;
+}
+.D09-menu-information__button.small-button {
+  width: 104px;
+}
+
+// D09-table3
+.D09-table3 {
+  margin-top: 15px;
+}
+.D09-table3.table3 th {
+  padding: 13.9px 20px;
+}
+.D09-table3.table3 td {
+  padding: 0 20px;
+  width: 834px;
+}
+
+// D09-edit-button
+.D09-edit-button {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.D09-edit-button .small-button {
+  width: 60px;
+}

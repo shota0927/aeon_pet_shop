@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_16255" data-name="長方形 16255" width="22" height="22" transform="translate(0.01 0.007)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_18747" data-name="グループ 18747" transform="translate(-12 -7)">
+    <path id="パス_35573" data-name="パス 35573" d="M17,0A17.107,17.107,0,0,1,32.708,10.489,16.584,16.584,0,0,1,34,17,17,17,0,1,1,17,0Z" transform="translate(12 7)" fill="#f2f5e9"/>
+    <g id="マスクグループ_59" data-name="マスクグループ 59" transform="translate(17.99 11.993)" clip-path="url(#clip-path)">
+      <path id="Icon_ionic-md-people" data-name="Icon ionic-md-people" d="M16.851,13.611a2.869,2.869,0,1,0-2.92-2.868A2.9,2.9,0,0,0,16.851,13.611Zm-7.787,0a2.869,2.869,0,1,0-2.92-2.868A2.9,2.9,0,0,0,9.064,13.611Zm0,2.1c-2.288,0-6.814,1.1-6.814,3.346v2.581H16.017V19.061C16.017,16.814,11.351,15.714,9.064,15.714Zm7.787.526a5.2,5.2,0,0,0-.834.048,2.85,2.85,0,0,1,1.53,2.772v2.581h6.119V19.061C23.665,16.814,19.139,16.24,16.851,16.24Z" transform="translate(-2.25 -2.571)" fill="#6f8d1b"/>
+    </g>
+  </g>
+</svg>

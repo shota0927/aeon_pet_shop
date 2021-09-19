@@ -1,0 +1,130 @@
+
+// D16-inner
+.D16-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+// D16-shop-tab
+.D16-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D16-shop-tab__customer,
+.D16-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D16-shop-tab__customer {
+  background: $color-thin-green;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D16-shop-tab__pet {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D16-shop-tab__area {
+  background: #fff;
+  padding: 16px 11px 27px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+// D16-pet-name
+.D16-pet-name {
+  font-size: 16px;
+}
+
+// D16-menu-information
+.D16-menu-information {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-bright-green;
+}
+
+.D16-menu-information__items {
+  display: flex;
+  align-items: center;
+}
+.D16-menu-information__item {
+  font-size: 14px;
+  display: block;
+  margin-right: 4px;
+  background-color: $color-thin-green;
+  padding: 14px 22px 12px;
+  min-width: 100px;
+  border-radius: 6px 6px 0px 0px;
+  color: $color-main;
+  line-height: 1;
+  text-align: center;
+}
+.D16-menu-information__item.D16-menu-information__item--booking {
+  padding: 14px 30px 12px;
+}
+.D16-menu-information__item.menu-information__item--active {
+  color: #fff;
+  background-color: $color-bright-green;
+}
+.D16-menu-information__button.small-button {
+  width: 104px;
+}
+
+// D16-table3
+.D16-table3 {
+  margin-top: 15px;
+}
+.D16-table3.table3 th {
+  padding: 11.5px 20px;
+  vertical-align: text-top;
+}
+.D16-table3.table3 td {
+  padding: 11.5px 20px;
+  line-height: 1.5;
+  width: 834px;
+}
+
+// D16-edit-button
+.D16-edit-button {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}

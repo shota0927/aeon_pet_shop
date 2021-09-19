@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <!-- ************************************** -->
+  <!-- ********* 以下、パス指定あり ********* -->
+  <!-- ************************************** -->
+  <script src="/js/jquery-ui.min-1.10.4.js" ></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- ************************************** -->
+  <!-- ************** ここまで ************** -->
+  <!-- ************************************** -->
+  <link rel="icon" href="" /><!-- favicon未設定 -->
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <h1 class="header-booking__logo">
+      <a href="/" >
+        <!-- ************************************** -->
+        <!-- ********* 以下、パス指定あり ********* -->
+        <!-- ************************************** -->
+        <img src="/image/common/logo-green.png" alt="ロゴ">
+      </a>
+    </h1>
+  </header>
+
+  <!-- E07-inner -->
+  <div class="E07-inner">
+    <!-- E07-wrapper -->
+    <div class="E07-wrapper">
+
+      <!-- E07-steps -->
+      <ul class="E07-steps">
+        <li class="E07-step">
+          <div class="E07-step__title">STEP1</div>
+          <div class="E07-step__subtitle">お客さま情報の登録</div>
+          <span class="E07-step__circle E07-step__circle--current-not"></span>
+        </li>
+        <li class="E07-step">
+          <div class="E07-step__title">STEP2</div>
+          <div class="E07-step__subtitle">ペット情報の登録</div>
+          <span class="E07-step__circle E07-step__circle--current-not"></span>
+        </li>
+        <li class="E07-step">
+          <div class="E07-step__title">STEP3</div>
+          <div class="E07-step__subtitle">事前確認事項の登録</div>
+          <span class="E07-step__circle E07-step__circle--current"></span>
+        </li>
+        <li class="E07-step">
+          <div class="E07-step__title E07-step__title--yet">STEP4</div>
+          <div class="E07-step__subtitle E07-step__subtitle--yet">登録情報の確認</div>
+          <span class="E07-step__circle E07-step__circle--current-yet"></span>
+        </li>
+      </ul>
+
+      <!-- E07-category-bar -->
+      <div class="E07-category-bar">
+        <h2 class="E07-category-bar__title">
+          事前確認事項の登録
+        </h2>
+      </div>
+
+      <div class="E07-interview-wrapper">
+        <!-- E07-animal-hospital E07-container -->
+        <div class="E07-animal-hospital E07-container">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">かかりつけの動物病院</p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--optional">任意</p>
+          </div>
+          <!-- インプット -->
+          <div class="E07-animal-hospital__input input__wrapper">
+            <input name="animal-hospital" type="text" class="input__area--default" placeholder="〇〇〇〇病院">
+          </div>
+        </div>
+        <!-- E07-photo-permit E07-container -->
+        <div class="E07-photo-permit E07-container">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              グルーミング中や仕上がり後の写真を撮影してもよろしいですか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--optional">任意</p>
+          </div>
+          <div class="E07-photo-permit__check check">
+            <input name="photo-permit-agree" value="photo-permit-agree" type="checkbox" id="photo-permit-agree">
+            <label for="photo-permit-agree">同意する</label>
+          </div>
+        </div>
+
+        <!-- E07-health-state E07-container -->
+        <div class="E07-health-state E07-container">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              健康状態
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-checklist select">
+            <li class="E07-checklist__item">
+              <input type="radio" id="no-abnormal" name="health-state-abnormal">
+              <label for="no-abnormal">異常なし</label>
+            </li>
+            <li class="E07-checklist__item">
+              <input type="radio" id="has-abnormal" name="health-state-abnormal" checked="checked">
+              <label for="has-abnormal">異常あり</label>
+            </li>
+          </ul>
+          <div class="E07-health-state__wrapper">
+
+          
+          <table class="E07-health-state__table E07-table">
+            <tbody>
+              <tr>
+                <th>症状・程度</th>
+                <th>部位</th>
+                <th>詳細</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="E07-table__td-wrapper">
+                    <div class="E07-table__check check">
+                      <input name="patellar" value="patellar" type="checkbox" id="patellar">
+                      <label for="patellar">パテラ</label>
+                    </div>
+                    <div class="E07-table__pull-down pull-down">
+                      <select name="patellar-select" class="pull-down__select" required>
+                        <option value selected>選択して下さい</option>
+                        <option value="option1">オプション1</option>
+                        <option value="option2">オプション2</option>
+                        <option value="option3">オプション3</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="E07-table__pull-down pull-down">
+                    <select name="patellar-part" class="pull-down__select" required>
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <!-- インプット -->
+                  <div class="E07-table__input input__wrapper">
+                    <input name="patellar-detail" type="text" class="input__area--default" placeholder="入力してください">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="E07-table__td-wrapper">
+                    <div class="E07-table__check check">
+                      <input name="hernia" value="hernia" type="checkbox" id="hernia">
+                      <label for="hernia">ヘルニア</label>
+                    </div>
+                    <div class="E07-table__pull-down pull-down">
+                      <select name="hernia-select" class="pull-down__select" required>
+                        <option value selected>選択して下さい</option>
+                        <option value="option1">オプション1</option>
+                        <option value="option2">オプション2</option>
+                        <option value="option3">オプション3</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="E07-table__pull-down pull-down">
+                    <select name="hernia-part-select" class="pull-down__select" required>
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <!-- インプット -->
+                  <div class="E07-table__input input__wrapper">
+                    <input name="hernia-part-detail" type="text" class="input__area--default" placeholder="入力してください">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="E07-table__td-wrapper">
+                    <div class="E07-table__check check">
+                      <input name="fracture" value="fracture" type="checkbox" id="fracture">
+                      <label for="fracture">骨折歴</label>
+                    </div>
+                    <div class="E07-table__pull-down pull-down">
+                      <select name="fracture-select" class="pull-down__select" required>
+                        <option value selected>選択して下さい</option>
+                        <option value="option1">オプション1</option>
+                        <option value="option2">オプション2</option>
+                        <option value="option3">オプション3</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="E07-table__pull-down pull-down">
+                    <select name="fracture-part-select" class="pull-down__select" required>
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <!-- インプット -->
+                  <div class="E07-table__input input__wrapper">
+                    <input name="fracture-detail" type="text" class="input__area--default" placeholder="入力してください">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="E07-table__td-wrapper">
+                    <div class="E07-table__check check">
+                      <input name="heart-disease" value="heart-disease" type="checkbox" id="heart-disease">
+                      <label for="heart-disease">心臓病</label>
+                    </div>
+                    <div class="E07-table__pull-down pull-down">
+                      <select name="heart-disease-select" class="pull-down__select" required>
+                        <option value selected>選択して下さい</option>
+                        <option value="option1">オプション1</option>
+                        <option value="option2">オプション2</option>
+                        <option value="option3">オプション3</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="E07-table__pull-down pull-down">
+                    <select name="heart-disease-part-select" class="pull-down__select" required>
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <!-- インプット -->
+                  <div class="E07-table__input input__wrapper">
+                    <input name="heart-disease-detail" type="text" class="input__area--default" placeholder="入力してください">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="E07-table__td-wrapper">
+                    <div class="E07-table__check check">
+                      <input name="epilepsy" value="epilepsy" type="checkbox" id="epilepsy">
+                      <label for="epilepsy">てんかん</label>
+                    </div>
+                    <div class="E07-table__pull-down pull-down">
+                      <select name="epilepsy-select" class="pull-down__select" required>
+                        <option value selected>選択して下さい</option>
+                        <option value="option1">オプション1</option>
+                        <option value="option2">オプション2</option>
+                        <option value="option3">オプション3</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="E07-table__pull-down pull-down">
+                    <select name="epilepsy-part-select" class="pull-down__select" required>
+                      <option value selected>選択して下さい</option>
+                      <option value="option1">オプション1</option>
+                      <option value="option2">オプション2</option>
+                      <option value="option3">オプション3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <!-- インプット -->
+                  <div class="E07-table__input input__wrapper">
+                    <input name="epilepsy-detail" type="text" class="input__area--default" placeholder="入力してください">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        <div class="E07-interview E07-container">
+
+        
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              その他現在治療中の病気・怪我はございますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-option" name="option"  class="E07-js-hidden E07-js-radio">
+              <label for="no-option">ない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="has-option" name="option"  class="E07-js-open E07-js-radio">
+              <label for="has-option">ある</label>
+            </li>
+          </ul>
+          <div class="E07-interview__hidden-wrapper">
+            <textarea name="calculation-remarks" id="calculation-remarks" class="E07-interview__textarea" placeholder="治療状況など"></textarea>
+          </div>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              最近動物病院を受診しましたか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-medical-examination" name="medical-examination">
+              <label for="no-medical-examination">かかってない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="had-medical-examination" name="medical-examination">
+              <label for="had-medical-examination">かかった</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              血液などの検査を1年以内にしていますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="blood-test-yet" name="blood-test">
+              <label for="blood-test-yet">していない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="blood-test-done" name="blood-test">
+              <label for="blood-test-done">している</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              心臓病の検査を1年以内にしていますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="heart-disease-test-yet" name="heart-disease-test">
+              <label for="heart-disease-test-yet">していない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="heart-disease-test-done" name="heart-disease-test">
+              <label for="heart-disease-test-done">している</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              投薬中の薬があれば教えてください。
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-medicine" name="medicine">
+              <label for="no-medicine">ない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="take-medicine" name="medicine">
+              <label for="take-medicine">ある</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text E07-interview-title__text--lh15">
+              室内でおトイレのワンちゃんにお伺いします。<br>
+              ペットシーツを食べることがありますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-pet-sheet" name="pet-sheet">
+              <label for="no-pet-sheet">いいえ</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="yes-pet-sheet" name="pet-sheet">
+              <label for="yes-pet-sheet">はい</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              いつものウンチの状態はいかがですか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items E07-interview__items--column select">
+            <li class="E07-interview__item">
+              <input type="radio" id="hard-poop" name="poop-status">
+              <label for="hard-poop">堅い</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="normal-poop" name="poop-status">
+              <label for="normal-poop">通常</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="soft-poop" name="poop-status">
+              <label for="soft-poop">柔らかい</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="diarrhea" name="poop-status">
+              <label for="diarrhea">下痢が多い</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              お水の飲み方はどちらですか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items E07-interview__items--column select">
+            <li class="E07-interview__item">
+              <input type="radio" id="dishes" name="how-to-drink-water">
+              <label for="dishes">お皿</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="water-dispenser" name="how-to-drink-water">
+              <label for="water-dispenser">給水器</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="both" name="how-to-drink-water">
+              <label for="both">どちらでも</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              預かり中に体調を崩したことはございますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-get-sick" name="get-sick" class="E07-js-hidden E07-js-radio">
+              <label for="no-get-sick">ない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="has-get-sick" name="get-sick" class="E07-js-open E07-js-radio">
+              <label for="has-get-sick">ある</label>
+            </li>
+          </ul>
+          <div class="E07-interview__hidden-wrapper">
+            <textarea name="get-sick-detail" id="get-sick-detail" class="E07-interview__textarea" placeholder="その時の様子など"></textarea>
+          </div>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              食べ物でアレルギーはございますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-allergy" name="allergy" class="E07-js-hidden E07-js-radio">
+              <label for="no-allergy">ない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="has-allergy" name="allergy" class="E07-js-open E07-js-radio">
+              <label for="has-allergy">ある</label>
+            </li>
+          </ul>
+          <div class="E07-interview__hidden-wrapper">
+            <textarea name="get-sick-detail" id="allergy-detail" class="E07-interview__textarea" placeholder="アレルゲンを記載ください"></textarea>
+          </div>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              ノミ・ダニ予防はされていますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-prevention" name="tick-prevention">
+              <label for="no-prevention">していない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="yes-prevention" name="tick-prevention">
+              <label for="yes-prevention">している</label>
+            </li>
+          </ul>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              同居している他のワンちゃん・ネコちゃんはいますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items select">
+            <li class="E07-interview__item">
+              <input type="radio" id="no-other-pets" name="other-pets" class="E07-js-hidden E07-js-radio">
+              <label for="no-other-pets">いない</label>
+            </li>
+            <li class="E07-interview__item">
+              <input type="radio" id="has-other-pets" name="other-pets" class="E07-js-open E07-js-radio">
+              <label for="has-other-pets">いる</label>
+            </li>
+          </ul>
+          <div class="E07-interview__hidden-wrapper">
+            <textarea name="other-pets-detail" id="other-pets-detail" class="E07-interview__textarea" placeholder="種類や数、同居の様子など"></textarea>
+          </div>
+        </div>
+        <div class="E07-interview__box">
+          <!-- E07-interview-title -->
+          <div class="E07-interview-title">
+            <p class="E07-interview-title__text">
+              その他、お手入れに関してお困りごとはありますか？
+            </p>
+            <p class="E07-interview-title__icon E07-interview-title__icon--required">必須</p>
+          </div>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items check">
+            <li class="E07-interview__item">
+              <input name="dandruff" value="dandruff" type="checkbox" id="dandruff">
+              <label for="dandruff">フケ</label>
+            </li>
+            <li class="E07-interview__item">
+              <input name="odor" value="odor" type="checkbox" id="odor">
+              <label for="odor">ニオイ</label>
+            </li>
+            <li class="E07-interview__item">
+              <input name="sticky" value="sticky" type="checkbox" id="sticky">
+              <label for="sticky">べたつき</label>
+            </li>
+          </ul>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items check">
+            <li class="E07-interview__item">
+              <input name="mouth-care" value="mouth-care" type="checkbox" id="mouth-care">
+              <label for="mouth-care">お口のケア</label>
+            </li>
+            <li class="E07-interview__item">
+              <input name="hair-loss" value="hair-loss" type="checkbox" id="hair-loss">
+              <label for="hair-loss">抜け毛</label>
+            </li>
+            <li class="E07-interview__item">
+              <input name="fur-ball" value="fur-ball" type="checkbox" id="fur-ball">
+              <label for="fur-ball">もつれ、毛玉</label>
+            </li>
+          </ul>
+          <!-- 選択肢 -->
+          <ul class="E07-interview__items check">
+            <li class="E07-interview__item">
+              <input name="dry" value="dry" type="checkbox" id="dry">
+              <label for="dry">乾燥</label>
+            </li>
+            <li class="E07-interview__item">
+              <input name="not-particularly" value="not-particularly" type="checkbox" id="not-particularly">
+              <label for="not-particularly">特になし</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="E07-button">
+        <!-- ボタン（最重要） -->
+        <a href="" class="most-important-button">確認画面へ</a>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>

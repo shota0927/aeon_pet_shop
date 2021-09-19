@@ -1,0 +1,153 @@
+
+// D03-inner
+.D03-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+//D03-shop-tab
+.D03-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.D03-shop-tab__customer,
+.D03-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+
+.D03-shop-tab__customer {
+  background: #fff;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-customer.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.D03-shop-tab__pet {
+  background: $color-thin-green;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/image/common/shop-tab-icon-pet.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.D03-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 20px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+.D03-search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.D03-search-box__results {
+  margin-right: 15px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+//table-shopInfo
+.D03-table-shopInfo-wrapper {
+  margin-top: 10px;
+}
+
+.D03-table-shopInfo {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    text-align: center;
+    border: 1px solid #f4f4f4;
+    padding: 0;
+    line-height: 1.5;
+    padding: 5px;
+  }
+}
+
+.D03-table-shopInfo__head {
+  display: block;
+  width: 100%;
+}
+
+.D03-table-shopInfo__head th {
+  background: $color-bright-green;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+}
+
+.D03-table-shopInfo__body {
+  overflow-y: auto;
+  max-height: 549px;
+  display: block;
+  width: 100%;
+  color: $color-text-main;
+  font-size: 12px;
+}
+
+.D03-table-shopInfo__body td {
+  height: 32px;
+}
+
+.D03-table-shopInfo__cutomer-name {
+  width: 200px;
+}
+
+.D03-table-shopInfo__pet-name {
+  width: 200px;
+}
+
+.D03-table-shopInfo__breed {
+  width: 192px;
+}
+
+.D03-table-shopInfo__tel {
+  width: 119px;
+}
+
+.D03-table-shopInfo__latestShop {
+  width: 200px;
+}
+
+.D03-table-shopInfo__detail {
+  width: 70px;
+}
