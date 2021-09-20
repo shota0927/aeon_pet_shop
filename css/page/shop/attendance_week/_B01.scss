@@ -1,0 +1,182 @@
+// B01-inner
+.B01-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+
+// B01-wrapper
+.B01-wrapper {
+  border-radius: 4px;
+  background-color: #fff;
+  height: 698px;
+  box-shadow: 0 0 6px rgba($color: #343434, $alpha: 0.08);
+  padding: 12px 10px;
+}
+
+
+// B01-table-wrapper
+.B01-table-wrapper {
+  position: relative;
+}
+.B01-table-wrapper__bar {
+  position: absolute;
+  width: 19px;
+  height: 192px;
+  border-radius: 4px;
+  background-color: #58CC89;
+  top: 35px;
+  left: 58px;
+}
+.B01-table-wrapper__holiday-bar {
+  position: absolute;
+  width: 111px;
+  height: 576px;
+  border-radius: 4px;
+  background-color: #F4F4F4;
+  top: 35px;
+  left: 311px;
+}
+.B01-table-wrapper__modal {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.B01-table-wrapper__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: -35px;
+}
+.B01-table-wrapper__buttons .small-button--last-week,
+.B01-table-wrapper__buttons .small-button--next-week {
+  height: 22px;
+  width: 44px;
+}
+.B01-table-wrapper__buttons .small-button--last-week {
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-right: 8px;
+}
+.B01-table-wrapper__buttons .small-button--last-week::after {
+  left: 5.5px;
+}
+.B01-table-wrapper__buttons .small-button--next-week {
+  padding-top: 5px;
+  padding-right: 14px;
+  padding-left: 8px;
+}
+.B01-table-wrapper__buttons .small-button--next-week::after {
+  right: 9.5px;
+}
+
+// B01-modal
+.B01-modal {
+  width: 223px;
+  height: 114px;
+  padding: 18px 17px 16px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba($color: #000, $alpha: 0.24);
+  font-size: 14px;
+}
+.B01-modal__link {
+  margin-top: 18px;
+  margin-left: auto;
+  text-align: right;
+}
+.B01-modal__link a {
+  text-decoration: underline;
+  position: relative;
+}
+.B01-modal__link a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -22px;
+  top: 4px;
+  background-image: url(/image/common/edit-icon.png);
+  background-size: cover;
+}
+
+// B01-table
+.B01-table {
+  margin-top: 23px;
+}
+.B01-table.time-table td {
+  width: 126px;
+}
+.B01-table.time-table tr {
+  height: 24px;
+}
+.B01-table .B01-table-date {
+  background-color: initial;
+}
+
+
+// B01-table-date
+.B01-table.time-table .B01-table-date {
+  padding-right: 10px;
+  padding-left: 13px;
+  border-right: 1px solid #D5D5D5;
+  border-bottom: 1px solid #F4F4F4;
+}
+.B01-table.time-table .B01-table-date:last-of-type,
+.B01-table.time-table .B01-table-date:first-of-type {
+  border-right: initial;
+}
+.B01-table-date__wrapper {
+  margin-top: -23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.B01-table-date__box {
+  font-size: 10px;
+}
+.B01-table-date__box.B01-table-date__box--holiday {
+  margin-left: -7px;
+  background-color: $color-thin-green;
+  width: 69px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.B01-table-date__box span {
+  font-size: 18px;
+  font-family: 'Lato';
+  font-weight: 500;
+  margin-right: 6px;
+}
+.B01-table-date__button {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: $color-accent-orange;
+  position: relative;
+}
+.B01-table-date__button::before {
+  position: absolute;
+  content: "";
+  width: 1.38px;
+  height: 11px;
+  background-color: #fff;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%,-50%);
+}
+.B01-table-date__button::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 1.38px;
+  background-color: #fff;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%,-50%);
+}

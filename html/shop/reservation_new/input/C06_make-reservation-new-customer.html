@@ -10,7 +10,7 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- reset css -->
-  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
@@ -23,8 +23,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
   <script src="./js/jquery-ui.min-1.10.4.js"></script>
   <!-- css -->
-  <link rel="stylesheet" href="../../../../../css/styles.css" />
-  <link rel="stylesheet" href="C06_make-reservation-new-customer.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+
   <link rel="icon" href="" />
 </head>
 
@@ -48,9 +48,9 @@
       <!-- タブ -->
       <div class='header-booking__tab booking-tab'>
         <div class='booking-tab__buttons'>
-          <span class='booking-tab__content1'>予約管理</span>
-          <span class='booking-tab__content2'>シフト管理</span>
-          <span class='booking-tab__content3'>電子カルテ</span>
+          <a class='booking-tab__content1'>予約管理</a>
+          <a class='booking-tab__content2'>シフト管理</a>
+          <a class='booking-tab__content3'>電子カルテ</a>
           <div id='booking-tab__lamp' class='booking-tab__content1'></div>
         </div>
       </div>
@@ -70,7 +70,7 @@
   <!-- メイン -->
   <div class="c06__mrnc__background--green">
     <div class="c06__mrnc__background--white">
-      <img class="c06__mrnc__img--reservation-logo" src="images/icon_reservation-plus-person.png" alt="ロゴ">
+      <img class="c06__mrnc__img--reservation-logo" src="/image/common/icon_reservation-plus-person.png" alt="ロゴ">
       <p class="c06__mrnc__txt--make-reservation">予約する（新規のお客様）</p>
       <!-- カテゴリータイトル　お客様・ペット情報 -->
       <div class="booking-category-title c06__mrnc__category-title--custoemr-pets-infomation">
@@ -228,7 +228,7 @@
         <div class="calendar__wrapper c06__mrnc__calendar__wrapper--select-reception-date-time">
           <form action="" class="box__datepicker">
             <input type="text" id="datepicker" class="datepicker" placeholder="2022年02月31日（火）">
-            <img class="c06__mrnc__img__calender-logo" src="images/icon_calender.png" alt="ロゴ">
+            <img class="c06__mrnc__img__calender-logo" src="/image/common/icon_calender.png" alt="ロゴ">
           </form>
         </div>
         <div class="pull-down c06__mrnc__drop-down--select-reception-date-time">
@@ -282,7 +282,7 @@
 
 
   <!-- js -->
-  <script defer type="text/javascript" src="./js/script.js"></script>
+  <script defer type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>

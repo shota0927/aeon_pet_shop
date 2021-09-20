@@ -1,4 +1,3 @@
-@import "../../../../../../css/setting/setting";
 
 // D07-inner
 .D07-inner {
@@ -31,7 +30,7 @@
     display: block;
     position: absolute;
     content: "";
-    background-image: url(../../../../../../image/shop-tab-icon-customer-active.png);
+    background-image: url(/image/shop-tab-icon-customer-active.png);
     background-position: center;
     background-size: cover;
     width: 28px;
@@ -50,7 +49,7 @@
     display: block;
     position: absolute;
     content: "";
-    background-image: url(../../../../../../image/shop-tab-icon-pet-inactive.png);
+    background-image: url(/image/shop-tab-icon-pet-inactive.png);
     background-position: center;
     background-size: cover;
     width: 28px;

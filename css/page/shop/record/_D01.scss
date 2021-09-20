@@ -1,5 +1,3 @@
-@import "../../../../css/setting/setting";
- 
 
 // D01-inner
 .D01-inner {
@@ -26,7 +24,7 @@
     content: "";
     height: 34px;
     width: 34px;
-    background-image: url(../../../../image/common/menu-icon-customer.svg);
+    background-image: url(/image/common/menu-icon-customer.svg);
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
@@ -39,7 +37,7 @@
     content: "";
     height: 34px;
     width: 34px;
-    background-image: url(../../../../image/common/menu-icon-pet.svg);
+    background-image: url(/image/common/menu-icon-pet.svg);
     left: 12px;
     top: 50%;
     transform: translateY(-50%);

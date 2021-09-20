@@ -1,0 +1,257 @@
+//**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+
+
+
+// D04-inner
+.D04-inner {
+  background-color: $color-shop-inner;
+  padding: 10px;
+}
+
+//D04-shop-tab
+.D04-shop-tab__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.D04-shop-tab__customer,
+.D04-shop-tab__pet {
+  line-height: 1;
+  display: block;
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 32px 11px 48px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+}
+.D04-shop-tab__customer {
+  background: #fff;
+  margin-right: 4px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    //**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+    background-image: url(/image/common/shop-tab-icon-customer.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D04-shop-tab__pet {
+  background: $color-thin-green;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    //**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+    background-image: url(/image/common/shop-tab-icon-pet.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+.D04-shop-tab__area {
+  background: #fff;
+  padding: 15px 11px 20px;
+  box-shadow: 0px 0px 6px rgba(52, 52, 52, 0.08);
+  min-height: 659px;
+}
+
+//.D04-body
+.D04-body {
+  display: flex;
+  align-items: flex-start;
+}
+
+//D04-customer-infoお客様情報
+.D04-customer-info {
+  width: 480px;
+  margin-right: 21px;
+}
+.D04-customer-info__head {
+  height: 36px;
+  border-bottom: solid 1px $color-main;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.D04-customer-info__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.D04-customer-info__text {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+//D04-customer-info__table
+.D04-customer-info__table {
+  margin-top: 13px;
+}
+.D04-customer-info__table.table3 th {
+  padding: 11px 10px;
+  vertical-align: text-top;
+  line-height: 1.5;
+  width: 151px;
+}
+.D04-customer-info__table.table3 td {
+  padding: 5px 10px;
+  line-height: 1.5;
+}
+// D04-customer-info__btn
+.D04-customer-info__btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.D04-customer-info__btn .small-button--left-arrow {
+  margin-right: 196px;
+}
+.D-04-small-button-delete.small-button {
+  width: 104px;
+  margin-right: 6px;
+}
+.D-04-small-button-edit.small-button {
+  width: 60px;
+}
+
+//D04-latest-use最近のご利用
+.D04-latest-use {
+  width: 481px;
+  height: 634px;
+  overflow-y: scroll;
+}
+.D04-latest-use__bar {
+  background-color: $color-bright-green;
+  border-radius: 6px 6px 0 0;
+  padding: 0 17px;
+  height: 42px;
+  line-height: 42px;
+}
+.D04-latest-use__title {
+  color: $color-background-base;
+  font-size: 14px;
+  font-weight: 400;
+}
+.D04-card {
+  height: 73px;
+  border-radius: 10px;
+  background-color: $color-thin-green;
+  padding: 5px 14px 11px 20px;
+  margin-top: 5px;
+  width: 100%;
+}
+.D04-card__info {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+//D04-pet-info ペット情報
+.D04-latest-use__pet-info {
+  margin-top: 40px;
+}
+.D04-pet-info__head {
+  height: 36px;
+  border-bottom: solid 1px $color-main;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.D04-pet-info__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.D04-pet-info__add-button {
+  width: 71px;
+  height: 25px;
+  border-radius: 24px;
+  border: 1px solid $color-main;
+  color: $color-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 12px;
+}
+.D04-pet-info__accordion {
+  margin-top: 10px;
+}
+
+//D04-accordion
+.D04-accordion__head {
+  font-size: 14px;
+  padding-left: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: solid 1px $color-border-gray;
+}
+.D04-accordion__body {
+  display: none;
+  background-color: #E7ECD7;
+  padding: 10px;
+  position: relative;
+}
+
+
+//D04-accordion__table
+.D04-accordion__table th,
+.D04-accordion__table td {
+  border-bottom: solid 1px #E7ECD7;
+}
+.D04-accordion__table th {
+  padding: 14px 10px;
+  width: 161px;
+}
+.D04-accordion__table td {
+  background-color: $color-background-base;
+  padding: 10px;
+}
+.D04-accordion__icon {
+  position: absolute;
+  content: "";
+  //**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+  background: transparent url(/image/common/accordion-down.svg) no-repeat center center / contain;
+  width: 10px;
+  height: 6px;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.is-open {
+    //**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+    background-image: url(/image/common/accordion-up.svg);
+  }
+}
+.D04-accordion__btn {
+  margin-top: 8px;
+  text-align: right;
+  padding-right: 16px;
+}
+

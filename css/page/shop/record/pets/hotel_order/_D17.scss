@@ -1,4 +1,4 @@
-@import "../../../../../../css/setting/setting";
+
 
 // D17-inner
 .D17-inner {
@@ -33,7 +33,7 @@
     display: block;
     position: absolute;
     content: "";
-    background-image: url(../../../../../../image/common/shop-tab-icon-customer-active.png);
+    background-image: url(/image/common/shop-tab-icon-customer-active.png);
     background-position: center;
     background-size: cover;
     width: 28px;
@@ -53,7 +53,7 @@
     display: block;
     position: absolute;
     content: "";
-    background-image: url(../../../../../../image/common/shop-tab-icon-pet-inactive.png);
+    background-image: url(/image/common/shop-tab-icon-pet-inactive.png);
     background-position: center;
     background-size: cover;
     width: 28px;

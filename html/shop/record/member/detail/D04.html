@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>PETEMO | PETLIFE STORE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <!-- ************************************** -->
+  <!-- ********* 以下、パス指定あり ********* -->
+  <!-- ************************************** -->
+  <script src="//js/jquery-ui.min-1.10.4.js"></script>
+  <!-- js -->
+  <script defer type="text/javascript" src="/js/script.js"></script>
+  <script defer type="text/javascript" src="/js/my-script.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- ************************************** -->
+  <!-- ************** ここまで ************** -->
+  <!-- ************************************** -->
+  <link rel="icon" href="" /><!-- favicon未設定 -->
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header-booking">
+    <div class="header-booking__left">
+      <h1 class="header-booking__logo">
+        <a href="/">
+          <!-- ************************************** -->
+          <!-- ********* 以下、パス指定あり ********* -->
+          <!-- ************************************** -->
+          <img src="/image/common/logo-green.png" alt="ロゴ">
+        </a>
+      </h1>
+
+      <div class="header-booking__login-name">〇〇〇〇さんでログイン中</div>
+      <!-- ************************************** -->
+      <!-- ********* 以下、パス指定あり ********* -->
+      <!-- ************************************** -->
+      <a href="" class="header-booking__logout-button logout-button--small"><img src="/image/common/logout-icon.png"
+          alt="ログアウトアイコン">ログアウト</a>
+    </div>
+
+    <div class="header-booking__right">
+      <!-- タブ -->
+      <div class='header-booking__tab booking-tab'>
+        <div class='booking-tab__buttons'>
+          <a href="#" class='booking-tab__content1'>予約管理</a>
+          <a href="#" class='booking-tab__content2'>シフト管理</a>
+          <a href="#" class='booking-tab__content3'>電子カルテ</a>
+          <div id='booking-tab__lamp' class='booking-tab__content3'></div>
+        </div>
+      </div>
+
+      <div class="header-booking__pull-down pull-down">
+        <select class="pull-down__select" required>
+          <option value="" selected>未選択</option>
+          <option value="option2">PETEMO越谷レイクタウンkaze店</option>
+          <option value="option3">○○○○店</option>
+          <option value="option4">○○○○店</option>
+          <option value="option5">○○○○店</option>
+          <option value="option6">○○○○店</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- inner  -->
+  <div class="D04-inner">
+    <div class="D04-shop-tab">
+      <ul class="D04-shop-tab__inner">
+        <li><a href="" class="D04-shop-tab__customer">顧客管理</a></li>
+        <li><a href="" class="D04-shop-tab__pet">ペット管理</a></li>
+      </ul>
+      <div class="D04-shop-tab__area">
+        <div class="D04-body">
+          <!-- D04-customer-info お客様情報-->
+          <div class="D04-customer-info">
+            <div class="D04-customer-info__head">
+              <h2 class="D04-customer-info__title">お客さま情報</h2>
+              <p class="D04-customer-info__text">マイページID：未設定</p>
+            </div>
+            <!-- D04-table3 お客様情報テーブル-->
+            <table class="D04-customer-info__table table3">
+              <tbody>
+                <tr>
+                  <th>お名前</th>
+                  <td>中野 恵志</td>
+                </tr>
+                <tr>
+                  <th>ふりがな</th>
+                  <td>なかの けいし</td>
+                </tr>
+                <tr>
+                  <th>性別</th>
+                  <td>無回答</td>
+                </tr>
+                <tr>
+                  <th>生年月日</th>
+                  <td>1977年01月01日</td>
+                </tr>
+                <tr>
+                  <th>お電話番号</th>
+                  <td>09012345678<br>09012345678</td>
+                </tr>
+                <tr>
+                  <th>代理人お電話番号</th>
+                  <td>09012345678（妻）</td>
+                </tr>
+                <tr>
+                  <th>郵便番号</th>
+                  <td>150-0002</td>
+                </tr>
+                <tr>
+                  <th>住所</th>
+                  <td>東京都渋谷区渋谷1-15-21 ポーラ渋谷ビル4F</td>
+                </tr>
+                <tr>
+                  <th>DM発送承諾</th>
+                  <td>可</td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>テキストが入ります。</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="D04-customer-info__btn">
+              <a href="" class="small-button--left-arrow">一覧へ戻る</a>
+              <a href="" class="small-button D-04-small-button-delete">完全に削除</a>
+              <a href="" class="small-button D-04-small-button-edit">編集</a>
+            </div>
+          </div>
+
+
+          <!-- D04-latest-use 最近のご利用 -->
+          <div class="D04-latest-use">
+            <div class="D04-latest-use__bar">
+              <h2 class="D04-latest-use__title">最近ご利用</h2>
+            </div>
+            <!-- D04-latest-use__cards  カード-->
+            <div class="D04-latest-use__cards">
+              <div class="D04-card">
+                <ul class="D04-card__info">
+                  <li>
+                    <p>ご利用日時：2021年07月17日(土)　10:00</p>
+                  </li>
+                  <li>
+                    <p>直近のご利用店舗：PeTeMoビアレ横浜店</p>
+                  </li>
+                  <li>
+                    <p>ペット名：コタロー　ちゃん　コース名：シャンプーコース</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="D04-card">
+                <ul class="D04-card__info">
+                  <li>
+                    <p>ご利用日時：2021年07月17日(土)　10:00</p>
+                  </li>
+                  <li>
+                    <p>直近のご利用店舗：PeTeMoビアレ横浜店</p>
+                  </li>
+                  <li>
+                    <p>ペット名：コタロー　ちゃん　コース名：シャンプーコース</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="D04-card">
+                <ul class="D04-card__info">
+                  <li>
+                    <p>ご利用日時：2021年07月17日(土)　10:00</p>
+                  </li>
+                  <li>
+                    <p>直近のご利用店舗：PeTeMoビアレ横浜店</p>
+                  </li>
+                  <li>
+                    <p>ペット名：コタロー　ちゃん　コース名：シャンプーコース</p>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!--D04-pet-info ペット情報 -->
+            <div class="D04-latest-use__pet-info D04-pet-info">
+              <div class="D04-pet-info__head">
+                <h2 class="D04-pet-info__title">ペット情報</h2>
+                <a class="D04-pet-info__add-button">＋ 追加</a>
+              </div>
+              <div class="D04-pet-info__accordion">
+                <!-- D04-accordionペット情報アコーディオン -->
+                <dl class="D04-accordion">
+                  <dt class="D04-accordion__head">マロン<span class="D04-accordion__icon"></span> </dt>
+                  <dd class="D04-accordion__body">
+                    <table class="D04-accordion__table table3">
+                      <tbody>
+                        <tr>
+                          <th>ペットのお名前</th>
+                          <td>小太郎（コタロウ）</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの性別</th>
+                          <td>男の子</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの生年月日</th>
+                          <td>1999年 01月 01日 </td>
+                        </tr>
+                        <tr>
+                          <th>ペットの種類</th>
+                          <td>トイプードル</td>
+                        </tr>
+                        <tr>
+                          <th>混合ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                        <tr>
+                          <th>狂犬病ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="D04-accordion__btn">
+                      <a href="" class="small-button D-04-small-button-delete">完全に削除</a>
+                      <a href="" class="small-button D-04-small-button-edit">編集</a>
+                    </div>
+                  </dd>
+                </dl>
+                <!-- D04-accordionペット情報アコーディオン -->
+                <dl class="D04-accordion">
+                  <dt class="D04-accordion__head">ムギ<span class="D04-accordion__icon"></span> </dt>
+                  <dd class="D04-accordion__body">
+                    <table class="D04-accordion__table table3">
+                      <tbody>
+                        <tr>
+                          <th>ペットのお名前</th>
+                          <td>小太郎（コタロウ）</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの性別</th>
+                          <td>男の子</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの生年月日</th>
+                          <td>1999年 01月 01日 </td>
+                        </tr>
+                        <tr>
+                          <th>ペットの種類</th>
+                          <td>トイプードル</td>
+                        </tr>
+                        <tr>
+                          <th>混合ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                        <tr>
+                          <th>狂犬病ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="D04-accordion__btn">
+                      <a href="" class="small-button D-04-small-button-delete">完全に削除</a>
+                      <a href="" class="small-button D-04-small-button-edit">編集</a>
+                    </div>
+                  </dd>
+                </dl>
+                <!-- D04-accordionペット情報アコーディオン -->
+                <dl class="D04-accordion">
+                  <dt class="D04-accordion__head">小太郎<span class="D04-accordion__icon"></span> </dt>
+                  <dd class="D04-accordion__body">
+                    <table class="D04-accordion__table table3">
+                      <tbody>
+                        <tr>
+                          <th>ペットのお名前</th>
+                          <td>小太郎（コタロウ）</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの性別</th>
+                          <td>男の子</td>
+                        </tr>
+                        <tr>
+                          <th>ペットの生年月日</th>
+                          <td>1999年 01月 01日 </td>
+                        </tr>
+                        <tr>
+                          <th>ペットの種類</th>
+                          <td>トイプードル</td>
+                        </tr>
+                        <tr>
+                          <th>混合ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                        <tr>
+                          <th>狂犬病ワクチン</th>
+                          <td>済 (2021年01月23日）</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="D04-accordion__btn">
+                      <a href="" class="small-button D-04-small-button-delete">完全に削除</a>
+                      <a href="" class="small-button D-04-small-button-edit">編集</a>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

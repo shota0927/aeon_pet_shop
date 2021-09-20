@@ -24,7 +24,6 @@
   <script src="/js/jquery-ui.min-1.10.4.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="C02_reservation-status-display-month.css">
   <link rel="icon" href="" />
 </head>
 
@@ -68,14 +67,100 @@
     </div>
   </header>
   <!-- メイン -->
+
+
+  <!-- モーダルウィンドウ -->
+  <div class="c02__rsdmrl__background">
+    <div class="c02__rsdmrl__container--white">
+      <p class="c02__rsdmrl__txt--date">2021年7月19日（月）</p>
+      <img class="c02__rsdmrl__reservation-logo" src="/image/common/icon_reservation-logo.png" alt="予約ロゴ">
+      <div class="c02__rsdmrl__table__wrapper">
+        <!-- テーブル左右色付き -->
+        <table class="c02__rsdmrl__table">
+          <tbody>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+            <tr>
+              <th class="c02__rsdmrl__table--left">11:00〜15:00</th>
+              <td class="c02__rsdmrl__table--right">柴田ハナ 様　　シャンプーコース（大型犬）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- ボタン 閉じる -->
+      <a href="" class="sub-button c02__rsdmrl__button--white" data-dismiss="modal">閉じる</a>
+    </div>
+  </div>
+
+  <!-- モーダルウィンドウ終 -->
+
   <div class="c02__rsdm__background--green">
     <div class="c02__rsdm__background--white">
       <!-- カテゴリータイトル -->
       <div class="shift-title">
         <div class="shift-title__title">
-          2021年7月<a class="shift-title__arrow-button" href=""><img src="/image/common/arrow-last-button-greem.png"
+          2021年7月<a class="shift-title__arrow-button"><img src="/image/common/arrow-last-button-greem.png"
               alt="下矢印ボタン"></a>
         </div>
+
+      <!-- 月毎モーダル -->
+      <!-- カレンダー選択　年月表示 -->
+      <div class="calender2 calender2--month c02-month-modal">
+        <div class="calender2__header calender2__header--month">
+          <a href="" class="calender2__left-arrow"><span></span></a>
+          <div class="calender2__title">
+            <span>YYYY</span>
+          </div>
+          <a href="" class="calender2__right-arrow"><span></span></a>
+        </div>
+        <table class="calender2__table calender2__table--month">
+          <tbody>
+            <tr>
+              <td>1月</td>
+              <td>2月</td>
+              <td>3月</td>
+              <td>4月</td>
+            </tr>
+            <tr>
+              <td>5月</td>
+              <td>6月</td>
+              <td>7月</td>
+              <td>8月</td>
+            </tr>
+            <tr>
+              <td>9月</td>
+              <td>10月</td>
+              <td>11月</td>
+              <td>12月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+        <!-- 月毎モーダル終わり -->
 
         <ul class="shift-title__list">
           <li class="shift-title__item">

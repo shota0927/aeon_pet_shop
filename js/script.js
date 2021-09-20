@@ -1,5 +1,31 @@
 $(function () {
 
+  //c02カレンダーの日付がクリックされたら
+  $(".calender-table__icon").click(function () {
+    //ボタンがクリックされたら
+    $('.c02__rsdmrl__background').fadeIn(300);
+    $('.c02__rsdm__arrow-button').fadeOut(300);
+
+    $(".c02__rsdmrl__button--white").click(function () {
+      //閉じるボタンがクリックされたら
+      $('.c02__rsdmrl__background').fadeOut(300);
+    });
+
+  });
+  //c02月毎→ボタンがクリックされたら
+  $(".shift-title__arrow-button").on('click', function (e) {
+    //ボタンがクリックされたら
+    $('.c02-month-modal').fadeIn(300); 
+    e.stopPropagation();
+  });
+
+  $(document).on('click', function() {
+    $('.c02-month-modal').fadeOut(300);
+  });
+
+
+
+
   //ハンバーガーメニューのアクション
   $(".js-hamburger--login").click(function () {
     //ボタンがクリックされたら

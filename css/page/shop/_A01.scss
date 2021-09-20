@@ -1,0 +1,166 @@
+//**************************************//
+//********* 以下、パス指定あり *********//
+//**************************************//
+
+// A01-inner
+.A01-inner {
+  background-color: $color-thin-green;
+  padding: 20px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// A01-title
+.A01-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.A01-title__box {
+  margin-right: 5px;
+}
+.A01-title__number {
+  font-size: 24px;
+  font-family: 'Lato';
+  margin-right: 2px;
+}
+
+
+// A01-reservation
+.A01-reservation__title {
+  margin-left: 19px;
+}
+.A01-reservation__wrapper {
+  margin-top: 12px;
+  background-color: #fff;
+  width: 465px;
+  height: 638px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(#000, 0.08);
+  padding: 12px 11px 11px;
+}
+.A01-reservation__subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.A01-reservation__button .small-button--right-arrow {
+  width: 112px;
+  height: 26px;
+  padding-top: 5px;
+}
+.A01-reservation__table {
+  margin-top: 12px;
+  position: relative;
+  border-top: 1px solid #F4F4F4;
+  border-right: 1px solid #D5D5D5;
+}
+.A01-reservation__table .time-table td {
+  width: 391px;
+}
+.A01-reservation__table .time-table tr {
+  height: 24px;
+}
+.A01-reservation__card {
+  position: absolute;
+  left: 74px;
+  top: 23px;
+  background-color: #58CC89;
+  padding-top: 14px;
+  padding-left: 10px;
+  width: 112px;
+  height: 169px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 11px;
+  line-height: calc(13 / 11);
+  
+}
+#second{
+  top: 192px;
+  height: 145px;
+  background-color: #36ACD8;
+}
+#third{
+  top: 192px;
+  height: 169px;
+  left: 187px;
+  background-color: #E08A55;
+}
+#fourth{
+  top: 433px;
+  height: 72px;
+  left: 301px;
+  background-color: #58CC89;
+}
+
+.A01-reservation__card span {
+  display: block;
+}
+
+
+// A01-menu
+.A01-menu__title {
+  text-align: center;
+}
+.A01-menu__title .A01-title__number {
+  margin-left: 9px;
+  margin-right: 7px;
+}
+.A01-menu__title .A01-title__box:first-of-type {
+  margin-right: 28px;
+}
+.A01-menu__attention-list {
+  width: 525px;
+  background-color: rgba(#F4451C, 0.08);
+  color: #F4451C;
+  padding: 19px 30px 23px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(#343434, 0.08);
+  font-size: 14px;
+  line-height: 1.721428571;
+  margin-top: 15px;
+}
+.D01-menu__cards {
+  margin-top: 21px;
+  height: 302px;
+  width: 518px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.D01-menu__card a {
+  width: 250px;
+  height: 142px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(#000, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-main;
+}
+.D01-menu__card img {
+  width: 40px;
+  height: 40px;
+}
+
+
+// A01-login-button
+.A01-login-button {
+  margin-top: 94px;
+  text-align: right;
+}
+.A01-login-button a {
+  font-size: 14px;
+  background-color: #FF00E2;
+  color: #fff;
+  width: 183px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+}
