@@ -1,4 +1,3 @@
-
 .c06__mrncm__header__pull-down {
     left: 10.5px;
 }
@@ -93,7 +92,7 @@
             display: inline-block;
             position: relative;
             left: 40px;
-            top: 34px;
+            top: 27px;
 
             .c06__mrncm__txt--customer-name {
                 display: inline-block;
@@ -111,28 +110,28 @@
             }
         }
 
-        .c06__mrncm__input__wrapper--phone-number {
-            display: inline-block;
-            position: relative;
-            left: 97px;
-            top: 34px;
+        // .c06__mrncm__input__wrapper--phone-number {
+        //     display: inline-block;
+        //     position: relative;
+        //     left: 97px;
+        //     top: 34px;
 
-            .c06__mrncm__txt--phone-number {
-                display: inline-block;
-                font-size: 14px;
-            }
+        //     .c06__mrncm__txt--phone-number {
+        //         display: inline-block;
+        //         font-size: 14px;
+        //     }
 
-            .c06__mrncm__input--phone-number {
-                display: inline-block;
-                margin-left: 12px;
+        //     .c06__mrncm__input--phone-number {
+        //         display: inline-block;
+        //         margin-left: 12px;
 
-                .c06__mrncm__input__area--phone-number {
-                    height: 46px;
-                    width: 340px;
-                }
+        //         .c06__mrncm__input__area--phone-number {
+        //             height: 46px;
+        //             width: 340px;
+        //         }
 
-            }
-        }
+        //     }
+        // }
 
         .c06__mrncm__gray__wrapper {
             width: 944px;
@@ -165,6 +164,8 @@
                             height: 46px;
                             width: 340px;
                             background: $color-background-base;
+
+
                         }
 
                     }
@@ -188,6 +189,10 @@
                             height: 46px;
                             width: 340px;
                             background: $color-background-base;
+
+                            &:invalid {
+                                color: #333;
+                            }
                         }
                     }
                 }
@@ -365,6 +370,10 @@
                     .c06__mrncm__select__area--course {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
             }
@@ -386,6 +395,10 @@
                     .c06__mrncm__select__area--stuff {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
 
@@ -406,6 +419,10 @@
                     .c06__mrncm__select__area--option {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
             }
@@ -428,6 +445,10 @@
                     .c06__mrncm__select__area--campaign {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
 
                     }
                 }
@@ -542,7 +563,7 @@
                     display: inline-block;
 
                     &::after {
-                        left: 5.5px;
+                        left: 4.5px;
                     }
                 }
             }

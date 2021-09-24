@@ -3751,7 +3751,7 @@ a:hover {
 
 .b04__smda__background .b04__smda__container--white {
   width: 721px;
-  height: 510px;
+  height: 532px;
   background: #fff;
   margin: 107px 131px 129px 172px;
   display: inline-block;
@@ -3808,6 +3808,10 @@ a:hover {
   background: #98AD5C;
   color: #F5F5F5;
   margin-right: 20px;
+}
+
+.b04__smda__background .b04__smda__container--white .b04__smda__wrapper--main-edit-area .b04__smda__wrapper--status .b04__smda__pull-down__select:invalid {
+  color: #333;
 }
 
 .b04__smda__background .b04__smda__container--white .b04__smda__wrapper--main-edit-area .b04__smda__wrapper--time {
@@ -4445,6 +4449,10 @@ a:hover {
   background: #98AD5C;
   color: #F5F5F5;
   margin-right: 20px;
+}
+
+.b04__smde__background .b04__smde__container--white .b04__smde__wrapper--main-edit-area .b04__smde__wrapper--status .b04__smde__pull-down__select {
+  color: #333;
 }
 
 .b04__smde__background .b04__smde__container--white .b04__smde__wrapper--main-edit-area .b04__smde__wrapper--time {
@@ -5261,7 +5269,7 @@ a:hover {
   display: inline-block;
   position: relative;
   left: 40px;
-  top: 34px;
+  top: 27px;
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--customer-name .c06__mrncm__txt--customer-name {
@@ -5275,28 +5283,6 @@ a:hover {
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--customer-name .c06__mrncm__input--customer-name .c06__mrncm__input__area--customer-name {
-  height: 46px;
-  width: 340px;
-}
-
-.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--phone-number {
-  display: inline-block;
-  position: relative;
-  left: 97px;
-  top: 34px;
-}
-
-.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--phone-number .c06__mrncm__txt--phone-number {
-  display: inline-block;
-  font-size: 14px;
-}
-
-.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--phone-number .c06__mrncm__input--phone-number {
-  display: inline-block;
-  margin-left: 12px;
-}
-
-.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__wrapper--phone-number .c06__mrncm__input--phone-number .c06__mrncm__input__area--phone-number {
   height: 46px;
   width: 340px;
 }
@@ -5354,6 +5340,10 @@ a:hover {
   height: 46px;
   width: 340px;
   background: #fff;
+}
+
+.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__gray__wrapper .c06__mrncm__gray__inner--1 .c06__mrncm__input__wrapper--select-pet-type .c06__mrncm__drop-down--select-pet-type .c06__mrncm__select__area--pet-type:invalid {
+  color: #333;
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__gray__wrapper .c06__mrncm__gray__inner--2 {
@@ -5519,6 +5509,10 @@ a:hover {
   height: 46px;
 }
 
+.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-course .c06__mrncm__drop-down--select-course .c06__mrncm__select__area--course:invalid {
+  color: #333;
+}
+
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-stuff {
   position: relative;
   display: inline-block;
@@ -5540,6 +5534,10 @@ a:hover {
   height: 46px;
 }
 
+.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-stuff .c06__mrncm__drop-down--select-stuff .c06__mrncm__select__area--stuff:invalid {
+  color: #333;
+}
+
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-option {
   display: inline-block;
 }
@@ -5557,6 +5555,10 @@ a:hover {
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-option .c06__mrncm__drop-down--select-option .c06__mrncm__select__area--option {
   width: 341px;
   height: 46px;
+}
+
+.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-option .c06__mrncm__drop-down--select-option .c06__mrncm__select__area--option:invalid {
+  color: #333;
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-campaign {
@@ -5578,6 +5580,10 @@ a:hover {
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-campaign .c06__mrncm__drop-down--select-campaign .c06__mrncm__select__area--campaign {
   width: 341px;
   height: 46px;
+}
+
+.c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__course-stuff-option-campaign__group__wrapper .c06__mrncm__input__wrapper--select-campaign .c06__mrncm__drop-down--select-campaign .c06__mrncm__select__area--campaign:invalid {
+  color: #333;
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__add-btn {
@@ -5681,7 +5687,7 @@ a:hover {
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__select__group--how-to-reserve .c06__mrncm__select__wrapper--how-to-reserve .c06__mrncm__select__choices--phone::after {
-  left: 5.5px;
+  left: 4.5px;
 }
 
 .c06__mrncm__background--green .c06__mrncm__background--white .c06__mrncm__input__group--remarks {
@@ -5852,6 +5858,10 @@ a:hover {
   background: #fff;
 }
 
+.c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__gray__wrapper .c06__mrnc__gray__inner--1 .c06__mrnc__input__wrapper--select-pet-type .c06__mrnc__drop-down--select-pet-type .c06__mrnc__select__area--pet-type:invalid {
+  color: #333;
+}
+
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__gray__wrapper .c06__mrnc__gray__inner--2 {
   margin-top: 18px;
 }
@@ -6015,6 +6025,10 @@ a:hover {
   height: 46px;
 }
 
+.c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-course .c06__mrnc__drop-down--select-course .c06__mrnc__select__area--course:invalid {
+  color: #333;
+}
+
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-stuff {
   position: relative;
   display: inline-block;
@@ -6036,6 +6050,10 @@ a:hover {
   height: 46px;
 }
 
+.c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-stuff .c06__mrnc__drop-down--select-stuff .c06__mrnc__select__area--stuff:invalid {
+  color: #333;
+}
+
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-option {
   display: inline-block;
 }
@@ -6053,6 +6071,10 @@ a:hover {
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-option .c06__mrnc__drop-down--select-option .c06__mrnc__select__area--option {
   width: 341px;
   height: 46px;
+}
+
+.c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-option .c06__mrnc__drop-down--select-option .c06__mrnc__select__area--option:invalid {
+  color: #333;
 }
 
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-campaign {
@@ -6074,6 +6096,10 @@ a:hover {
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-campaign .c06__mrnc__drop-down--select-campaign .c06__mrnc__select__area--campaign {
   width: 341px;
   height: 46px;
+}
+
+.c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__course-stuff-option-campaign__group__wrapper .c06__mrnc__input__wrapper--select-campaign .c06__mrnc__drop-down--select-campaign .c06__mrnc__select__area--campaign:invalid {
+  color: #333;
 }
 
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__add-btn {
@@ -6177,7 +6203,7 @@ a:hover {
 }
 
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__select__group--how-to-reserve .c06__mrnc__select__wrapper--how-to-reserve .c06__mrnc__select__choices--phone::after {
-  left: 5.5px;
+  left: 4.5px;
 }
 
 .c06__mrnc__background--green .c06__mrnc__background--white .c06__mrnc__input__group--remarks {
@@ -6233,7 +6259,7 @@ a:hover {
   color: #6F8D1B;
   padding: 34px 51px 35px 52px;
   position: relative;
-  bottom: 27px;
+  vertical-align: top;
 }
 
 .c06__mrnr__background .c06__mrnr__container--white .c06__mrnr__main__wrapper .c06__mrnr__reservation-details__wrapper {
@@ -6242,7 +6268,7 @@ a:hover {
 }
 
 .c06__mrnr__background .c06__mrnr__container--white .c06__mrnr__main__wrapper .c06__mrnr__reservation-details__wrapper .c06__mrnr__txt__reservation-details {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c06__mrnr__background .c06__mrnr__container--white .c06__mrnr__main__wrapper .c06__mrnr__btn--orange {
@@ -6614,7 +6640,7 @@ a:hover {
   display: inline-block;
   position: relative;
   left: 40px;
-  top: 34px;
+  top: 27px;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__txt--customer-name {
@@ -6622,23 +6648,31 @@ a:hover {
   font-size: 14px;
 }
 
-.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__serch__wrapper--customer-name {
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__serch__wrapper--name {
   display: inline-block;
   margin-left: 26px;
   top: 0px;
   left: 0px;
 }
 
-.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__serch__wrapper--customer-name .c08__mrec__box__serch {
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__serch__wrapper--name .c08__mrec__box__serch {
   height: 46px;
   width: 340px;
+}
+
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__serch__wrapper--customer-name .c08__mrec__suggest__wrapper {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  width: 340px;
+  left: 72px;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__input__wrapper--phone-number {
   display: inline-block;
   position: relative;
   left: 97px;
-  top: 34px;
+  top: 27px;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__input__wrapper--phone-number .c08__mrec__txt--phone-number {
@@ -6683,6 +6717,10 @@ a:hover {
   height: 46px;
   width: 340px;
   background: #fff;
+}
+
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__gray__wrapper .c08__mrec__gray__inner--1 .c08__mrec__select__wrapper--select-pet-name .c08__mrec__drop-down--select-pet-name .c08__mrec__select__area--pet-name:invalid {
+  color: #333;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__gray__wrapper .c08__mrec__gray__inner--1 .c08__mrec__txt__wrapper--type-of-pet {
@@ -6864,6 +6902,10 @@ a:hover {
   height: 46px;
 }
 
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-course .c08__mrec__drop-down--select-course .c08__mrec__select__area--course:invalid {
+  color: #333;
+}
+
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-stuff {
   position: relative;
   display: inline-block;
@@ -6885,6 +6927,10 @@ a:hover {
   height: 46px;
 }
 
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-stuff .c08__mrec__drop-down--select-stuff .c08__mrec__select__area--stuff:invalid {
+  color: #333;
+}
+
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-option {
   display: inline-block;
 }
@@ -6902,6 +6948,10 @@ a:hover {
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-option .c08__mrec__drop-down--select-option .c08__mrec__select__area--option {
   width: 341px;
   height: 46px;
+}
+
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-option .c08__mrec__drop-down--select-option .c08__mrec__select__area--option:invalid {
+  color: #333;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-campaign {
@@ -6923,6 +6973,10 @@ a:hover {
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-campaign .c08__mrec__drop-down--select-campaign .c08__mrec__select__area--campaign {
   width: 341px;
   height: 46px;
+}
+
+.c08__mrec__background--green .c08__mrec__background--white .c08__mrec__course-stuff-option-campaign__group__wrapper .c08__mrec__input__wrapper--select-campaign .c08__mrec__drop-down--select-campaign .c08__mrec__select__area--campaign:invalid {
+  color: #333;
 }
 
 .c08__mrec__background--green .c08__mrec__background--white .c08__mrec__add-btn {
@@ -7415,6 +7469,10 @@ a:hover {
   height: 46px;
 }
 
+.c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-course .c09__cr__drop-down--select-course .c09__cr__select__area--course:invalid {
+  color: #333;
+}
+
 .c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-stuff {
   position: relative;
   display: inline-block;
@@ -7436,6 +7494,10 @@ a:hover {
   height: 46px;
 }
 
+.c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-stuff .c09__cr__drop-down--select-stuff .c09__cr__select__area--stuff:invalid {
+  color: #333;
+}
+
 .c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-option {
   display: inline-block;
 }
@@ -7453,6 +7515,10 @@ a:hover {
 .c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-option .c09__cr__drop-down--select-option .c09__cr__select__area--option {
   width: 341px;
   height: 46px;
+}
+
+.c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-option .c09__cr__drop-down--select-option .c09__cr__select__area--option:invalid {
+  color: #333;
 }
 
 .c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-campaign {
@@ -7474,6 +7540,10 @@ a:hover {
 .c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-campaign .c09__cr__drop-down--select-campaign .c09__cr__select__area--campaign {
   width: 341px;
   height: 46px;
+}
+
+.c09__cr__background--green .c09__cr__background--white .c09__cr__course-stuff-option-campaign__group__wrapper .c09__cr__input__wrapper--select-campaign .c09__cr__drop-down--select-campaign .c09__cr__select__area--campaign:invalid {
+  color: #333;
 }
 
 .c09__cr__background--green .c09__cr__background--white .c09__cr__add-btn {
@@ -7558,6 +7628,22 @@ a:hover {
   margin-top: 8px;
 }
 
+.c09__cr__background--green .c09__cr__background--white .c09__cr__input__group--remarks .c09__cr__textarea__wrapper--remarks textarea::-webkit-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__cr__background--green .c09__cr__background--white .c09__cr__input__group--remarks .c09__cr__textarea__wrapper--remarks textarea:-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__cr__background--green .c09__cr__background--white .c09__cr__input__group--remarks .c09__cr__textarea__wrapper--remarks textarea::-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__cr__background--green .c09__cr__background--white .c09__cr__input__group--remarks .c09__cr__textarea__wrapper--remarks textarea::placeholder {
+  color: #d5d5d5;
+}
+
 .c09__cr__background--green .c09__cr__background--white .c09__cr__txt--update-person-date {
   font-size: 12px;
   display: inline-block;
@@ -7628,6 +7714,10 @@ a:hover {
   height: 46px;
 }
 
+.c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__cancel-reason__wrapper .c09__crcr__cancel-reason__input__wrapper .c09__crcr__cancel-reason__select {
+  color: #333;
+}
+
 .c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper {
   margin-top: 18px;
 }
@@ -7639,6 +7729,22 @@ a:hover {
 .c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper .c09__crcr__other-memos__textarea__wrapper {
   margin-top: 6px;
   height: 140px;
+}
+
+.c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper .c09__crcr__other-memos__textarea__wrapper textarea::-webkit-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper .c09__crcr__other-memos__textarea__wrapper textarea:-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper .c09__crcr__other-memos__textarea__wrapper textarea::-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+.c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__other-memos__wrapper .c09__crcr__other-memos__textarea__wrapper textarea::placeholder {
+  color: #d5d5d5;
 }
 
 .c09__crcr__background .c09__crcr__container--white .c09__crcr__main__wrapper .c09__crcr__btn-wrapper {

@@ -1,4 +1,3 @@
-
 .c06__mrnr__background {
     height: 768px;
     background: $color-icon-default;
@@ -24,7 +23,7 @@
                 color: $color-main;
                 padding: 34px 51px 35px 52px;
                 position: relative;
-                bottom: 27px;
+                vertical-align: top;
             }
 
             .c06__mrnr__reservation-details__wrapper {
@@ -32,25 +31,12 @@
                 margin-left: 19px;
 
                 .c06__mrnr__txt__reservation-details {
-                    font-size: 14px;
-                    // xdのデザイン上では16pxですが、16にするとレイアウトが
-                    // 大きく変わってしまったので14pxで対応しています。
+                    font-size: 16px;
 
 
                 }
 
-                // .c06__mrnr__txt--date-time{
 
-                // }
-                // .c06__mrnr__txt--required-time{
-
-                // }
-                // .c06__mrnr__txt--welcoming-time{
-
-                // }
-                // .c06__mrnr__txt--assumed-value{
-
-                // }
             }
 
             .c06__mrnr__btn--orange {

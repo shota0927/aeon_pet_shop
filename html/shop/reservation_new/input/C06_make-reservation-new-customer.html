@@ -86,7 +86,8 @@
       <div class="c06__mrnc__input__wrapper--phone-number">
         <p class="c06__mrnc__txt--phone-number">電話番号</p>
         <div class="input__wrapper c06__mrnc__input--phone-number">
-          <input type="text" class="input__area--default c06__mrnc__input__area--phone-number" placeholder="入力してください">
+          <input type="text" class="input__area--default c06__mrnc__input__area--phone-number"
+            placeholder="09012345678">
         </div>
       </div>
       <!-- グレーエリア -->
@@ -139,10 +140,10 @@
           <!-- ワクチン接触　確認 -->
           <div class="c06__mrnc__check-box__wapper--1">
             <div class="check">
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--rabies-vaccine" for="test1">狂犬病ワクチン確認</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--mixed-vaccine" for="test1">混合ワクチン確認</label>
+              <input type="checkbox" id="rabies">
+              <label class="c06__mrnc__check-box--rabies-vaccine" for="rabies">狂犬病ワクチン確認</label>
+              <input type="checkbox" id="mixed">
+              <label class="c06__mrnc__check-box--mixed-vaccine" for="mixed">混合ワクチン確認</label>
             </div>
           </div>
           <!-- 年齢 -->
@@ -150,24 +151,25 @@
           <!-- 持病　けが確認 -->
           <div class="c06__mrnc__check-box__wapper--2">
             <div class="check">
-              <input type="checkbox" id="test2" checked="checked">
-              <label class="c06__mrnc__check-box--chronic-disease_hurt-check" for="test2">持病・けが確認</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--veterinarian-permission" for="test1">獣医師の許可</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--heart-disease" for="test1">心疾患</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--endocrine-disorder" for="test1">内分泌疾患</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--cancerous-tumour-disease" for="test1">腫癌性疾患</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--others" for="test1">その他</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--gastric-disorder" for="test1">胃疾患</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--neurological-disorder" for="test1">神経疾患</label>
-              <input type="checkbox" id="test1">
-              <label class="c06__mrnc__check-box--respiratory-digestive-system-diseases" for="test1">呼吸器・消化器系疾患</label>
+              <input type="checkbox" id="chronic" checked="checked">
+              <label class="c06__mrnc__check-box--chronic-disease_hurt-check" for="chronic">持病・けが確認</label>
+              <input type="checkbox" id="veterinarian">
+              <label class="c06__mrnc__check-box--veterinarian-permission" for="veterinarian">獣医師の許可</label>
+              <input type="checkbox" id="heart">
+              <label class="c06__mrnc__check-box--heart-disease" for="heart">心疾患</label>
+              <input type="checkbox" id="endocrine">
+              <label class="c06__mrnc__check-box--endocrine-disorder" for="endocrine">内分泌疾患</label>
+              <input type="checkbox" id="cancerous">
+              <label class="c06__mrnc__check-box--cancerous-tumour-disease" for="cancerous">腫癌性疾患</label>
+              <input type="checkbox" id="others">
+              <label class="c06__mrnc__check-box--others" for="others">その他</label>
+              <input type="checkbox" id="gastric">
+              <label class="c06__mrnc__check-box--gastric-disorder" for="gastric">胃疾患</label>
+              <input type="checkbox" id="neurological">
+              <label class="c06__mrnc__check-box--neurological-disorder" for="neurological">神経疾患</label>
+              <input type="checkbox" id="respiratory">
+              <label class="c06__mrnc__check-box--respiratory-digestive-system-diseases"
+                for="respiratory">呼吸器・消化器系疾患</label>
             </div>
           </div>
         </div>
@@ -242,8 +244,8 @@
       <!-- 毛玉・もつれ -->
       <div class="c06__mrnc__check-group__wrapper--furball-snarl">
         <div class="check c06__mrnc__check__wrapper">
-          <input type="checkbox" id="test2" checked="checked">
-          <label for="test2">毛玉・もつれ</label>
+          <input type="checkbox" id="furball" checked="checked">
+          <label for="furball">毛玉・もつれ</label>
         </div>
         <div class="pull-down c06__mrnc__drop-down--furball-snarl">
           <select class="pull-down__select c06__mrnc__select__area--furball-snarl" required>
@@ -257,12 +259,12 @@
       <div class="c06__mrnc__select__group--how-to-reserve">
         <p class="c06__mrnc__txt--how-to-reserve">予約経路</p>
         <div class="select c06__mrnc__select__wrapper--how-to-reserve">
-          <input type="radio" id="test4" name="radio" checked="checked">
-          <label class="c06__mrnc__select__choices--web" for="test4">Web</label>
-          <input type="radio" id="test3" name="radio">
-          <label class="c06__mrnc__select__choices--counter" for="test3">店頭</label>
-          <input type="radio" id="test3" name="radio">
-          <label class="c06__mrnc__select__choices--phone" for="test3">電話</label>
+          <input type="radio" id="web" name="radio" checked="checked">
+          <label class="c06__mrnc__select__choices--web" for="web">Web</label>
+          <input type="radio" id="counter" name="radio">
+          <label class="c06__mrnc__select__choices--counter" for="counter">店頭</label>
+          <input type="radio" id="phone" name="radio">
+          <label class="c06__mrnc__select__choices--phone" for="phone">電話</label>
         </div>
       </div>
       <div class="c06__mrnc__input__group--remarks">
