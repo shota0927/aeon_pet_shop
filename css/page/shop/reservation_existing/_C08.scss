@@ -1,4 +1,3 @@
-
 .c08__mrec__header__pull-down {
     left: 10.5px;
 }
@@ -46,14 +45,14 @@
             display: inline-block;
             position: relative;
             left: 40px;
-            top: 34px;
+            top: 27px;
 
             .c08__mrec__txt--customer-name {
                 display: inline-block;
                 font-size: 14px;
             }
 
-            .c08__mrec__serch__wrapper--customer-name {
+            .c08__mrec__serch__wrapper--name {
                 display: inline-block;
                 margin-left: 26px;
                 top: 0px;
@@ -64,13 +63,21 @@
                     width: 340px;
                 }
             }
+
+            .c08__mrec__suggest__wrapper {
+                position: absolute;
+                z-index: 100;
+                background: #fff;
+                width: 340px;
+                left: 72px;
+            }
         }
 
         .c08__mrec__input__wrapper--phone-number {
             display: inline-block;
             position: relative;
             left: 97px;
-            top: 34px;
+            top: 27px;
 
             .c08__mrec__txt--phone-number {
                 display: inline-block;
@@ -117,6 +124,10 @@
                             height: 46px;
                             width: 340px;
                             background: $color-background-base;
+
+                            &:invalid {
+                                color: #333;
+                            }
                         }
 
                     }
@@ -315,6 +326,10 @@
                     .c08__mrec__select__area--course {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
             }
@@ -336,6 +351,10 @@
                     .c08__mrec__select__area--stuff {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
 
@@ -356,6 +375,10 @@
                     .c08__mrec__select__area--option {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
                     }
                 }
             }
@@ -378,6 +401,10 @@
                     .c08__mrec__select__area--campaign {
                         width: 341px;
                         height: 46px;
+
+                        &:invalid {
+                            color: #333;
+                        }
 
                     }
                 }

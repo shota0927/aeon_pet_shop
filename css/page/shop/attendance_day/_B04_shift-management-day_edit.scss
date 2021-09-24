@@ -1,4 +1,3 @@
-
 .b04__smde__background {
     height: 768px;
     background: $color-icon-default;
@@ -37,6 +36,10 @@
                     background: $color-bright-green;
                     color: $color-text-sub;
                     margin-right: 20px;
+                }
+
+                .b04__smde__pull-down__select {
+                    color: #333;
                 }
             }
 
